@@ -3,6 +3,37 @@
 }
 
 body {
-  font-family: 'Barlow Semi Condensed', sans-serif; 
+  font-family: 'Barlow Semi Condensed', sans-serif;
 
+}
+
+.profile{
+  background-color: black;
+  display: flex;
+}
+
+.profile img{
+  position:relative;
+  padding: 50px;
+}
+
+.CV-header-text{
+color:white;
+padding: 50px;
+}
+
+.contact{
+  background-color: #a6313a;
+  display:flex;
+
+
+}
+.contact ul{
+  list-style: none;
+  display:flex;
+  justify-content: space-around;
+
+}
+.contact li img{
+  width: 30px;
 }
