@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-
+  margin: 2%;
 }
 
 h3 {
@@ -25,6 +25,7 @@ hr {
   padding: 5px;
 }
 
+
 /*Estilos Cabecera CV*/
 .profile{
   background-color: black;
@@ -39,8 +40,8 @@ hr {
 }
 
 .CV-header-text{
-color:white;
-padding: 10px;
+  color:white;
+  padding: 10px;
 }
 
 .contact{
@@ -59,11 +60,20 @@ padding: 10px;
   width: 30px;
 }
 
-/*Estilos posicionamiento Educacion*/
+/*estilos EXPERIENCIA*/
+.list-experience {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.job {
+  font-weight: bold;
+}
+
+/*Estilos EDUCACION*/
 .list-education {
   display: flex;
-    padding: 0 20px;
-    margin: 0;
-    justify-content: space-between;
-    width: 40%;
+  padding: 0 20px;
+  margin: 0;
+  justify-content: space-between;
 }
