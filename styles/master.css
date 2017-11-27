@@ -5,16 +5,29 @@
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 2%;
+  font-size: 16px;
 }
 
 h3 {
   margin-bottom: 0;
+  text-transform: uppercase;
+  margin-left: 5%;
 }
-
+h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
 hr {
   height: 2px;
-  background-color: black;
+  background-color: #a6313a;
   border:none;
+  margin-top: 3px;
+  margin-right: 25%;
+  margin-left: 5%;
+}
+
+p{
+  width: 90%;
 }
 
 /*ESTILOS CV*/
@@ -29,19 +42,21 @@ hr {
 /*Estilos Cabecera CV*/
 .profile{
   background-color: black;
-  display: flex;
   width: 100%;
-  align-items: center;
 }
 
 .profile img{
   width: 100%;
-  padding: 10px;
+  padding: 5%;
 }
 
 .CV-header-text{
   color:white;
-  padding: 10px;
+  padding: 5%;
+}
+.CV-description{
+  width: 100%;
+  text-align: justify;
 }
 
 .contact{
@@ -50,18 +65,16 @@ hr {
 }
 .contact ul{
   list-style: none;
-  display:flex;
-  justify-content: space-around;
   margin-top: 0;
-  padding: 15px 0;
+  padding: 15px;
 
 }
 .contact li img{
   width: 30px;
 }
 
-/*estilos EXPERIENCIA*/
-.list-experience {
+/*estilos EXPERIENCIA, LENGUAJE, HABILIDADES*/
+.list-experience, .list-language, .list-skills {
   padding: 0 20px;
   margin: 0;
 }
