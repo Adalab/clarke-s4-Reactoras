@@ -62,17 +62,8 @@ header{
 nav{
   display:flex;
 }
-.form-active{
-  background-color: #a6313a;
-  text-transform: uppercase;
-  color:white;
-  border:#a6313a;
-  border-radius: 5px 5px 0px 0px;
-  width: 50%;
-  padding: 5px;
-}
 
-.cv-active{
+.tab-button{
   background-color: white;
   text-transform: uppercase;
   color:#a6313a;
@@ -81,6 +72,17 @@ nav{
   width: 50%;
   padding: 5px;
 }
+
+.tab-button.active{
+  background-color: #a6313a;
+  color:white;
+  border:#a6313a;
+}
+
+.hidden {
+  display: none;
+}
+
 
 /*ESTILOS CV*/
 
