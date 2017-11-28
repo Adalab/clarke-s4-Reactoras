@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+
+.kerstyle{
+  text-transform: uppercase;
+}
+
+
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 2%;
@@ -19,18 +25,61 @@ h2 {
   text-transform: uppercase;
 }
 
-hr {
-  height: 2px;
-  background-color: #a6313a;
-  border:none;
-  margin-top: 3px;
-  margin-right: 15px;
-  margin-left: 15px;
+p{
+  margin-top: 0;
 }
 
-p{
-  width: 90%;
-  margin-top: 0;
+/*Estilos del header*/
+
+header{
+  background-color: #a6313a;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  height: 30px;
+  padding: 5px;
+}
+
+
+/*Estilos welcome box*/
+
+.welcome-box{
+  background-color: lightgray;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.white-line{
+  height: 2px;
+  background-color: white;
+  border:none;
+}
+
+.welcome-text{
+  padding: 10px;
+}
+/*Estilos de botones*/
+nav{
+  display:flex;
+}
+.form-active{
+  background-color: #a6313a;
+  text-transform: uppercase;
+  color:white;
+  border:#a6313a;
+  border-radius: 5px 5px 0px 0px;
+  width: 50%;
+  padding: 5px;
+}
+
+.cv-active{
+  background-color: white;
+  text-transform: uppercase;
+  color:#a6313a;
+  border: 1px solid #a6313a;
+  border-radius: 5px 5px 0px 0px;
+  width: 50%;
+  padding: 5px;
 }
 
 /*ESTILOS CV*/
@@ -41,6 +90,14 @@ p{
   padding: 5px;
 }
 
+.red-line {
+  height: 2px;
+  background-color: #a6313a;
+  border:none;
+  margin-top: 3px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
 
 /*Estilos Cabecera CV*/
 .profesion {
