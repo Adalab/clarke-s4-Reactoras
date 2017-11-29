@@ -118,11 +118,11 @@ nav{
   display: none;
 }
 
-.CV-header-text{
+.cv-header-text{
   color:white;
   padding: 15px;
 }
-.CV-description{
+.cv-description{
   width: 100%;
   text-align: justify;
 }
