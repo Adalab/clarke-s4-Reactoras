@@ -83,8 +83,58 @@ nav{
   display: none;
 }
 
+/*Estilos del form*/
+
+.form-box {
+  margin-top: 15px;
+}
+
+/*Estilos cajas contenedoras del fieldset*/
+
+.form-contact, .form-skills, .form-language, .form-experience, .form-education {
+  border: 2px solid #a6313a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input, textarea{
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  border:none;
+  border-radius: 5px;
+  padding: 10px;
+  margin:8px 0px;
+  background: lightgray;
+  width: 100%;
+  font-family: inherit;
+
+}
+
+.submit-button{
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  background-color: #a6313a;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  margin: 15px 0px;
+  box-shadow: none;
+
+}
+
 
 /*ESTILOS CV*/
+
+.cv-box{
+  margin-bottom: 15px;
+}
+
 
 /*Estilos caja gris secciones*/
 .skills-box, .language-box, .experience-box, .education-box {
@@ -162,4 +212,19 @@ nav{
   padding: 20px 20px;
   margin: 0;
   justify-content: space-between;
+}
+
+
+
+
+
+/*Estilos del footer*/
+
+footer {
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  height: 30px;
+  padding: 5px;
 }
