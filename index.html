@@ -34,7 +34,7 @@
       <fieldset class="form-contact">
 
         <legend>Datos Personales</legend>
-        <legend class="form-obl">*Campos obligatorios</legend>
+        <p class="form-obl">*Campos obligatorios</p>
 
         <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
         <input type="text" name="profession" value="" placeholder="Profesión*" required>
@@ -71,12 +71,22 @@
         <input type="text" name="job" value="" placeholder="Puesto*">
         <input type="text" name="company" value="" placeholder="Empresa*">
 
-        <label for="start-exp">Desde*</label>
-        <input type="text" id ="start-exp" name="month" value="" placeholder="Mes">
-        <input type="number" name="year" value="" placeholder="Año">
-        <label for="finish-exp">Hasta*</label>
-        <input type="text" id ="finish-exp" name="month" value="" placeholder="Mes">
-        <input type="number" name="year" value="" placeholder="Año">
+        <div class="calendar">
+
+          <div class="calendar-start-exp">
+            <p class="start-exp">Desde*</p>
+            <select id ="start-exp-month" name="month"></select>
+            <select id ="start-exp-year" name="year"></select>
+          </div>
+
+          <div class="calendar-end-exp">
+            <p class="end-exp">Hasta*</p>
+            <select id ="end-exp-month" name="month"></select>
+            <select id ="end-exp-year" name="year"></select>
+          </div>
+
+        </div>
+
         <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
 
       </fieldset>
@@ -88,19 +98,25 @@
         <input type="text" name="degree" value="" placeholder="Título*" required>
         <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
 
-        <label for="start-edu">Desde*</label>
-        <input type="text" id ="start-edu" name="month" value="" placeholder="Mes" required>
-        <input type="text" name="year" value="" placeholder="Año" required>
-        <label for="to">Hasta*</label>
-        <input type="text" id ="start-edu" name="month" value="" placeholder="Mes" required>
-        <input type="text" name="year" value="" placeholder="Año" required>
+        <div class="calendar">
+
+          <div class="calendar-start-educ">
+            <p class="start-educ">Desde*</p>
+            <select id ="start-educ-month" name="month"></select>
+            <select id ="start-educ-year" name="year"></select>
+          </div>
+
+          <div class="calendar-end-educ">
+            <p class="end-educ">Hasta*</p>
+            <select id ="end-educ-month" name="month"></select>
+            <select id ="end-educ-year" name="year"></select>
+          </div>
+
+        </div>
 
       </fieldset>
 
       <input class="submit-button" type="submit" value="enviar datos al cv">
-
-
-
 
     </form>
 

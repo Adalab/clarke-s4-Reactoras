@@ -58,7 +58,9 @@ header{
 .welcome-text{
   padding: 10px;
 }
-/*Estilos de botones*/
+
+/*Estilos de botones de formulario y curriculum*/
+
 nav{
   display:flex;
 }
@@ -83,6 +85,7 @@ nav{
   display: none;
 }
 
+/*Estilos generales del Formulario*/
 /*Estilos del form*/
 
 .form-box {
@@ -90,6 +93,14 @@ nav{
 }
 
 /*Estilos cajas contenedoras del fieldset*/
+
+
+.form-obl{
+  color: gray;
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 0px;
+}
 
 .form-contact, .form-skills, .form-language, .form-experience, .form-education {
   border: 2px solid #a6313a;
@@ -109,6 +120,11 @@ input, textarea{
   width: 100%;
   font-family: inherit;
 
+}
+/*Estilos de calendario*/
+
+.calendar{
+  display: block;
 }
 
 .submit-button{
