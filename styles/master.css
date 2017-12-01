@@ -2,11 +2,9 @@
   box-sizing: border-box;
 }
 
-
 .kerstyle{
   text-transform: uppercase;
 }
-
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -85,7 +83,7 @@ nav{
   display: none;
 }
 
-/*Estilos generales del Formulario*/
+/*Estilos generales del FORMULARIO*/
 /*Estilos del form*/
 
 .form-box {
@@ -93,7 +91,6 @@ nav{
 }
 
 /*Estilos cajas contenedoras del fieldset*/
-
 
 .form-obl{
   color: gray;
@@ -104,9 +101,11 @@ nav{
 
 .form-contact, .form-skills, .form-language, .form-experience, .form-education {
   border: 2px solid #a6313a;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 10px;
 }
+
+/*Estilos cajas introduccion datos*/
 
 input, textarea{
   -webkit-appearance: none;
@@ -119,13 +118,36 @@ input, textarea{
   background: lightgray;
   width: 100%;
   font-family: inherit;
-
 }
-/*Estilos de calendario*/
 
-.calendar{
-  display: block;
+/*Estilos de cajitas fechas*/
+.calendar {
+  margin: 2px 0;
 }
+
+.calendar-start-exp, .calendar-end-exp, .calendar-start-educ, .calendar-end-educ {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#start-exp-month, #start-exp-year, #end-exp-month, #end-exp-year, #start-educ-month, #start-educ-year, #end-educ-month, #end-educ-year {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  border: none;
+  border-bottom: 1px solid #a6313a;
+  background-color: white;
+  color: white;
+  font-family: inherit;
+  padding: 2px 10px;
+  border-radius: 0;
+}
+
+
+
+/*Estilos boton enviar final*/
 
 .submit-button{
   -webkit-appearance: none;
@@ -133,15 +155,14 @@ input, textarea{
   appearance:         none;
   background-color: #a6313a;
   color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   text-transform: uppercase;
   text-align: center;
   padding: 5px;
   width: 100%;
   border: none;
-  margin: 15px 0px;
+  margin-bottom: 20px;
   box-shadow: none;
-
 }
 
 
@@ -153,6 +174,7 @@ input, textarea{
 
 
 /*Estilos caja gris secciones*/
+
 .skills-box, .language-box, .experience-box, .education-box {
   background-color: lightgray;
   padding: 5px;
@@ -168,6 +190,7 @@ input, textarea{
 }
 
 /*Estilos Cabecera CV*/
+
 .profesion {
   font-style: oblique;
   font-weight: normal;
@@ -188,6 +211,7 @@ input, textarea{
   color:white;
   padding: 15px;
 }
+
 .cv-description{
   width: 100%;
   text-align: justify;
@@ -201,18 +225,20 @@ input, textarea{
   list-style: none;
   margin-top: 0;
   padding: 15px;
-
 }
+
 .contact li img{
   width: 30px;
   padding-right: 10px;
 }
 
 /*estilos EXPERIENCIA, LENGUAJE, HABILIDADES*/
+
 .list-language, .list-skills {
   padding: 0 20px;
   margin: 0;
 }
+
 .list-experience {
   margin: 0;
   padding: 20px 20px;
@@ -223,16 +249,13 @@ input, textarea{
 }
 
 /*Estilos EDUCACION*/
+
 .list-education {
   display: flex;
   padding: 20px 20px;
   margin: 0;
   justify-content: space-between;
 }
-
-
-
-
 
 /*Estilos del footer*/
 
