@@ -132,7 +132,7 @@ input, textarea{
   width: 60%;
 }
 
-#start-exp-month, #start-exp-year, #end-exp-month, #end-exp-year, #start-educ-month, #start-educ-year, #end-educ-month, #end-educ-year {
+#startExpMonth, #startExpYear, #end-exp-month, #end-exp-year, #start-educ-month, #start-educ-year, #end-educ-month, #end-educ-year {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
