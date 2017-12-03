@@ -45,7 +45,7 @@ header{
 .welcome-box{
   text-align: center;
   padding: 20px 10px;
-  background: url(/images/background-welcome.jpg) no-repeat;
+  background: url(https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg) no-repeat;
   background-size: cover;
   color: white;
 }
