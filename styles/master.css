@@ -273,3 +273,52 @@ footer {
   height: 30px;
   padding: 5px;
 }
+
+/*MEDIAQUERIES*/
+
+
+@media all and (min-width: 768px){
+
+.list-contact {
+  display:flex;
+  justify-content: space-between;
+}
+
+.list-education li{
+  margin-right: 30px;
+}
+}
+
+@media all and (min-width:1024px){
+
+/*.welcome-box{
+  height: 15em;
+  padding:20px 60px;
+}
+
+  .flex-personal-data {
+    display:flex;
+    justify-content: space-between;
+  }
+.flex-personal-data2{
+  display:flex;
+}
+
+}*/
+
+main {
+  display: flex;
+
+
+}
+.form-box{
+  width:50%;
+}
+
+.cv-box{
+  width:50%;
+  border: 2px solid #a6313a;
+  border-radius: 15px;
+  margin:20px;
+  padding: 10px 10px;
+}

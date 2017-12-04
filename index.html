@@ -24,6 +24,8 @@
     <button class="tab-button active" type="button" name="button-form">formulario</button>
     <button class="tab-button" type="button" name="button-cv">cv</button>
   </nav>
+<main>
+
 
   <div class="form-box">
 
@@ -33,12 +35,18 @@
 
         <legend>Datos Personales</legend>
         <p class="form-obl">*Campos obligatorios</p>
+        <div class="flex-personal-data">
+
 
         <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
         <input type="text" name="profession" value="" placeholder="Profesión*" required>
+        </div>
+        <div class="flex-personal-data2">
+
         <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
         <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
         <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
+        </div>
         <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
 
       </fieldset>
@@ -195,7 +203,7 @@
 
     <section class="language">
       <h3>Idiomas</h3>
-      <hr>
+      <hr class="red-line">
       <div class="language-box">
         <ul class="list-language">
           <li>
@@ -212,7 +220,7 @@
 
     <section class="experience">
       <h3>Experiencia Profesional</h3>
-      <hr>
+      <hr class="red-line">
       <div class="experience-box">
         <ul class="list-experience">
           <li>
@@ -230,7 +238,7 @@
 
     <section class="education">
       <h3>Educación</h3>
-      <hr>
+      <hr class="red-line">
       <div class="education-box">
         <ul class="list-education">
           <li>
@@ -246,7 +254,7 @@
     </section>
 
   </div>
-
+</main>
   <footer>
     <p>&copy;<span class=kerstyle>ker</span></p>
   </footer>
