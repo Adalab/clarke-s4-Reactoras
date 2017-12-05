@@ -32,7 +32,9 @@
       <fieldset class="form-contact">
 
         <legend>Datos Personales</legend>
-        <p class="form-obl">*Campos obligatorios</p>
+        <button class="edit-button" type="button" name="button">Editar</button>
+
+        <div class="contact-input hidden">
 
         <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
         <input type="text" name="profession" value="" placeholder="Profesión*" required>
@@ -40,31 +42,52 @@
         <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
         <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
         <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
+        <p class="form-obl">*Campos obligatorios</p>
+        <button class="close-input-button" type="button" name="button">cerrar</button>
+        <button class="send-input-button" type="button" name="button">guardar</button>
+
+        </div>
 
       </fieldset>
 
       <fieldset class="form-skills">
 
         <legend>Habilidades</legend>
+        <button class="edit-button" type="button" name="button">Editar</button>
+
+        <div class="skills-input">
+        <p class="form-obl">*Campos obligatorios</p>
 
         <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
         <input type="text" name="secondskill" value="" placeholder="Habilidad2*" required>
         <input type="text" name="thirdskill" value="" placeholder="Habilidad3*" required>
-
+        <button class="close-input-button" type="button" name="button">cerrar</button>
+        <button class="send-input-button" type="button" name="button">guardar</button>
+      </div>
       </fieldset>
 
       <fieldset class="form-language">
 
         <legend>Idiomas</legend>
+        <button class="edit-button" type="button" name="button">Editar</button>
+
+        <div class="language-input">
+        <p class="form-obl">*Campos obligatorios</p>
 
         <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
         <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
-
+        <button class="close-input-button" type="button" name="button">cerrar</button>
+        <button class="send-input-button" type="button" name="button">guardar</button>
+      </div>
       </fieldset>
 
       <fieldset class="form-experience">
 
         <legend>Experiencia Profesional</legend>
+        <button class="edit-button" type="button" name="button">Editar</button>
+
+        <div class="experience-input">
+        <p class="form-obl">*Campos obligatorios</p>
 
         <input type="text" name="job" value="" placeholder="Puesto*">
         <input type="text" name="company" value="" placeholder="Empresa*">
@@ -103,12 +126,18 @@
           </div>
 
         </div>
-
+        <button class="close-input-button" type="button" name="button">cerrar</button>
+        <button class="send-input-button" type="button" name="button">guardar</button>
+      </div>
       </fieldset>
 
       <fieldset class="form-education">
 
         <legend>Educación</legend>
+        <button class="edit-button" type="button" name="button">Editar</button>
+
+        <div class="education-input">
+        <p class="form-obl">*Campos obligatorios</p>
 
         <input type="text" name="degree" value="" placeholder="Título*" required>
         <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
@@ -134,8 +163,10 @@
             <option>2015</option>
           </select>
           </div>
-
         </div>
+        <button class="close-input-button" type="button" name="button">cerrar</button>
+        <button class="send-input-button" type="button" name="button">guardar</button>
+      </div>
 
       </fieldset>
 
