@@ -21,8 +21,8 @@
   </div>
 
   <nav>
-    <button class="tab-button active" type="button" name="button-form">formulario</button>
-    <button class="tab-button" type="button" name="button-cv">cv</button>
+    <button class="tab-form-button active" type="button" name="button-form">formulario</button>
+    <button class="tab-cv-button" type="button" name="button-cv">cv</button>
   </nav>
 
   <div class="form-box">
@@ -34,17 +34,17 @@
         <legend>Datos Personales</legend>
         <button class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="contact-input">
+        <div class="contact-input hidden">
 
-        <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
-        <input type="text" name="profession" value="" placeholder="Profesión*" required>
-        <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
-        <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
-        <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
-        <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
-        <p class="form-obl">*Campos obligatorios</p>
-        <button class="close-input-button" type="button" name="button">cerrar</button>
-        <button class="send-input-button" type="button" name="button">guardar</button>
+          <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
+          <input type="text" name="profession" value="" placeholder="Profesión*" required>
+          <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
+          <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
+          <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
+          <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
+          <p class="form-obl">*Campos obligatorios</p>
+          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button class="send-input-button" type="button" name="button">guardar</button>
 
         </div>
 
@@ -55,22 +55,20 @@
         <legend>Habilidades</legend>
         <button class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="skills-input">
-        <p class="form-obl">*Campos obligatorios</p>
+        <div class="skills-input hidden">
+          <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
+          <p class="form-obl">*Campos obligatorios</p>
 
-        <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
-      
+          <div class="skills-buttons">
+            <img class="add-button" src="images/add.svg" alt="add button">
+            <img class="up-button" src="images/up.svg" alt="up button">
+            <img class="down-button" src="images/down.svg" alt="down button">
+            <img class="remove-button" src="images/remove.svg" alt="remove button">
+          </div>
 
-        <div class="skills-buttons">
-          <img class="add-button" src="images/add.svg" alt="add button">
-          <img class="up-button" src="images/up.svg" alt="up button">
-          <img class="down-button" src="images/down.svg" alt="down button">
-          <img class="remove-button" src="images/remove.svg" alt="remove button">
+          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
-
-        <button class="close-input-button" type="button" name="button">cerrar</button>
-        <button class="send-input-button" type="button" name="button">guardar</button>
-      </div>
       </fieldset>
 
       <fieldset class="form-language">
@@ -78,22 +76,21 @@
         <legend>Idiomas</legend>
         <button class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="language-input">
-        <p class="form-obl">*Campos obligatorios</p>
+        <div class="language-input hidden">
+          <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
+          <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
+          <p class="form-obl">*Campos obligatorios</p>
 
-        <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
-        <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
+          <div class="language-buttons">
+            <img class="add-button" src="images/add.svg" alt="add button">
+            <img class="up-button" src="images/up.svg" alt="up button">
+            <img class="down-button" src="images/down.svg" alt="down button">
+            <img class="remove-button" src="images/remove.svg" alt="remove button">
+          </div>
 
-        <div class="language-buttons">
-          <img class="add-button" src="images/add.svg" alt="add button">
-          <img class="up-button" src="images/up.svg" alt="up button">
-          <img class="down-button" src="images/down.svg" alt="down button">
-          <img class="remove-button" src="images/remove.svg" alt="remove button">
+          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
-
-        <button class="close-input-button" type="button" name="button">cerrar</button>
-        <button class="send-input-button" type="button" name="button">guardar</button>
-      </div>
       </fieldset>
 
       <fieldset class="form-experience">
@@ -101,57 +98,56 @@
         <legend>Experiencia Profesional</legend>
         <button class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="experience-input">
-        <p class="form-obl">*Campos obligatorios</p>
+        <div class="experience-input hidden">
+          <input type="text" name="job" value="" placeholder="Puesto*">
+          <input type="text" name="company" value="" placeholder="Empresa*">
+          <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
+          <p class="form-obl">*Campos obligatorios</p>
 
-        <input type="text" name="job" value="" placeholder="Puesto*">
-        <input type="text" name="company" value="" placeholder="Empresa*">
-        <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
+          <div class="calendar">
 
-        <div class="calendar">
+            <div class="calendar-start-exp">
+              <p class="start-exp">Desde*</p>
+              <select class="input-form" name="month-exp">
+                <option id ="startExpMonth" disabled selected>Mes</option>
+                <option>Enero</option>
+                <option>Febrero</option>
+                <option>Marzo</option>
+                <option>Abril</option>
+                <option>Mayo</option>
+                <option>Junio</option>
+                <option>Julio</option>
+                <option>Agosto</option>
+                <option>Septiembre</option>
+                <option>Octubre</option>
+                <option>Noviembre</option>
+                <option>Diciembre</option>
+              </select>
+              <select id ="startExpYear" name="year-exp"></select>
+            </div>
 
-          <div class="calendar-start-exp">
-            <p class="start-exp">Desde*</p>
-            <select class="input-form" name="month-exp">
-              <option id ="startExpMonth" disabled selected>Mes</option>
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-              <option>Junio</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-              <option>Diciembre</option>
-            </select>
-            <select id ="startExpYear" name="year-exp"></select>
+            <div class="calendar-end-exp">
+              <p class="end-exp">Hasta*</p>
+              <select id ="end-exp-month" name="month">
+                <option>Enero</option>
+              </select>
+              <select id ="end-exp-year" name="year">
+                <option>2015</option>
+              </select>
+            </div>
+
           </div>
 
-          <div class="calendar-end-exp">
-            <p class="end-exp">Hasta*</p>
-            <select id ="end-exp-month" name="month">
-            <option>Enero</option>
-          </select>
-            <select id ="end-exp-year" name="year">
-            <option>2015</option>
-          </select>
+          <div class="experience-buttons">
+            <img class="add-button" src="images/add.svg" alt="add button">
+            <img class="up-button" src="images/up.svg" alt="up button">
+            <img class="down-button" src="images/down.svg" alt="down button">
+            <img class="remove-button" src="images/remove.svg" alt="remove button">
           </div>
 
+          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
-
-        <div class="experience-buttons">
-          <img class="add-button" src="images/add.svg" alt="add button">
-          <img class="up-button" src="images/up.svg" alt="up button">
-          <img class="down-button" src="images/down.svg" alt="down button">
-          <img class="remove-button" src="images/remove.svg" alt="remove button">
-        </div>
-
-        <button class="close-input-button" type="button" name="button">cerrar</button>
-        <button class="send-input-button" type="button" name="button">guardar</button>
-      </div>
       </fieldset>
 
       <fieldset class="form-education">
@@ -159,37 +155,36 @@
         <legend>Educación</legend>
         <button class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="education-input">
-        <p class="form-obl">*Campos obligatorios</p>
+        <div class="education-input hidden">
+          <input type="text" name="degree" value="" placeholder="Título*" required>
+          <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
+          <p class="form-obl">*Campos obligatorios</p>
 
-        <input type="text" name="degree" value="" placeholder="Título*" required>
-        <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
+          <div class="calendar">
 
-        <div class="calendar">
+            <div class="calendar-start-educ">
+              <p class="start-educ">Desde*</p>
+              <select id ="start-educ-month" name="month">
+                <option>Enero</option>
+              </select>
+              <select id ="start-educ-year" name="year">
+                <option>2015</option>
+              </select>
+            </div>
 
-          <div class="calendar-start-educ">
-            <p class="start-educ">Desde*</p>
-            <select id ="start-educ-month" name="month">
-              <option>Enero</option>
-            </select>
-            <select id ="start-educ-year" name="year">
-            <option>2015</option>
-          </select>
+            <div class="calendar-end-educ">
+              <p class="end-educ">Hasta*</p>
+              <select id ="end-educ-month" name="month">
+                <option>Enero</option>
+              </select>
+              <select id ="end-educ-year" name="year">
+                <option>2015</option>
+              </select>
+            </div>
           </div>
-
-          <div class="calendar-end-educ">
-            <p class="end-educ">Hasta*</p>
-            <select id ="end-educ-month" name="month">
-            <option>Enero</option>
-          </select>
-            <select id ="end-educ-year" name="year">
-            <option>2015</option>
-          </select>
-          </div>
+          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
-        <button class="close-input-button" type="button" name="button">cerrar</button>
-        <button class="send-input-button" type="button" name="button">guardar</button>
-      </div>
 
       </fieldset>
 
@@ -199,7 +194,7 @@
 
   </div>
 
-  <div class="cv-box">
+  <div class="cv-box hidden">
 
     <div class="cv-header">
       <div class="profile">
@@ -305,8 +300,8 @@
     <p>&copy;<span class=kerstyle>ker</span></p>
   </footer>
 
-<script type="text/javascript" src="js/main.js">
+  <script type="text/javascript" src="js/main.js">
 
-</script>
+  </script>
 </body>
 </html>
