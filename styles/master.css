@@ -151,6 +151,21 @@ nav{
   float: right;
 }
 
+/*Estilos botones añadir, subir, bajar y quitar*/
+.skills-buttons, .language-buttons, .experience-buttons {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/*tamaño iconos botones añadir, subir, bajar y quitar*/
+.add-button, .up-button, .down-button, .remove-button {
+  width: 30px;
+  height: 30px;
+}
+
 /*Estilos cajas introduccion datos*/
 
 input, textarea{
