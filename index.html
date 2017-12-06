@@ -34,11 +34,11 @@
         <legend>Datos Personales</legend>
         <p class="form-obl">*Campos obligatorios</p>
 
-        <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
-        <input type="text" name="profession" value="" placeholder="Profesión*" required>
-        <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
-        <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
-        <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
+        <input id="fill-camp" type="text" name="full name" placeholder="Nombre y Apellidos*" required>
+        <input type="text" name="profession" placeholder="Profesión*" required>
+        <input type="tel" name="phone" placeholder="Teléfono*" required>
+        <input type="email" name="email" placeholder="Correo electrónico*" required>
+        <input type="text" name="Linkedin" placeholder="linkedin.com/nombredetuperfil">
         <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
 
       </fieldset>
@@ -47,9 +47,9 @@
 
         <legend>Habilidades</legend>
 
-        <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
-        <input type="text" name="secondskill" value="" placeholder="Habilidad2*" required>
-        <input type="text" name="thirdskill" value="" placeholder="Habilidad3*" required>
+        <input type="text" name="firstskill" placeholder="Habilidad1*" required>
+        <input type="text" name="secondskill" placeholder="Habilidad2*" required>
+        <input type="text" name="thirdskill" placeholder="Habilidad3*" required>
 
       </fieldset>
 
@@ -57,8 +57,8 @@
 
         <legend>Idiomas</legend>
 
-        <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
-        <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
+        <input type="text" name="firstlanguage" placeholder="Idioma*" required>
+        <input type="text" name="leveltitle" placeholder="Nivel/Título*" required>
 
       </fieldset>
 
@@ -66,40 +66,22 @@
 
         <legend>Experiencia Profesional</legend>
 
-        <input type="text" name="job" value="" placeholder="Puesto*">
-        <input type="text" name="company" value="" placeholder="Empresa*">
+        <input type="text" name="job" placeholder="Puesto*">
+        <input type="text" name="company" placeholder="Empresa*">
         <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
 
         <div class="calendar">
 
           <div class="calendar-start-exp">
             <p class="start-exp">Desde*</p>
-            <select class="input-form" name="month-exp">
-              <option id ="startExpMonth" disabled selected>Mes</option>
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-              <option>Junio</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-              <option>Diciembre</option>
-            </select>
-            <select id ="startExpYear" name="year-exp"></select>
+            <select class="month" name="month-exp"></select>
+            <select class="year" name="year-exp"></select>
           </div>
 
           <div class="calendar-end-exp">
             <p class="end-exp">Hasta*</p>
-            <select id ="end-exp-month" name="month">
-            <option>Enero</option>
-          </select>
-            <select id ="end-exp-year" name="year">
-            <option>2015</option>
-          </select>
+            <select class="month" name="month"></select>
+            <select class="year" name="year-exp"></select>
           </div>
 
         </div>
@@ -110,29 +92,21 @@
 
         <legend>Educación</legend>
 
-        <input type="text" name="degree" value="" placeholder="Título*" required>
-        <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
+        <input type="text" name="degree" placeholder="Título*" required>
+        <input type="text" name="university" placeholder="Centro de Estudios*" required>
 
         <div class="calendar">
 
           <div class="calendar-start-educ">
             <p class="start-educ">Desde*</p>
-            <select id ="start-educ-month" name="month">
-              <option>Enero</option>
-            </select>
-            <select id ="start-educ-year" name="year">
-            <option>2015</option>
-          </select>
+            <select class="month" name="month"></select>
+            <select class="year" name="year"></select>
           </div>
 
           <div class="calendar-end-educ">
             <p class="end-educ">Hasta*</p>
-            <select id ="end-educ-month" name="month">
-            <option>Enero</option>
-          </select>
-            <select id ="end-educ-year" name="year">
-            <option>2015</option>
-          </select>
+            <select class="month" name="month"></select>
+            <select class="year" name="year"></select>
           </div>
 
         </div>

@@ -1,22 +1,35 @@
 'use strict'
 
-function addYears(initYear, currentYear) {
-  var acumulador = '';
-  for (var i = initYear; i <= currentYear; i++) {
-    acumulador = acumulador + '<option>' + i + '</option>';
-  }
-  return '<option id="startExpMonth" disabled selected>Año</option>' + acumulador;
+// Desplegables mes
+
+var selectMonths = '<option selected disabled value="mes">  Mes</option>';
+selectMonths = selectMonths + '<option value="enero">Enero</option>';
+selectMonths = selectMonths + '<option value="febrero">Febrero</option>';
+selectMonths = selectMonths + '<option value="marzo">Marzo</option>';
+selectMonths = selectMonths + '<option value="abril">Abril</option>';
+selectMonths = selectMonths + '<option value="mayo">Mayo</option>';
+selectMonths = selectMonths + '<option value="junio">Junio</option>';
+selectMonths = selectMonths + '<option value="julio">Julio</option>';
+selectMonths = selectMonths + '<option value="agosto">Agosto</option>';
+selectMonths = selectMonths + '<option value="septiembre">Septiembre</option>';
+selectMonths = selectMonths + '<option value="octubre">Octubre</option>';
+selectMonths = selectMonths + '<option value="noviembre">Noviembre</option>';
+selectMonths = selectMonths + '<option value="diciembre">Diciembre</option>';
+
+var monthsAll = document.querySelectorAll('.month');
+for (var i = 0; i < monthsAll.length;i++) {
+    monthsAll[i].innerHTML = selectMonths;
 }
 
-var selectYears = document.querySelector('startExpYear');
+// Desplegables año
 
-startExpYear.innerHTML = addYears(1950, 2017);
+var years = 2060;
+var selectYears = '<option selected disabled value="año"> Año</option>'; //almacena selections de html que van en el select
 
-/*var startYear = 1950;
-var currentYear = 2017;
-var options = '';
-for (var i = startYear; i <= currentYear; i++) {
-  options += '<option>' + i + '</option>'
+for (var initYear = 1950; initYear < years; initYear++) {
+  selectYears = selectYears + '<option>' + (initYear) + '</option>';
 }
-
-document.getElementById('startExpYear').innerHTML = options;*/
+var yearsAll = document.querySelectorAll('.year');
+for (var i = 0; i < yearsAll.length;i++) {
+    yearsAll[i].innerHTML = selectYears;
+}
