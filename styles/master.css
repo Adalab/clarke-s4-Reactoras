@@ -348,23 +348,26 @@ footer {
 
 @media all and (min-width:1024px){
 
-.welcome-box{
+.welcome-box {
   height: 15em;
   padding:20px 60px;
 }
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
-.form-box{
-  width:50%;
+nav {
+  display: none;
 }
 
-.cv-box{
-  width:50%;
-  border: 2px solid #a6313a;
-  border-radius: 15px;
-  margin:20px;
-  padding: 10px 10px;
+.form-box {
+  width:30%;
+}
+
+.cv-box {
+  display: block;
+  width:65%;
+  margin-top: 20px;
 }
