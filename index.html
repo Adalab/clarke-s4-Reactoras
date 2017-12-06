@@ -21,8 +21,8 @@
   </div>
 
   <nav>
-    <button class="tab-form-button active" type="button" name="button-form">formulario</button>
-    <button class="tab-cv-button" type="button" name="button-cv">cv</button>
+    <button class="tab-button active" type="button" name="button-form">formulario</button>
+    <button class="tab-button" type="button" name="button-cv">cv</button>
   </nav>
 
   <div class="form-box">
@@ -32,9 +32,9 @@
       <fieldset class="form-contact">
 
         <legend>Datos Personales</legend>
-        <button class="edit-button" type="button" name="button">Editar</button>
+        <button data-id="0" class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="contact-input hidden">
+        <div class="contact-input content hidden">
 
           <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
           <input type="text" name="profession" value="" placeholder="Profesión*" required>
@@ -43,7 +43,7 @@
           <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
           <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
           <p class="form-obl">*Campos obligatorios</p>
-          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button data-id="0" class="edit-button close" type="button" name="button">cerrar</button>
           <button class="send-input-button" type="button" name="button">guardar</button>
 
         </div>
@@ -53,9 +53,9 @@
       <fieldset class="form-skills">
 
         <legend>Habilidades</legend>
-        <button class="edit-button" type="button" name="button">Editar</button>
+        <button data-id="1" class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="skills-input hidden">
+        <div class="skills-input content hidden">
           <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
           <p class="form-obl">*Campos obligatorios</p>
 
@@ -66,7 +66,7 @@
             <img class="remove-button" src="images/remove.svg" alt="remove button">
           </div>
 
-          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button data-id="1" class="edit-button close" type="button" name="button">cerrar</button>
           <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
       </fieldset>
@@ -74,9 +74,9 @@
       <fieldset class="form-language">
 
         <legend>Idiomas</legend>
-        <button class="edit-button" type="button" name="button">Editar</button>
+        <button data-id="2" class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="language-input hidden">
+        <div class="language-input content hidden">
           <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
           <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
           <p class="form-obl">*Campos obligatorios</p>
@@ -88,7 +88,7 @@
             <img class="remove-button" src="images/remove.svg" alt="remove button">
           </div>
 
-          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button data-id="2" class="edit-button close" type="button" name="button">cerrar</button>
           <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
       </fieldset>
@@ -96,9 +96,9 @@
       <fieldset class="form-experience">
 
         <legend>Experiencia Profesional</legend>
-        <button class="edit-button" type="button" name="button">Editar</button>
+        <button data-id="3" class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="experience-input hidden">
+        <div class="experience-input content hidden">
           <input type="text" name="job" value="" placeholder="Puesto*">
           <input type="text" name="company" value="" placeholder="Empresa*">
           <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
@@ -145,7 +145,7 @@
             <img class="remove-button" src="images/remove.svg" alt="remove button">
           </div>
 
-          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button data-id="3" class="edit-button close" type="button" name="button">cerrar</button>
           <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
       </fieldset>
@@ -153,9 +153,9 @@
       <fieldset class="form-education">
 
         <legend>Educación</legend>
-        <button class="edit-button" type="button" name="button">Editar</button>
+        <button data-id="4" class="edit-button" type="button" name="button">Editar</button>
 
-        <div class="education-input hidden">
+        <div class="education-input content hidden">
           <input type="text" name="degree" value="" placeholder="Título*" required>
           <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
           <p class="form-obl">*Campos obligatorios</p>
@@ -182,7 +182,7 @@
               </select>
             </div>
           </div>
-          <button class="close-input-button" type="button" name="button">cerrar</button>
+          <button data-id="4" class="edit-button close" type="button" name="button">cerrar</button>
           <button class="send-input-button" type="button" name="button">guardar</button>
         </div>
 
