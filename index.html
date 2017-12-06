@@ -24,243 +24,288 @@
     <button class="tab-button active" type="button" name="button-form">formulario</button>
     <button class="tab-button" type="button" name="button-cv">cv</button>
   </nav>
-<main>
+  <main>
 
 
-  <div class="form-box">
+    <div class="form-box">
 
-    <form class="form" action="index.html" method="post">
+      <form class="form" action="index.html" method="post">
 
-      <fieldset class="form-contact">
+        <fieldset class="form-contact">
 
-        <legend>Datos Personales</legend>
-        <p class="form-obl">*Campos obligatorios</p>
-        <div class="flex-personal-data">
+          <legend>Datos Personales</legend>
+          <button data-id="0" class="edit-button" type="button" name="button">Editar</button>
 
+          <div class="contact-input content hidden">
 
-        <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
-        <input type="text" name="profession" value="" placeholder="Profesión*" required>
-        </div>
-        <div class="flex-personal-data2">
+            <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
+            <input type="text" name="profession" value="" placeholder="Profesión*" required>
+            <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
+            <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
+            <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
+            <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
+            <p class="form-obl">*Campos obligatorios</p>
+            <button data-id="0" class="edit-button close" type="button" name="button">cerrar</button>
+            <button class="send-input-button" type="button" name="button">guardar</button>
 
-        <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
-        <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
-        <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
-        </div>
-        <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
-
-      </fieldset>
-
-      <fieldset class="form-skills">
-
-        <legend>Habilidades</legend>
-
-        <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
-        <input type="text" name="secondskill" value="" placeholder="Habilidad2*" required>
-        <input type="text" name="thirdskill" value="" placeholder="Habilidad3*" required>
-
-      </fieldset>
-
-      <fieldset class="form-language">
-
-        <legend>Idiomas</legend>
-
-        <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
-        <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
-
-      </fieldset>
-
-      <fieldset class="form-experience">
-
-        <legend>Experiencia Profesional</legend>
-
-        <input type="text" name="job" value="" placeholder="Puesto*">
-        <input type="text" name="company" value="" placeholder="Empresa*">
-        <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
-
-        <div class="calendar">
-
-          <div class="calendar-start-exp">
-            <p class="start-exp">Desde*</p>
-            <select class="input-form" name="month-exp">
-              <option id ="startExpMonth" disabled selected>Mes</option>
-              <option>Enero</option>
-              <option>Febrero</option>
-              <option>Marzo</option>
-              <option>Abril</option>
-              <option>Mayo</option>
-              <option>Junio</option>
-              <option>Julio</option>
-              <option>Agosto</option>
-              <option>Septiembre</option>
-              <option>Octubre</option>
-              <option>Noviembre</option>
-              <option>Diciembre</option>
-            </select>
-            <select id ="startExpYear" name="year-exp"></select>
           </div>
 
-          <div class="calendar-end-exp">
-            <p class="end-exp">Hasta*</p>
-            <select id ="end-exp-month" name="month">
-            <option>Enero</option>
-          </select>
-            <select id ="end-exp-year" name="year">
-            <option>2015</option>
-          </select>
+        </fieldset>
+
+        <fieldset class="form-skills">
+
+          <legend>Habilidades</legend>
+          <button data-id="1" class="edit-button" type="button" name="button">Editar</button>
+
+          <div class="skills-input content hidden">
+            <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
+            <p class="form-obl">*Campos obligatorios</p>
+
+            <div class="skills-buttons">
+              <img class="add-button" src="images/add.svg" alt="add button">
+              <img class="up-button" src="images/up.svg" alt="up button">
+              <img class="down-button" src="images/down.svg" alt="down button">
+              <img class="remove-button" src="images/remove.svg" alt="remove button">
+            </div>
+
+            <button data-id="1" class="edit-button close" type="button" name="button">cerrar</button>
+            <button class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
-        </div>
+        </fieldset>
 
-      </fieldset>
+        <fieldset class="form-language">
 
-      <fieldset class="form-education">
+          <legend>Idiomas</legend>
+          <button data-id="2" class="edit-button" type="button" name="button">Editar</button>
 
-        <legend>Educación</legend>
+          <div class="language-input content hidden">
+            <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
+            <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
+            <p class="form-obl">*Campos obligatorios</p>
 
-        <input type="text" name="degree" value="" placeholder="Título*" required>
-        <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
+            <div class="language-buttons">
+              <img class="add-button" src="images/add.svg" alt="add button">
+              <img class="up-button" src="images/up.svg" alt="up button">
+              <img class="down-button" src="images/down.svg" alt="down button">
+              <img class="remove-button" src="images/remove.svg" alt="remove button">
+            </div>
 
-        <div class="calendar">
-
-          <div class="calendar-start-educ">
-            <p class="start-educ">Desde*</p>
-            <select id ="start-educ-month" name="month">
-              <option>Enero</option>
-            </select>
-            <select id ="start-educ-year" name="year">
-            <option>2015</option>
-          </select>
+            <button data-id="2" class="edit-button close" type="button" name="button">cerrar</button>
+            <button class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
-          <div class="calendar-end-educ">
-            <p class="end-educ">Hasta*</p>
-            <select id ="end-educ-month" name="month">
-            <option>Enero</option>
-          </select>
-            <select id ="end-educ-year" name="year">
-            <option>2015</option>
-          </select>
+        </fieldset>
+
+        <fieldset class="form-experience">
+
+          <legend>Experiencia Profesional</legend>
+          <button data-id="3" class="edit-button" type="button" name="button">Editar</button>
+
+          <div class="experience-input content hidden">
+            <input type="text" name="job" value="" placeholder="Puesto*">
+            <input type="text" name="company" value="" placeholder="Empresa*">
+            <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
+            <p class="form-obl">*Campos obligatorios</p>
+
+            <div class="calendar">
+
+              <div class="calendar-start-exp">
+                <p class="start-exp">Desde*</p>
+                <select class="input-form" name="month-exp">
+                  <option id ="startExpMonth" disabled selected>Mes</option>
+                  <option>Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                  <option>Junio</option>
+                  <option>Julio</option>
+                  <option>Agosto</option>
+                  <option>Septiembre</option>
+                  <option>Octubre</option>
+                  <option>Noviembre</option>
+                  <option>Diciembre</option>
+                </select>
+                <select id ="startExpYear" name="year-exp"></select>
+              </div>
+
+              <div class="calendar-end-exp">
+                <p class="end-exp">Hasta*</p>
+                <select id ="end-exp-month" name="month">
+                  <option>Enero</option>
+                </select>
+                <select id ="end-exp-year" name="year">
+                  <option>2015</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="experience-buttons">
+              <img class="add-button" src="images/add.svg" alt="add button">
+              <img class="up-button" src="images/up.svg" alt="up button">
+              <img class="down-button" src="images/down.svg" alt="down button">
+              <img class="remove-button" src="images/remove.svg" alt="remove button">
+            </div>
+
+            <button data-id="3" class="edit-button close" type="button" name="button">cerrar</button>
+            <button class="send-input-button" type="button" name="button">guardar</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-education">
+
+          <legend>Educación</legend>
+          <button data-id="4" class="edit-button" type="button" name="button">Editar</button>
+
+          <div class="education-input content hidden">
+            <input type="text" name="degree" value="" placeholder="Título*" required>
+            <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
+            <p class="form-obl">*Campos obligatorios</p>
+
+            <div class="calendar">
+
+              <div class="calendar-start-educ">
+                <p class="start-educ">Desde*</p>
+                <select id ="start-educ-month" name="month">
+                  <option>Enero</option>
+                </select>
+                <select id ="start-educ-year" name="year">
+                  <option>2015</option>
+                </select>
+              </div>
+
+              <div class="calendar-end-educ">
+                <p class="end-educ">Hasta*</p>
+                <select id ="end-educ-month" name="month">
+                  <option>Enero</option>
+                </select>
+                <select id ="end-educ-year" name="year">
+                  <option>2015</option>
+                </select>
+              </div>
+            </div>
+            <button data-id="4" class="edit-button close" type="button" name="button">cerrar</button>
+            <button class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
-        </div>
+        </fieldset>
 
-      </fieldset>
+        <input class="submit-button" type="submit" value="enviar datos al cv">
 
-      <input class="submit-button" type="submit" value="enviar datos al cv">
+      </form>
 
-    </form>
-
-  </div>
-
-  <div class="cv-box">
-
-    <div class="cv-header">
-      <div class="profile">
-        <img src="images/niñomotivado.jpg" alt="niñomotivado">
-        <div class="cv-header-text">
-          <h2>Nombre Apellido</h2>
-          <h2> <span class="profesion">Profesión</span></h2>
-          <p class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class="contact">
-        <ul class="list-contact">
-          <li>
-            <img src="images/phone-icon.svg" alt="telefono">
-            +34 666 66 66 66
-          </li>
-          <li>
-            <img src="images/mail-icon.svg" alt="mail">
-            adalab@adalab.com
-          </li>
-          <li>
-            <img src="images/linkedin-icon.svg" alt="linkedin">
-            linkedin.com/adalab
-          </li>
-        </ul>
-      </div>
     </div>
 
-    <section class="skills">
-      <h3>Habilidades</h3>
-      <hr class="red-line">
-      <div class="skills-box">
-        <ul class="list-skills">
-          <li>
-            <h4>Habilidad1</h4>
-          </li>
-          <li>
-            <h4>Habilidad2</h4>
-          </li>
-          <li>
-            <h4>Habilidad-n</h4>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="cv-box hidden">
 
-    <section class="language">
-      <h3>Idiomas</h3>
-      <hr class="red-line">
-      <div class="language-box">
-        <ul class="list-language">
-          <li>
-            <h4>Lenguaje1</h4>
-            <p>Nivel/título</p>
-          </li>
-          <li>
-            <h4>Lenguaje2</h4>
-            <p>Nivel/título</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="experience">
-      <h3>Experiencia Profesional</h3>
-      <hr class="red-line">
-      <div class="experience-box">
-        <ul class="list-experience">
-          <li>
-            <p><span class="job">Encargado de planta - Carrefour</span> junio 2015-septiembre 2016</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="cv-header">
+        <div class="profile">
+          <img src="images/niñomotivado.jpg" alt="niñomotivado">
+          <div class="cv-header-text">
+            <h2>Nombre Apellido</h2>
+            <h2> <span class="profesion">Profesión</span></h2>
+            <p class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-          </li>
-          <li>
-            <p><span class="job">Encargado de planta - Carrefour</span> junio 2015-septiembre 2016</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="contact">
+          <ul class="list-contact">
+            <li>
+              <img src="images/phone-icon.svg" alt="telefono">
+              +34 666 66 66 66
+            </li>
+            <li>
+              <img src="images/mail-icon.svg" alt="mail">
+              adalab@adalab.com
+            </li>
+            <li>
+              <img src="images/linkedin-icon.svg" alt="linkedin">
+              linkedin.com/adalab
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
 
-    <section class="education">
-      <h3>Educación</h3>
-      <hr class="red-line">
-      <div class="education-box">
-        <ul class="list-education">
-          <li>
-            <p><span class="job">Licenciatura en Periodismo - Universidad Rey Juan Carlos I</span></p>
-            <p>septiembre 2007-junio 2013</p>
-          </li>
-          <li>
-            <p><span class="job">Licenciatura en Economía - Universidad Rey Juan Carlos</span></p>
-            <p>junio 2015-septiembre 2016</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section class="skills">
+        <h3>Habilidades</h3>
+        <hr class="red-line">
+        <div class="skills-box">
+          <ul class="list-skills">
+            <li>
+              <h4>Habilidad1</h4>
+            </li>
+            <li>
+              <h4>Habilidad2</h4>
+            </li>
+            <li>
+              <h4>Habilidad-n</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  </div>
-</main>
+      <section class="language">
+        <h3>Idiomas</h3>
+        <hr class="red-line">
+        <div class="language-box">
+          <ul class="list-language">
+            <li>
+              <h4>Lenguaje1</h4>
+              <p>Nivel/título</p>
+            </li>
+            <li>
+              <h4>Lenguaje2</h4>
+              <p>Nivel/título</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h3>Experiencia Profesional</h3>
+        <hr class="red-line">
+        <div class="experience-box">
+          <ul class="list-experience">
+            <li>
+              <p><span class="job">Encargado de planta - Carrefour</span> junio 2015-septiembre 2016</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </li>
+            <li>
+              <p><span class="job">Encargado de planta - Carrefour</span> junio 2015-septiembre 2016</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="education">
+        <h3>Educación</h3>
+        <hr class="red-line">
+        <div class="education-box">
+          <ul class="list-education">
+            <li>
+              <p><span class="job">Licenciatura en Periodismo - Universidad Rey Juan Carlos I</span></p>
+              <p>septiembre 2007-junio 2013</p>
+            </li>
+            <li>
+              <p><span class="job">Licenciatura en Economía - Universidad Rey Juan Carlos</span></p>
+              <p>junio 2015-septiembre 2016</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
   <footer>
     <p>&copy;<span class=kerstyle>ker</span></p>
   </footer>
 
-<script type="text/javascript" src="js/main.js">
+  <script type="text/javascript" src="js/main.js">
 
-</script>
+  </script>
 </body>
 </html>

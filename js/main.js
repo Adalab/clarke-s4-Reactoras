@@ -1,22 +1,63 @@
-'use strict'
+'use strict';
 
-function addYears(initYear, currentYear) {
-  var acumulador = '';
-  for (var i = initYear; i <= currentYear; i++) {
-    acumulador = acumulador + '<option>' + i + '</option>';
+/*Funcion para cambiar entre FORM y CV al clicar en las pestañas-nav*/
+var tabButton = document.querySelectorAll('.tab-button');
+var showForm = document.querySelector('.form-box');
+var showCv = document.querySelector('.cv-box');
+
+for (var i = 0; i < tabButton.length; i++) {
+  tabButton[i].addEventListener('click', switchCv);
+}
+
+function switchCv () {
+  showCv.classList.toggle('hidden');
+  showForm.classList.toggle('hidden');
+  for (var i = 0; i < tabButton.length; i++) {
+    tabButton[i].classList.toggle('active');
   }
-  return '<option id="startExpMonth" disabled selected>Año</option>' + acumulador;
 }
 
-var selectYears = document.querySelector('startExpYear');
 
-startExpYear.innerHTML = addYears(1950, 2017);
+/*Funcion para desplegar fieldeset al clicar en editar*/
 
-/*var startYear = 1950;
-var currentYear = 2017;
-var options = '';
-for (var i = startYear; i <= currentYear; i++) {
-  options += '<option>' + i + '</option>'
+function showContent(event) {
+  var content = document.querySelectorAll('.content');
+  var idButton = event.currentTarget.getAttribute('data-id');
+  content[idButton].classList.toggle('hidden');
 }
 
-document.getElementById('startExpYear').innerHTML = options;*/
+var editButton = document.querySelectorAll('.edit-button');
+for (var i = 0; i < editButton.length; i++) {
+  editButton[i].addEventListener('click', showContent);
+};
+
+
+/*Funcion para cerrar los fieldset al clicar en cerrar*/
+/*function closeContent(event) {
+  var content = document.querySelectorAll('.content');
+  var closeIdButton = event.currentTarget.getAttribute('data-id');
+  content[closeIdButton].classList.add('hidden');
+}
+
+var closeButton = document.querySelectorAll('.close-button-input');
+for (var i = 0; i < closeButton.length; i++) {
+  closeButton[i].addEventListener('click', closeContent);
+};*/
+
+/*var editButton = document.querySelectorAll('.edit-button');
+var showContent = document.querySelector('.content');
+
+for (var i = 0; i < editButton.length; i++) {
+editButton[i].addEventListener('click', editContent);
+}
+
+function editContent (event) {
+  var progreso = event.currentTarget;
+  var input = progreso.
+  for (var i = 0; i < editButton.length; i++) {
+  showContent.classList.remove('hidden');
+}
+for (var i = 0; i < showContent.length; i++) {
+  showContent[i].classList.add('hidden');
+}
+};*/
