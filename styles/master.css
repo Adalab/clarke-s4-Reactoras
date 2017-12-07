@@ -187,7 +187,7 @@ input, textarea{
   margin: 2px 0;
 }
 
-.calendar-start-exp, .calendar-end-exp, .calendar-start-educ, .calendar-end-educ{
+.calendar-start-exp, .calendar-end-exp, .calendar-start-educ, .calendar-end-educ {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -207,6 +207,7 @@ input, textarea{
   border-radius: 0;
   width: 25%;
 }
+
 
 
 /*Estilos boton enviar final*/
