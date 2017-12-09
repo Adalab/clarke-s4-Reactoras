@@ -10,14 +10,14 @@
 <body>
 
   <header>
-    <p>Cv by <span class=kerstyle>ker</span></p>
+    <p class="cvbyker">Cv by <span class=kerstyle>ker</span></p>
   </header>
 
   <div class="welcome-box">
     <h2>tu cv siempre actualizado</h2>
     <p class="welcome-text">Gracias a <span class=kerstyle>ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
     </p>
-    <p><span class="kerstyle"> ker</span> te cuida</p>
+    <p class="ker-care"><span class="kerstyle"> ker</span> te cuida</p>
   </div>
 
   <nav>
@@ -38,8 +38,8 @@
         <div class="flex-personal-data">
 
 
-        <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
-        <input type="text" name="profession" value="" placeholder="Profesión*" required>
+        <input type="text" class="input-form-box" id="name_surname" name="full name" value="" placeholder="Nombre y Apellidos*" required>
+        <input type="text" class="input-form-box" id="prof" name="profession" value="" placeholder="Profesión*" required>
         </div>
         <div class="flex-personal-data2">
 
@@ -147,7 +147,7 @@
 
       </fieldset>
 
-      <input class="submit-button" type="submit" value="enviar datos al cv">
+      <input id="save" class="submit-button" type="button" value="enviar datos al cv">
 
     </form>
 
@@ -159,8 +159,8 @@
       <div class="profile">
         <img src="images/niñomotivado.jpg" alt="niñomotivado">
         <div class="cv-header-text">
-          <h2>Nombre Apellido</h2>
-          <h2> <span class="profesion">Profesión</span></h2>
+          <h2 id="name_surname_out">Nombre Apellido</h2>
+          <h2> <span id="prof_out" class="profesion">Profesión</span></h2>
           <p class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
