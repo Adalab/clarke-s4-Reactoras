@@ -12,8 +12,8 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin: 2%;
-  font-size: 1em;
+  margin: 0 2%;
+  font-size: 16px;
 }
 
 h3 {
@@ -72,7 +72,7 @@ nav{
   display:flex;
 }
 
-.tab-button{
+.tab-button {
   background-color: white;
   text-transform: uppercase;
   letter-spacing: 0.125em;
@@ -83,7 +83,7 @@ nav{
   padding: 0.938em;
 }
 
-.tab-button.active{
+.active{
   background-color: #a6313a;
   color:white;
   border:#a6313a;
@@ -115,6 +115,63 @@ nav{
   margin-bottom: 0.625em;
 }
 
+/*Estilos botones editar, cerrar y guardar de campos colapsables*/
+.edit-button {
+  width: 100%;
+  background-color: #a6313a;
+  color: white;
+  border: none;
+  border: 15px;
+  margin: 5px 0;
+  padding: 5px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.close {
+  width: 45%;
+  background-color: #a6313a;
+  color: white;
+  border: 2px solid #a6313a;
+  border-radius: : 15px;
+  margin-top: 15px;
+  padding: 5px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  float: left;
+}
+
+.send-input-button {
+  width: 45%;
+  background-color: white ;
+  color: #a6313a;
+  border: 2px solid #a6313a;
+  border-radius: : 15px;
+  margin-top: 15px;
+  padding: 5px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  float: right;
+}
+
+/*Estilos botones añadir, subir, bajar y quitar*/
+.skills-buttons, .language-buttons, .experience-buttons {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/*tamaño iconos botones añadir, subir, bajar y quitar*/
+.add-button, .up-button, .down-button, .remove-button {
+  width: 30px;
+  height: 30px;
+}
+
 /*Estilos cajas introduccion datos*/
 
 input, textarea{
@@ -143,20 +200,19 @@ input, textarea{
   width: 60%;
 }
 
-#startExpMonth, #startExpYear, #end-exp-month, #end-exp-year, #start-educ-month, #start-educ-year, #end-educ-month, #end-educ-year {
+.month, .year{
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
   border: none;
   border-bottom: 0.063em solid #a6313a;
   background-color: white;
-  color: white;
+  color: black;
   font-family: inherit;
   padding: 0.125em 0.625em;
   border-radius: 0em;
+  width: 25%;
 }
-
-
 
 /*Estilos boton enviar final*/
 
@@ -297,57 +353,49 @@ footer {
 
 @media all and (min-width:1024px){
 
-/*.welcome-box{
+.welcome-box {
   height: 15em;
   padding:20px 60px;
 }
 
-  .flex-personal-data {
-    display:flex;
-    justify-content: space-between;
-  }
-.flex-personal-data2{
-  display:flex;
-}
-
-}*/
-header{
+header {
   height: 75px;
 }
 
-.cvbyker{
+.cvbyker {
   font-size: 30px;
-
 }
 
-.ker-care{
+.ker-care {
   font-size: 20px;
 }
 
 h2 {
   font-size: 30px;
 }
-.welcome-text{
-font-size: 24px;
 
-}
-nav {
-  display:none;
+.welcome-text {
+font-size: 24px;
 }
 
 main {
   display: flex;
   justify-content: space-between;
-
-
 }
-.form-box{
+
+nav {
+  display: none;
+}
+
+.form-box {
   width:30%;
 }
 
-.cv-box{
+.cv-box {
+display: block;
   width:65%;
   margin:20px;
   margin-right: 0px;
   padding: 10px 10px;
+}
 }
