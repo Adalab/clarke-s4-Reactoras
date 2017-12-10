@@ -191,7 +191,7 @@ input, textarea{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 60%;
+  width: 80%;
 }
 
 .month, .year{
@@ -203,12 +203,17 @@ input, textarea{
   background-color: white;
   color: black;
   font-family: inherit;
-  padding: 2px 10px;
   border-radius: 0;
-  width: 25%;
+  padding: 0;
 }
-
-
+.month{
+  padding-left: 25px;
+  width: 45%;
+}
+.year{
+  padding-left: 10px;
+  width: 20%;
+}
 
 /*Estilos boton enviar final*/
 

@@ -58,17 +58,10 @@ for (var i = 0; i < yearsAll.length;i++) {
 
 //Inputs de sección Experiencia
 
-function viewprev(){
-	document.getElementById('cv_part').style.display="block";
-  document.getElementById('form_exp').style.display="block";
-};
-
 var saveExperience = document.querySelector('#send_exp_button');
-saveExperience.addEventListener('click',fillExperience)
-
+saveExperience.addEventListener('click',fillExperience);
 
 function fillExperience() {
-  viewprev("preview");
   var job = document.querySelector('#job').value;
   var company = document.querySelector('#company').value;
   var comments = document.querySelector('#comments').value;
@@ -80,8 +73,27 @@ function fillExperience() {
   document.querySelector('#job_out').innerHTML = job;
   document.querySelector('#company_out').innerHTML = company;
   document.querySelector('#comments_out').innerHTML = comments;
-  document.querySelector('#start_exp_out').innerHTML = '' + startMonthExp + '' + startYearExp;
-  document.querySelector('#end_exp_out').innerHTML = '- ' + endMonthExp + '' + endYearExp;
+  document.querySelector('#start_exp_out').innerHTML = '' + startMonthExp + ' ' + startYearExp;
+  document.querySelector('#end_exp_out').innerHTML = '- ' + endMonthExp + ' ' + endYearExp;
+};
+
+//Inputs de sección Educación
+
+var saveEducation = document.querySelector('#send_educ_button');
+saveEducation.addEventListener('click',fillEducation);
+
+function fillEducation() {
+  var degree = document.querySelector('#degree').value;
+  var university = document.querySelector('#university').value;
+  var startMonthEduc = document.querySelector('#start_month_educ').value;
+  var startYearEduc = document.querySelector('#start_year_educ').value;
+  var endMonthEduc = document.querySelector('#end_month_educ').value;
+  var endYearEduc = document.querySelector('#end_year_educ').value;
+
+  document.querySelector('#degree_out').innerHTML = degree;
+  document.querySelector('#university_out').innerHTML = university;
+  document.querySelector('#start_educ_out').innerHTML = '' + startMonthEduc + ' ' + startYearEduc;
+  document.querySelector('#end_educ_out').innerHTML = '- ' + endMonthEduc + ' ' + endYearEduc;
 };
 
 
