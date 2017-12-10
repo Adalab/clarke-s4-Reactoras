@@ -10,14 +10,14 @@
 <body>
 
   <header>
-    <p>Cv by <span class=kerstyle>ker</span></p>
+    <p class="cvbyker">Cv by <span class=kerstyle>ker</span></p>
   </header>
 
   <div class="welcome-box">
     <h2>tu cv siempre actualizado</h2>
     <p class="welcome-text">Gracias a <span class=kerstyle>ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
     </p>
-    <p><span class="kerstyle"> ker</span> te cuida</p>
+    <p class="ker-care"><span class="kerstyle"> ker</span> te cuida</p>
   </div>
 
   <nav>
@@ -38,8 +38,8 @@
 
           <div class="contact-input content hidden">
 
-            <input type="text" name="full name" value="" placeholder="Nombre y Apellidos*" required>
-            <input type="text" name="profession" value="" placeholder="Profesión*" required>
+            <input type="text" name="full name" id="name_surname" value="" placeholder="Nombre y Apellidos*" required>
+            <input type="text" name="profession" id="prof" value="" placeholder="Profesión*" required>
             <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
             <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
             <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
@@ -47,6 +47,7 @@
             <p class="form-obl">*Campos obligatorios</p>
             <button data-id="0" class="edit-button close" type="button" name="button">cerrar</button>
             <button class="send-input-button" type="button" name="button">guardar</button>
+
 
           </div>
 
@@ -97,29 +98,29 @@
 
         </fieldset>
 
-        <fieldset class="form-experience">
+        <fieldset id="form_exp" class="form-experience">
 
           <legend>Experiencia Profesional</legend>
           <button data-id="3" class="edit-button" type="button" name="button">Editar</button>
 
           <div class="experience-input content hidden">
-            <input type="text" name="job" value="" placeholder="Puesto*">
-            <input type="text" name="company" value="" placeholder="Empresa*">
-            <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
+            <input id="job" type="text" name="job" value="" placeholder="Puesto*">
+            <input id="company" type="text" name="company" value="" placeholder="Empresa*">
+            <textarea id="comments" name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
             <p class="form-obl">*Campos obligatorios</p>
 
             <div class="calendar">
 
               <div class="calendar-start-exp">
                 <p class="start-exp">Desde*</p>
-                <select class="month" name="month-exp"></select>
-                <select class="year" name="year-exp"></select>
+                <select id="start_month_exp" class="month" name="month-exp"></select>
+                <select id="start_year_exp" class="year" name="year-exp"></select>
               </div>
 
               <div class="calendar-end-exp">
                 <p class="end-exp">Hasta*</p>
-                <select class="month" name="month-exp"></select>
-                <select class="year" name="year-exp"></select>
+                <select id="end_month_exp" class="month" name="month-exp"></select>
+                <select id="end_year_exp" class="year" name="year-exp"></select>
               </div>
 
             </div>
@@ -132,7 +133,7 @@
             </div>
 
             <button data-id="3" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button id="send_exp_button" class="send-input-button" type="button" name="button">guardar</button>
           </div>
         </fieldset>
 
@@ -142,54 +143,46 @@
           <button data-id="4" class="edit-button" type="button" name="button">Editar</button>
 
           <div class="education-input content hidden">
-            <input type="text" name="degree" value="" placeholder="Título*" required>
-            <input type="text" name="university" value="" placeholder="Centro de Estudios*" required>
+            <input id="degree" type="text" name="degree" value="" placeholder="Título*" required>
+            <input id="university" type="text" name="university" value="" placeholder="Centro de Estudios*" required>
             <p class="form-obl">*Campos obligatorios</p>
 
             <div class="calendar">
 
               <div class="calendar-start-educ">
                 <p class="start-educ">Desde*</p>
-                <select id ="start-educ-month" name="month">
-                  <option>Enero</option>
-                </select>
-                <select id ="start-educ-year" name="year">
-                  <option>2015</option>
-                </select>
+                <select id="start_month_educ" class="month" name="month"></select>
+                <select id="start_year_educ" class="year" name="year"></select>
               </div>
 
               <div class="calendar-end-educ">
                 <p class="end-educ">Hasta*</p>
-                <select id ="end-educ-month" name="month">
-                  <option>Enero</option>
-                </select>
-                <select id ="end-educ-year" name="year">
-                  <option>2015</option>
-                </select>
+                <select id="end_month_educ" class="month" name="month"></select>
+                <select id="end_year_educ" class="year" name="year"></select>
               </div>
             </div>
             <button data-id="4" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button id="send_educ_button" class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
         </fieldset>
 
-        <input class="submit-button" type="submit" value="enviar datos al cv">
+        <input class="submit-button" id="save" type="submit" value="enviar datos al cv">
 
       </form>
 
     </div>
 
-    <div class="cv-box hidden">
+    <div id="cv_part" class="cv-box hidden">
 
-      <div class="cv-header">
-        <div class="profile">
-          <img src="images/niñomotivado.jpg" alt="niñomotivado">
-          <div class="cv-header-text">
-            <h2>Nombre Apellido</h2>
-            <h2> <span class="profesion">Profesión</span></h2>
-            <p class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+    <div class="cv-header">
+      <div class="profile">
+        <img src="images/niñomotivado.jpg" alt="niñomotivado">
+        <div class="cv-header-text">
+          <h2 id="name_surname_out">Nombre Apellido</h2>
+          <h2> <span id="prof_out" class="profesion">Profesión</span></h2>
+          <p class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
           </div>
         </div>
         <div class="contact">
@@ -251,13 +244,14 @@
         <div class="experience-box">
           <ul class="list-experience">
             <li>
-              <p><span class="job">Encargado de planta - Carrefour</span> junio 2015-septiembre 2016</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>
+                <span id="job_out"class="job">Encargado de planta - </span>
+                <span id="company_out"class="job">Carrefour </span>
+                <span id="start_exp_out">junio 2015</span>
+                <span id="end_exp_out">- septiembre 2016</span>
               </p>
-            </li>
-            <li>
-              <p><span class="job">Encargado de planta - Carrefour</span> junio 2015-septiembre 2016</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p id="comments_out">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
             </li>
           </ul>
         </div>
@@ -269,12 +263,14 @@
         <div class="education-box">
           <ul class="list-education">
             <li>
-              <p><span class="job">Licenciatura en Periodismo - Universidad Rey Juan Carlos I</span></p>
-              <p>septiembre 2007-junio 2013</p>
-            </li>
-            <li>
-              <p><span class="job">Licenciatura en Economía - Universidad Rey Juan Carlos</span></p>
-              <p>junio 2015-septiembre 2016</p>
+              <p>
+                <span id="degree_out" class="job">Licenciatura en Periodismo - </span>
+                <span id="university_out" class="job">Universidad Rey Juan Carlos I</span>
+              </p>
+              <p>
+                <span id="start_educ_out">septiembre 2007</span>
+                <span id="end_educ_out">-junio 2013</span>
+              </p>
             </li>
           </ul>
         </div>
