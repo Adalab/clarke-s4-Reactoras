@@ -67,7 +67,15 @@ skillsButton.addEventListener('click', skillsToCv);
 
 function skillsToCv() {
   var userSkillsValue = userSkills.value;
-  cvSkills.innerHTML = '<li><h4>' + userSkillsValue + '</h4></li>';
+  cvSkills.innerHTML += '<li><h4>' + userSkillsValue + '</h4></li>';
+};
+
+//Añadir una nueva Habilidad1
+var addNewSkill = document.querySelector('#add-skills');
+addNewSkill.addEventListener('click', newSkill);
+function newSkill() {
+  var userSkillsValue = userSkills.value;
+  userSkills.value = '';
 };
 
 //Pasar IDIOMA del form al cv
