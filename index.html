@@ -59,7 +59,7 @@
           <button data-id="1" class="edit-button" type="button" name="button">Editar</button>
 
           <div class="skills-input content hidden">
-            <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
+            <input class="user-skills" type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
             <p class="form-obl">*Campos obligatorios</p>
 
             <div class="skills-buttons">
@@ -70,7 +70,7 @@
             </div>
 
             <button data-id="1" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button id="skills-button" class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
         </fieldset>
@@ -81,8 +81,8 @@
           <button data-id="2" class="edit-button" type="button" name="button">Editar</button>
 
           <div class="language-input content hidden">
-            <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
-            <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
+            <input class="user-language" type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
+            <input class="user-level" type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
             <p class="form-obl">*Campos obligatorios</p>
 
             <div class="language-buttons">
@@ -93,7 +93,7 @@
             </div>
 
             <button data-id="2" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button id="language-button" class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
         </fieldset>
@@ -211,12 +211,6 @@
             <li>
               <h4>Habilidad1</h4>
             </li>
-            <li>
-              <h4>Habilidad2</h4>
-            </li>
-            <li>
-              <h4>Habilidad-n</h4>
-            </li>
           </ul>
         </div>
       </section>
@@ -228,10 +222,6 @@
           <ul class="list-language">
             <li>
               <h4>Lenguaje1</h4>
-              <p>Nivel/título</p>
-            </li>
-            <li>
-              <h4>Lenguaje2</h4>
               <p>Nivel/título</p>
             </li>
           </ul>
