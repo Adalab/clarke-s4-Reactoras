@@ -59,18 +59,18 @@
           <button data-id="1" class="edit-button" type="button" name="button">Editar</button>
 
           <div class="skills-input content hidden">
-            <input type="text" name="firstskill" value="" placeholder="Habilidad1*" required>
+            <input class="user-skills" type="text" name="firstskill" value="" placeholder="Habilidad*" required>
             <p class="form-obl">*Campos obligatorios</p>
 
             <div class="skills-buttons">
-              <img class="add-button" src="images/add.svg" alt="add button">
+              <img id="add-skills" class="add-button" src="images/add.svg" alt="add button">
               <img class="up-button" src="images/up.svg" alt="up button">
               <img class="down-button" src="images/down.svg" alt="down button">
               <img class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
             <button data-id="1" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button id="skills-button" class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
         </fieldset>
@@ -81,8 +81,8 @@
           <button data-id="2" class="edit-button" type="button" name="button">Editar</button>
 
           <div class="language-input content hidden">
-            <input type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
-            <input type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
+            <input class="user-language" type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
+            <input class="user-level" type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
             <p class="form-obl">*Campos obligatorios</p>
 
             <div class="language-buttons">
@@ -93,7 +93,7 @@
             </div>
 
             <button data-id="2" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button id="language-button" class="send-input-button" type="button" name="button">guardar</button>
           </div>
 
         </fieldset>
@@ -207,17 +207,7 @@
         <h3>Habilidades</h3>
         <hr class="red-line">
         <div class="skills-box">
-          <ul class="list-skills">
-            <li>
-              <h4>Habilidad1</h4>
-            </li>
-            <li>
-              <h4>Habilidad2</h4>
-            </li>
-            <li>
-              <h4>Habilidad-n</h4>
-            </li>
-          </ul>
+          <ul class="list-skills"></ul>
         </div>
       </section>
 
@@ -228,10 +218,6 @@
           <ul class="list-language">
             <li>
               <h4>Lenguaje1</h4>
-              <p>Nivel/título</p>
-            </li>
-            <li>
-              <h4>Lenguaje2</h4>
               <p>Nivel/título</p>
             </li>
           </ul>
