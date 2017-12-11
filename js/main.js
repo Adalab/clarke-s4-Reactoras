@@ -56,7 +56,6 @@ for (var i = 0; i < yearsAll.length;i++) {
     yearsAll[i].innerHTML = selectYears;
 };
 
-
 //Pasar HABILIDADES del form al cv
 
 var userSkills = document.querySelector('.user-skills');
@@ -91,3 +90,16 @@ function languageToCv() {
   var userLevelValue = userLevel.value;
   cvLanguage.innerHTML = '<li><h4>' + userLanguageValue + '</h4><p>' + userLevelValue + '</p></li>';
 };
+
+/*JS Meter datos en el cv Contactos*/
+
+document.getElementById("save1").addEventListener("click",saveFunction);
+
+function saveFunction(){
+  var inputContactList = document.getElementsByClassName("contact-field");
+  for (var i = 0; i < inputContactList.length; i++) {
+    document.getElementById(inputContactList[i].id+"_out").innerHTML = inputContactList[i].value;
+  }
+
+}
+

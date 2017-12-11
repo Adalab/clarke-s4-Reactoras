@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 
-.ker-care{
+.ker-care {
   font-size: 1em;
 }
 
-.kerstyle{
+.kerstyle {
   text-transform: uppercase;
 }
 
@@ -28,13 +28,13 @@ h2 {
   font-size: 1.250em;
 }
 
-p{
+p {
   margin-top: 0;
 }
 
 /*Estilos del header*/
 
-header{
+header {
   background-color: #a6313a;
   color:white;
   text-align: center;
@@ -47,7 +47,7 @@ header{
 
 /*Estilos welcome box*/
 
-.welcome-box{
+.welcome-box {
   text-align: center;
   padding: 1.250em 0.625em;
   background: url(https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg) no-repeat;
@@ -55,13 +55,13 @@ header{
   color: white;
 }
 
-.white-line{
+.white-line {
   height: 0.125em;
   background-color: white;
   border:none;
 }
 
-.welcome-text{
+.welcome-text {
   padding: 0.625em;
   font-size: 1em;
 }
@@ -83,7 +83,7 @@ nav{
   padding: 0.938em;
 }
 
-.active{
+.active {
   background-color: #a6313a;
   color:white;
   border:#a6313a;
@@ -102,7 +102,7 @@ nav{
 
 /*Estilos cajas contenedoras del fieldset*/
 
-.form-obl{
+.form-obl {
   color: gray;
   font-size: 0.750em;
   text-align: right;
@@ -174,7 +174,7 @@ nav{
 
 /*Estilos cajas introduccion datos*/
 
-input, textarea{
+input, textarea {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
@@ -200,7 +200,7 @@ input, textarea{
   width: 60%;
 }
 
-.month, .year{
+.month, .year {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
@@ -216,7 +216,7 @@ input, textarea{
 
 /*Estilos boton enviar final*/
 
-.submit-button{
+.submit-button {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
@@ -236,8 +236,8 @@ input, textarea{
 
 /*ESTILOS CV*/
 
-.cv-box{
-  margin: 2em 0;
+.cv-box {
+  margin-bottom: 0.938em;
 }
 
 /*Estilos caja gris secciones*/
@@ -263,38 +263,38 @@ input, textarea{
   font-weight: normal;
 }
 
-.profile{
+.profile {
   background-color: black;
   width: 100%;
 }
 
-.profile img{
+.profile img {
   width: 100%;
   padding: 15px;
   display: none;
 }
 
-.cv-header-text{
+.cv-header-text {
   color:white;
   padding: 15px;
 }
 
-.cv-description{
+.cv-description {
   width: 100%;
   text-align: justify;
 }
 
-.contact{
+.contact {
   background-color: #a6313a;
 
 }
-.contact ul{
+.contact ul {
   list-style: none;
   margin-top: 0;
   padding: 15px;
 }
 
-.contact li img{
+.contact li img {
   width: 30px;
   padding-right: 10px;
 }
@@ -345,7 +345,7 @@ footer {
     justify-content: space-between;
   }
 
-  .list-education li{
+  .list-education li {
     margin-right: 30px;
   }
 }
@@ -353,7 +353,7 @@ footer {
 @media all and (min-width:1024px){
 
   .welcome-box {
-    height: 15em;
+    height: 20em;
     padding:20px 60px;
   }
 
@@ -362,19 +362,19 @@ footer {
   }
 
   .cvbyker {
-    font-size: 30px;
+    font-size: 1.875em;
   }
 
   .ker-care {
-    font-size: 20px;
+    font-size: 1.250em;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 1.875em;
   }
 
   .welcome-text {
-    font-size: 24px;
+    font-size: 1.5em;
   }
 
   main {
