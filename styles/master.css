@@ -236,10 +236,40 @@ input, textarea{
 
 /*ESTILOS CV*/
 
-.cv-box{
-  margin-bottom: 0.938em;
+.color-preference {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 0;
 }
 
+.red {
+  width: 30px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #a6313a;
+  margin: 0 30px;
+
+}
+
+.green {
+  width: 30px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #0ca256;
+  margin: 0 30px;
+}
+
+.yellow {
+  width: 30px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #fecb02;
+  margin: 0 30px;
+}
+
+.cv-box{
+  margin: 2em 0;
+}
 
 /*Estilos caja gris secciones*/
 
@@ -341,61 +371,61 @@ footer {
 
 @media all and (min-width: 768px){
 
-.list-contact {
-  display:flex;
-  justify-content: space-between;
-}
+  .list-contact {
+    display:flex;
+    justify-content: space-between;
+  }
 
-.list-education li{
-  margin-right: 30px;
-}
+  .list-education li{
+    margin-right: 30px;
+  }
 }
 
 @media all and (min-width:1024px){
 
-.welcome-box {
-  height: 15em;
-  padding:20px 60px;
-}
+  .welcome-box {
+    height: 15em;
+    padding:20px 60px;
+  }
 
-header {
-  height: 75px;
-}
+  header {
+    height: 75px;
+  }
 
-.cvbyker {
-  font-size: 30px;
-}
+  .cvbyker {
+    font-size: 30px;
+  }
 
-.ker-care {
-  font-size: 20px;
-}
+  .ker-care {
+    font-size: 20px;
+  }
 
-h2 {
-  font-size: 30px;
-}
+  h2 {
+    font-size: 30px;
+  }
 
-.welcome-text {
-font-size: 24px;
-}
+  .welcome-text {
+    font-size: 24px;
+  }
 
-main {
-  display: flex;
-  justify-content: space-between;
-}
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
 
-nav {
-  display: none;
-}
+  nav {
+    display: none;
+  }
 
-.form-box {
-  width:30%;
-}
+  .form-box {
+    width:30%;
+  }
 
-.cv-box {
-display: block;
-  width:65%;
-  margin:20px;
-  margin-right: 0px;
-  padding: 10px 10px;
-}
+  .cv-box {
+    display: block;
+    width:65%;
+    margin:20px;
+    margin-right: 0px;
+    padding: 10px 10px;
+  }
 }
