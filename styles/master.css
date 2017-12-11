@@ -2,7 +2,11 @@
   box-sizing: border-box;
 }
 
-.kerstyle{
+.ker-care {
+  font-size: 1em;
+}
+
+.kerstyle {
   text-transform: uppercase;
 }
 
@@ -15,49 +19,51 @@ body {
 h3 {
   margin-bottom: 0;
   text-transform: uppercase;
-  margin-left: 15px;
+  margin-left: 0.938em;
 }
 
 h2 {
-  margin: 10px 0;
+  margin: 0.625em 0;
   text-transform: uppercase;
+  font-size: 1.250em;
 }
 
-p{
+p {
   margin-top: 0;
 }
 
 /*Estilos del header*/
 
-header{
+header {
   background-color: #a6313a;
   color:white;
   text-align: center;
-  height: 50px;
-  padding: 15px;
+  height: 3.125em;
+  padding: 0.938em;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.063em;
 }
 
 
 /*Estilos welcome box*/
 
-.welcome-box{
+.welcome-box {
   text-align: center;
-  padding: 20px 10px;
+  padding: 1.250em 0.625em;
   background: url(https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg) no-repeat;
   background-size: cover;
   color: white;
 }
 
-.white-line{
-  height: 2px;
+.white-line {
+  height: 0.125em;
   background-color: white;
   border:none;
 }
 
-.welcome-text{
-  padding: 10px;
+.welcome-text {
+  padding: 0.625em;
+  font-size: 1em;
 }
 
 /*Estilos de botones de formulario y curriculum*/
@@ -69,15 +75,15 @@ nav{
 .tab-button {
   background-color: white;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
   color:#a6313a;
-  border: 1px solid #a6313a;
-  border-radius: 0px 0px 10px 10px;
+  border: 0.063em solid #a6313a;
+  border-radius: 0em 0em 0.625em 0.625em;
   width: 50%;
-  padding: 15px;
+  padding: 0.938em;
 }
 
-.active{
+.active {
   background-color: #a6313a;
   color:white;
   border:#a6313a;
@@ -91,22 +97,22 @@ nav{
 /*Estilos del form*/
 
 .form-box {
-  margin-top: 15px;
+  margin-top: 0.938em;
 }
 
 /*Estilos cajas contenedoras del fieldset*/
 
-.form-obl{
+.form-obl {
   color: gray;
-  font-size: 12px;
+  font-size: 0.750em;
   text-align: right;
-  margin-bottom: 0px;
+  margin-bottom: 0em;
 }
 
 .form-contact, .form-skills, .form-language, .form-experience, .form-education {
-  border: 2px solid #a6313a;
-  border-radius: 15px;
-  margin-bottom: 10px;
+  border: 0.125em solid #a6313a;
+  border-radius: 0.938em;
+  margin-bottom: 0.625em;
 }
 
 /*Estilos botones editar, cerrar y guardar de campos colapsables*/
@@ -168,14 +174,14 @@ nav{
 
 /*Estilos cajas introduccion datos*/
 
-input, textarea{
+input, textarea {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
   border:none;
-  border-radius: 5px;
-  padding: 10px;
-  margin:8px 0px;
+  border-radius: 0.313em;
+  padding: 0.625em;
+  margin:0.5em 0em;
   background: lightgray;
   opacity: 0.5;
   width: 100%;
@@ -184,7 +190,7 @@ input, textarea{
 
 /*Estilos de cajitas fechas*/
 .calendar {
-  margin: 2px 0;
+  margin: 0.125em 0em;
 }
 
 .calendar-start-exp, .calendar-end-exp, .calendar-start-educ, .calendar-end-educ {
@@ -194,22 +200,23 @@ input, textarea{
   width: 80%;
 }
 
-.month, .year{
+.month, .year {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
   border: none;
-  border-bottom: 1px solid #a6313a;
+  border-bottom: 0.063em solid #a6313a;
   background-color: white;
   color: black;
   font-family: inherit;
-  border-radius: 0;
-  padding: 0;
+  border-radius: 0em;
 }
+
 .month{
   padding-left: 25px;
   width: 45%;
 }
+
 .year{
   padding-left: 10px;
   width: 20%;
@@ -217,30 +224,29 @@ input, textarea{
 
 /*Estilos boton enviar final*/
 
-.submit-button{
+.submit-button {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
   background-color: #a6313a;
   opacity: 1;
   color: white;
-  border-radius: 15px;
+  border-radius: 0.938em;
   text-transform: uppercase;
   text-align: center;
-  padding: 5px;
+  padding: 0.313em;
   width: 100%;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 1.250em;
   box-shadow: none;
 }
 
 
 /*ESTILOS CV*/
 
-.cv-box{
-  margin-bottom: 15px;
+.cv-box {
+  margin-bottom: 0.938em;
 }
-
 
 /*Estilos caja gris secciones*/
 
@@ -265,38 +271,38 @@ input, textarea{
   font-weight: normal;
 }
 
-.profile{
+.profile {
   background-color: black;
   width: 100%;
 }
 
-.profile img{
+.profile img {
   width: 100%;
   padding: 15px;
   display: none;
 }
 
-.cv-header-text{
+.cv-header-text {
   color:white;
   padding: 15px;
 }
 
-.cv-description{
+.cv-description {
   width: 100%;
   text-align: justify;
 }
 
-.contact{
+.contact {
   background-color: #a6313a;
 
 }
-.contact ul{
+.contact ul {
   list-style: none;
   margin-top: 0;
   padding: 15px;
 }
 
-.contact li img{
+.contact li img {
   width: 30px;
   padding-right: 10px;
 }
@@ -342,38 +348,61 @@ footer {
 
 @media all and (min-width: 768px){
 
-.list-contact {
-  display:flex;
-  justify-content: space-between;
-}
+  .list-contact {
+    display:flex;
+    justify-content: space-between;
+  }
 
-.list-education li{
-  margin-right: 30px;
-}
+  .list-education li {
+    margin-right: 30px;
+  }
 }
 
 @media all and (min-width:1024px){
 
-.welcome-box {
-  height: 15em;
-  padding:20px 60px;
-}
+  .welcome-box {
+    height: 20em;
+    padding:20px 60px;
+  }
 
-main {
-  display: flex;
-  justify-content: space-between;
-}
+  header {
+    height: 75px;
+  }
 
-nav {
-  display: none;
-}
+  .cvbyker {
+    font-size: 1.875em;
+  }
 
-.form-box {
-  width:30%;
-}
+  .ker-care {
+    font-size: 1.250em;
+  }
 
-.cv-box {
-  display: block;
-  width:65%;
-  margin-top: 20px;
+  h2 {
+    font-size: 1.875em;
+  }
+
+  .welcome-text {
+    font-size: 1.5em;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .form-box {
+    width:30%;
+  }
+
+  .cv-box {
+    display: block;
+    width:65%;
+    margin:20px;
+    margin-right: 0px;
+    padding: 10px 10px;
+  }
 }

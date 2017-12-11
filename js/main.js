@@ -50,10 +50,57 @@ var selectYears = '<option selected disabled value="año">Año</option>';
 
 for (var initYear = 1950; initYear < years; initYear++) {
   selectYears = selectYears + '<option>' + (initYear) + '</option>';
-}
+};
 var yearsAll = document.querySelectorAll('.year');
 for (var i = 0; i < yearsAll.length;i++) {
     yearsAll[i].innerHTML = selectYears;
+};
+
+//Pasar HABILIDADES del form al cv
+
+var userSkills = document.querySelector('.user-skills');
+var skillsButton = document.querySelector('#skills-button');
+var cvSkills = document.querySelector('.list-skills');
+
+skillsButton.addEventListener('click', skillsToCv);
+
+function skillsToCv() {
+  var userSkillsValue = userSkills.value;
+  cvSkills.innerHTML += '<li><h4>' + userSkillsValue + '</h4></li>';
+};
+
+//Añadir una nueva Habilidad
+var addNewSkill = document.querySelector('#add-skills');
+addNewSkill.addEventListener('click', newSkill);
+function newSkill() {
+  var userSkillsValue = userSkills.value;
+  userSkills.value = '';
+};
+
+//Pasar IDIOMA del form al cv
+var userLanguage = document.querySelector('.user-language');
+var userLevel = document.querySelector('.user-level');
+var languageButton = document.querySelector('#language-button');
+var cvLanguage = document.querySelector('.list-language');
+
+languageButton.addEventListener('click', languageToCv);
+
+function languageToCv() {
+  var userLanguageValue = userLanguage.value;
+  var userLevelValue = userLevel.value;
+  cvLanguage.innerHTML = '<li><h4>' + userLanguageValue + '</h4><p>' + userLevelValue + '</p></li>';
+};
+
+/*JS Meter datos en el cv Contactos*/
+
+document.getElementById("save1").addEventListener("click",saveFunction);
+
+function saveFunction(){
+  var inputContactList = document.getElementsByClassName("contact-field");
+  for (var i = 0; i < inputContactList.length; i++) {
+    document.getElementById(inputContactList[i].id+"_out").innerHTML = inputContactList[i].value;
+  }
+
 }
 
 //Inputs de sección Experiencia
@@ -112,3 +159,4 @@ function fillEducation() {
 
   document.body.innerHTML = contenidoOriginal;
 }
+
