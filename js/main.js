@@ -55,3 +55,15 @@ var yearsAll = document.querySelectorAll('.year');
 for (var i = 0; i < yearsAll.length;i++) {
     yearsAll[i].innerHTML = selectYears;
 };
+
+/*JS Meter datos en el cv Contactos*/
+
+document.getElementById("save1").addEventListener("click",saveFunction);
+
+function saveFunction(){
+  var inputContactList = document.getElementsByClassName("contact-field");
+  for (var i = 0; i < inputContactList.length; i++) {
+    document.getElementById(inputContactList[i].id+"_out").innerHTML = inputContactList[i].value;
+  }
+
+}

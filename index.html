@@ -38,15 +38,15 @@
 
           <div class="contact-input content hidden">
 
-            <input type="text" name="full name" id="name_surname" value="" placeholder="Nombre y Apellidos*" required>
-            <input type="text" name="profession" id="prof" value="" placeholder="Profesión*" required>
-            <input type="tel" name="phone" value="" placeholder="Teléfono*" required>
-            <input type="email" name="email" value="" placeholder="Correo electrónico*" required>
-            <input type="text" name="Linkedin" value="" placeholder="linkedin.com/nombredetuperfil">
-            <textarea name="comments" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
+            <input class="contact-field" type="text" name="full name" id="name_surname" value="" placeholder="Nombre y Apellidos*" required>
+            <input class="contact-field" type="text" name="profession" id="prof" value="" placeholder="Profesión*" required>
+            <input class="contact-field" type="tel" name="phone" id="phon" value="" placeholder="Teléfono*" required>
+            <input class="contact-field" type="email" name="email" id="mail" value="" placeholder="Correo electrónico*" required>
+            <input class="contact-field" type="text" name="Linkedin" id="linked" value="" placeholder="linkedin.com/nombredetuperfil">
+            <textarea class="contact-field" name="comments" id="description" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
             <p class="form-obl">*Campos obligatorios</p>
             <button data-id="0" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" type="button" name="button">guardar</button>
+            <button class="send-input-button" id="save1" type="button" name="button">guardar</button>
 
 
           </div>
@@ -181,7 +181,7 @@
         <div class="cv-header-text">
           <h2 id="name_surname_out">Nombre Apellido</h2>
           <h2> <span id="prof_out" class="profesion">Profesión</span></h2>
-          <p class="cv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p class="cv-description" id="description_out" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           </div>
         </div>
@@ -189,15 +189,15 @@
           <ul class="list-contact">
             <li>
               <img src="images/phone-icon.svg" alt="telefono">
-              +34 666 66 66 66
+              <span id="phon_out">+34 666 66 66 66</span>
             </li>
             <li>
               <img src="images/mail-icon.svg" alt="mail">
-              adalab@adalab.com
+              <span id="mail_out">adalab@adalab.com</span>
             </li>
             <li>
               <img src="images/linkedin-icon.svg" alt="linkedin">
-              linkedin.com/adalab
+              <span id="linked_out">linkedin.com/adalab</span>
             </li>
           </ul>
         </div>
