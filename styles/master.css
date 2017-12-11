@@ -236,37 +236,6 @@ input, textarea{
 
 /*ESTILOS CV*/
 
-.color-preference {
-  border: 1px solid black;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.red {
-  width: 30px;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #a6313a;
-  margin: 0 30px;
-
-}
-
-.green {
-  width: 30px;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #0ca256;
-  margin: 0 30px;
-}
-
-.yellow {
-  width: 30px;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #fecb02;
-  margin: 0 30px;
-}
-
 .cv-box{
   margin: 2em 0;
 }

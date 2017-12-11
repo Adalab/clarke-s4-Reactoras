@@ -70,7 +70,7 @@ function skillsToCv() {
   cvSkills.innerHTML += '<li><h4>' + userSkillsValue + '</h4></li>';
 };
 
-//Añadir una nueva Habilidad1
+//Añadir una nueva Habilidad
 var addNewSkill = document.querySelector('#add-skills');
 addNewSkill.addEventListener('click', newSkill);
 function newSkill() {
