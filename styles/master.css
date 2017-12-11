@@ -158,7 +158,7 @@ nav{
 }
 
 /*Estilos botones añadir, subir, bajar y quitar*/
-.skills-buttons, .language-buttons, .experience-buttons {
+.skills-buttons, .language-buttons, .experience-buttons, .education-buttons {
   display: flex;
   justify-content: space-around;
   border: 1px solid lightgrey;
@@ -197,7 +197,7 @@ input, textarea {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 60%;
+  width: 80%;
 }
 
 .month, .year {
@@ -209,9 +209,17 @@ input, textarea {
   background-color: white;
   color: black;
   font-family: inherit;
-  padding: 0.125em 0.625em;
   border-radius: 0em;
-  width: 25%;
+}
+
+.month{
+  padding-left: 25px;
+  width: 45%;
+}
+
+.year{
+  padding-left: 10px;
+  width: 20%;
 }
 
 /*Estilos boton enviar final*/

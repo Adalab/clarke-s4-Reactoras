@@ -103,3 +103,60 @@ function saveFunction(){
 
 }
 
+//Inputs de sección Experiencia
+
+var saveExperience = document.querySelector('#send_exp_button');
+saveExperience.addEventListener('click',fillExperience);
+
+function fillExperience() {
+  var job = document.querySelector('#job').value;
+  var company = document.querySelector('#company').value;
+  var comments = document.querySelector('#comments').value;
+  var startMonthExp = document.querySelector('#start_month_exp').value;
+  var startYearExp = document.querySelector('#start_year_exp').value;
+  var endMonthExp = document.querySelector('#end_month_exp').value;
+  var endYearExp = document.querySelector('#end_year_exp').value;
+
+  document.querySelector('#job_out').innerHTML = job;
+  document.querySelector('#company_out').innerHTML = company;
+  document.querySelector('#comments_out').innerHTML = comments;
+  document.querySelector('#start_exp_out').innerHTML = '' + startMonthExp + ' ' + startYearExp;
+  document.querySelector('#end_exp_out').innerHTML = '- ' + endMonthExp + ' ' + endYearExp;
+};
+
+//Inputs de sección Educación
+
+var saveEducation = document.querySelector('#send_educ_button');
+saveEducation.addEventListener('click',fillEducation);
+
+function fillEducation() {
+  var degree = document.querySelector('#degree').value;
+  var university = document.querySelector('#university').value;
+  var startMonthEduc = document.querySelector('#start_month_educ').value;
+  var startYearEduc = document.querySelector('#start_year_educ').value;
+  var endMonthEduc = document.querySelector('#end_month_educ').value;
+  var endYearEduc = document.querySelector('#end_year_educ').value;
+
+  document.querySelector('#degree_out').innerHTML = degree;
+  document.querySelector('#university_out').innerHTML = university;
+  document.querySelector('#start_educ_out').innerHTML = '' + startMonthEduc + ' ' + startYearEduc;
+  document.querySelector('#end_educ_out').innerHTML = '- ' + endMonthEduc + ' ' + endYearEduc;
+};
+
+
+//Imprimir CV
+
+ function printCV(){
+  var divPrint = document.getElementById('cv_part');
+  divPrint.style.display="block";
+
+  var contenido= divPrint.innerHTML;
+  var contenidoOriginal= document.body.innerHTML;
+
+  document.body.innerHTML = contenido;
+
+  window.print();
+
+  document.body.innerHTML = contenidoOriginal;
+}
+
