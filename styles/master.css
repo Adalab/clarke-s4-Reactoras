@@ -152,7 +152,7 @@ nav{
 }
 
 /*Estilos botones añadir, subir, bajar y quitar*/
-.skills-buttons, .language-buttons, .experience-buttons {
+.skills-buttons, .language-buttons, .experience-buttons, .education-buttons {
   display: flex;
   justify-content: space-around;
   border: 1px solid lightgrey;
