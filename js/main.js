@@ -40,7 +40,7 @@ for(i in monthArray){
 }
 var monthsAll = document.querySelectorAll('.month');
 for (var j = 0; j < monthsAll.length;j++) {
-    monthsAll[j].innerHTML = selectMonths;
+  monthsAll[j].innerHTML = selectMonths;
 };
 
 // Desplegables año
@@ -53,7 +53,7 @@ for (var initYear = 1950; initYear < years; initYear++) {
 };
 var yearsAll = document.querySelectorAll('.year');
 for (var i = 0; i < yearsAll.length;i++) {
-    yearsAll[i].innerHTML = selectYears;
+  yearsAll[i].innerHTML = selectYears;
 };
 
 //Pasar HABILIDADES del form al cv
@@ -146,7 +146,7 @@ function fillEducation() {
 
 //Imprimir CV
 
- function printCV(){
+function printCV(){
   var divPrint = document.getElementById('cv_part');
   divPrint.style.display="block";
 
@@ -160,3 +160,17 @@ function fillEducation() {
   document.body.innerHTML = contenidoOriginal;
 }
 
+//Boton final de guardar datos en el CV
+
+var finalSaveButton = document.querySelector('#save');
+
+finalSaveButton.addEventListener('click', saveAll);
+
+function saveAll(event) {
+  event.preventDefault();
+  saveFunction();
+  skillsToCv();
+  languageToCv();
+  fillExperience();
+  fillEducation();
+};
