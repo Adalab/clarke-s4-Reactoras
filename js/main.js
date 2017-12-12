@@ -146,7 +146,11 @@ function fillEducation() {
 
 //Imprimir CV
 
- function printCV(){
+  var buttonCV = document.querySelector('.print-button');
+  buttonCV.addEventListener('click',printCV);
+
+
+function printCV(){
   var divPrint = document.getElementById('cv_part');
   divPrint.style.display="block";
 
@@ -155,8 +159,9 @@ function fillEducation() {
 
   document.body.innerHTML = contenido;
 
-  window.print();
+  window.print('<link rel="stylesheet" href="styles/master.css" media="all">');
 
   document.body.innerHTML = contenidoOriginal;
 }
 
+//Meter imagen en CV
