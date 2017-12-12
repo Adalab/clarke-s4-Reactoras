@@ -58,24 +58,38 @@ for (var i = 0; i < yearsAll.length;i++) {
 
 //Pasar HABILIDADES del form al cv
 
-var userSkills = document.querySelector('.user-skills');
+//añadir el all dentro de la funcion del evento
 var skillsButton = document.querySelector('#skills-button');
 var cvSkills = document.querySelector('.list-skills');
 
 skillsButton.addEventListener('click', skillsToCv);
 
 function skillsToCv() {
-  var userSkillsValue = userSkills.value;
-  cvSkills.innerHTML += '<li><h4>' + userSkillsValue + '</h4></li>';
+  var userSkills = document.querySelectorAll('.skills-text');
+  for (var i = 0; i < userSkills.length; i++) {
+    var userSkillsValue = userSkills[i].value;
+    cvSkills.innerHTML += '<li><h4>' + userSkillsValue + '</h4></li>';
+  };
 };
 
 //Añadir una nueva Habilidad
 var addNewSkill = document.querySelector('#add-skills');
+var userNewSkills = document.querySelector('.user-new-skills');
 addNewSkill.addEventListener('click', newSkill);
 function newSkill() {
-  var userSkillsValue = userSkills.value;
-  userSkills.value = '';
+    userNewSkills.classList.remove('hidden');
 };
+
+//Quitar Habilidad
+var quitButtonSkill = document.querySelector('#quit-skills');
+var userDeleteSkills = document.querySelector('.user-new-skills');
+quitButtonSkill.addEventListener('click', quitSkill);
+function quitSkill() {
+  userDeleteSkills.classList.add('hidden');
+  userDeleteSkills.value = '';
+};
+
+
 
 //Pasar IDIOMA del form al cv
 var userLanguage = document.querySelector('.user-language');
