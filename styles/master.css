@@ -244,10 +244,6 @@ input, textarea {
 
 /*ESTILOS CV*/
 
-.cv-box {
-  margin-bottom: 0.938em;
-}
-
 /*Estilos caja gris secciones*/
 
 .skills-box, .language-box, .experience-box, .education-box {
@@ -332,6 +328,26 @@ input, textarea {
   justify-content: space-between;
 }
 
+/* Estilos botón imprimir CV*/
+
+.print-button {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  background-color: #a6313a;
+  opacity: 1;
+  color: white;
+  border-radius: 0.938em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.313em;
+  width: 100%;
+  border: none;
+  margin-bottom: 1.250em;
+  margin-top: 1.250em;
+  box-shadow: none;
+}
+
 /*Estilos del footer*/
 
 footer {
@@ -402,7 +418,17 @@ footer {
     display: block;
     width:65%;
     margin:20px;
-    margin-right: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
     padding: 10px 10px;
   }
+}
+
+@media print { /* Using for the screen as well */
+    body {
+      -webkit-print-color-adjust: exact;
+    }
+    .print-button{
+    display: none;
+}
 }

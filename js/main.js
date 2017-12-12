@@ -146,6 +146,9 @@ function fillEducation() {
 
 //Imprimir CV
 
+  var buttonCV = document.querySelector('.print-button');
+  buttonCV.addEventListener('click',printCV);
+
 function printCV(){
   var divPrint = document.getElementById('cv_part');
   divPrint.style.display="block";
@@ -155,7 +158,7 @@ function printCV(){
 
   document.body.innerHTML = contenido;
 
-  window.print();
+  window.print('<link rel="stylesheet" href="styles/master.css" media="all">');
 
   document.body.innerHTML = contenidoOriginal;
 }
