@@ -146,11 +146,11 @@ function fillEducation() {
 
 //Imprimir CV
 
-  var buttonCV = document.querySelector('.print-button');
-  buttonCV.addEventListener('click',printCV);
+  var buttonCv = document.querySelector('.print-button');
+  buttonCv.addEventListener('click',printCv);
 
 
-function printCV(){
+  function printCv(){
   var divPrint = document.getElementById('cv_part');
   divPrint.style.display="block";
 
@@ -159,7 +159,7 @@ function printCV(){
 
   document.body.innerHTML = contenido;
 
-  window.print('<link rel="stylesheet" href="styles/master.css" media="all">');
+  window.print();
 
   document.body.innerHTML = contenidoOriginal;
 }
