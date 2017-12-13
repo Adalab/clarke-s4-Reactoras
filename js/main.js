@@ -89,6 +89,7 @@ function quitSkill() {
   userDeleteSkills.value = '';
 };
 
+//Mover elemento hacia arriba (-1 en su posición dentro del array)
 
 
 //Pasar IDIOMA del form al cv
@@ -104,6 +105,7 @@ function languageToCv() {
   var userLevelValue = userLevel.value;
   cvLanguage.innerHTML = '<li><h4>' + userLanguageValue + '</h4><p>' + userLevelValue + '</p></li>';
 };
+
 
 /*JS Meter datos en el cv Contactos*/
 
