@@ -162,7 +162,12 @@ function fillEducation() {
 
 //Imprimir CV
 
-function printCV(){
+
+  var buttonCv = document.querySelector('.print-button');
+  buttonCv.addEventListener('click',printCv);
+
+  function printCv(){
+
   var divPrint = document.getElementById('cv_part');
   divPrint.style.display="block";
 
