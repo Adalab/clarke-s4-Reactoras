@@ -272,12 +272,6 @@ input, textarea {
   width: 100%;
 }
 
-.profile img {
-  width: 100%;
-  padding: 15px;
-  display: none;
-}
-
 .cv-header-text {
   color:white;
   padding: 15px;
