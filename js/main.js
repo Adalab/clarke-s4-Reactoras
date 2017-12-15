@@ -167,14 +167,13 @@ function fillEducation() {
   buttonCv.addEventListener('click',printCv);
 
   function printCv(){
-
   var divPrint = document.getElementById('cv_part');
   divPrint.style.display="block";
 
   var contenido= divPrint.innerHTML;
   var contenidoOriginal= document.body.innerHTML;
 
-  document.body.innerHTML = contenido;
+  document.body.innerHTML = divPrint.innerHTML;
 
   window.print();
 
