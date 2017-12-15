@@ -419,22 +419,24 @@ footer {
 }
 
 @media print { /* Using for the screen as well */
-    body {
-      -webkit-print-color-adjust: exact;
-    }
-    .print-button{
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  .print-button{
     display: none;
-}
-.list-contact {
-     display:flex;
-     justify-content: space-between;
-   }
+  }
 
-   .contact ul {
-     list-style: none;
-     margin-top: 0;
-     padding: 15px;
-     padding-left: 40px;
-     padding-right: 40px;
-   
+  .list-contact {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .contact ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
 }

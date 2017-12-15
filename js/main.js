@@ -77,7 +77,7 @@ var addNewSkill = document.querySelector('#add-skills');
 var userNewSkills = document.querySelector('.user-new-skills');
 addNewSkill.addEventListener('click', newSkill);
 function newSkill() {
-    userNewSkills.classList.remove('hidden');
+  userNewSkills.classList.remove('hidden');
 };
 
 //Quitar Habilidad
@@ -169,17 +169,17 @@ buttonCv.addEventListener('click',printCv);
 
 function printCv(){
 
-var divPrint = document.getElementById('cv_part');
-divPrint.style.display="block";
-var winPrint = window.open('','','left=0,width=800,height=900');
-winPrint.document.write('<link rel="stylesheet" href="styles/master.css" media="all">');
-winPrint.document.write(divPrint.innerHTML);
-winPrint.document.close();
-winPrint.document.focus();
-winPrint.print();
-window.close();
+  var divPrint = document.getElementById('cv_part');
+  divPrint.style.display="block";
+  var winPrint = window.open('','','left=0,width=800,height=900');
+  winPrint.document.write('<link rel="stylesheet" href="styles/master.css" media="all">');
+  winPrint.document.write(divPrint.innerHTML);
+  winPrint.document.close();
+  winPrint.document.focus();
+  winPrint.print();
+  window.close();
 
-document.body.innerHTML = contenidoOriginal;
+  document.body.innerHTML = contenidoOriginal;
 }
 
 //Boton final de guardar datos en el CV
