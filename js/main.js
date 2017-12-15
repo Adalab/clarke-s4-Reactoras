@@ -163,22 +163,22 @@ function fillEducation() {
 //Imprimir CV
 
 
-  var buttonCv = document.querySelector('.print-button');
-  buttonCv.addEventListener('click',printCv);
+var buttonCv = document.querySelector('.print-button');
+buttonCv.addEventListener('click',printCv);
 
-  function printCv(){
+function printCv(){
 
-  var divPrint = document.getElementById('cv_part');
-  divPrint.style.display="block";
+var divPrint = document.getElementById('cv_part');
+divPrint.style.display="block";
+var winPrint = window.open('','','left=0,width=800,height=900');
+winPrint.document.write('<link rel="stylesheet" href="styles/master.css" media="all">');
+winPrint.document.write(divPrint.innerHTML);
+winPrint.document.close();
+winPrint.document.focus();
+winPrint.print();
+window.close();
 
-  var contenido= divPrint.innerHTML;
-  var contenidoOriginal= document.body.innerHTML;
-
-  document.body.innerHTML = contenido;
-
-  window.print();
-
-  document.body.innerHTML = contenidoOriginal;
+document.body.innerHTML = contenidoOriginal;
 }
 
 //Boton final de guardar datos en el CV
