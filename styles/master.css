@@ -18,7 +18,7 @@ body {
 
 h3 {
   margin-bottom: 0;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin-left: 0.938em;
 }
 
@@ -50,7 +50,7 @@ header {
 .welcome-box {
   text-align: center;
   padding: 1.250em 0.625em;
-  background: url(https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg) no-repeat;
+  background: url('https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg') no-repeat;
   background-size: cover;
   color: white;
 }
@@ -61,10 +61,10 @@ header {
   border:none;
 }
 
-.welcome-text {
+/*.welcome-text {
   padding: 0.625em;
   font-size: 1em;
-}
+}*/
 
 /*Estilos de botones de formulario y curriculum*/
 
@@ -74,8 +74,8 @@ nav{
 
 .tab-button {
   background-color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
+  /*text-transform: uppercase;
+  letter-spacing: 1px;*/
   color:#a6313a;
   border: 0.063em solid #a6313a;
   border-radius: 0em 0em 0.625em 0.625em;
@@ -102,12 +102,12 @@ nav{
 
 /*Estilos cajas contenedoras del fieldset*/
 
-.form-obl {
+/*.form-obl {
   color: gray;
   font-size: 0.750em;
   text-align: right;
-  margin-bottom: 0em;
-}
+  /*margin-bottom: 0em;
+}*/
 
 .form-contact, .form-skills, .form-language, .form-experience, .form-education {
   border: 0.125em solid #a6313a;
@@ -119,41 +119,41 @@ nav{
 .edit-button {
   width: 100%;
   background-color: #a6313a;
-  color: white;
+  /*color: white;*/
   border: none;
   border: 15px;
   margin: 5px 0;
   padding: 5px;
-  font-family: inherit;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  /*font-family: inherit;*/
+  /*letter-spacing: 2px;
+  text-transform: uppercase;*/
 }
 
 .close {
   width: 45%;
   background-color: #a6313a;
-  color: white;
+  /*color: white;*/
   border: 2px solid #a6313a;
-  border-radius: : 15px;
+  /*border-radius: 15px;*/
   margin-top: 15px;
   padding: 5px;
-  font-family: inherit;
+  /*font-family: inherit;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
   float: left;
 }
 
 .send-input-button {
   width: 45%;
   background-color: white ;
-  color: #a6313a;
+  /*color: #a6313a;*/
   border: 2px solid #a6313a;
   border-radius: : 15px;
   margin-top: 15px;
   padding: 5px;
-  font-family: inherit;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  /*font-family: inherit;*/
+  /*letter-spacing: 2px;
+  text-transform: uppercase;*/
   float: right;
 }
 
@@ -230,10 +230,10 @@ input, textarea {
   appearance:         none;
   background-color: #a6313a;
   opacity: 1;
-  color: white;
+  /*color: white;*/
   border-radius: 0.938em;
-  text-transform: uppercase;
-  text-align: center;
+  /*text-transform: uppercase;
+  text-align: center;*/
   padding: 0.313em;
   width: 100%;
   border: none;
@@ -262,10 +262,10 @@ input, textarea {
 
 /*Estilos Cabecera CV*/
 
-.profesion {
-  font-style: oblique;
-  font-weight: normal;
-}
+/*.profesion {
+  /*font-style: oblique;*/
+  /*font-weight: normal;
+}*/
 
 .profile {
   background-color: black;
@@ -273,7 +273,7 @@ input, textarea {
 }
 
 .cv-header-text {
-  color:white;
+  /*color:white;*/
   padding: 15px;
 }
 
@@ -330,10 +330,10 @@ input, textarea {
   appearance:         none;
   background-color: #a6313a;
   opacity: 1;
-  color: white;
+  /*color: white;*/
   border-radius: 0.938em;
-  text-transform: uppercase;
-  text-align: center;
+  /*text-transform: uppercase;
+  text-align: center;*/
   padding: 0.313em;
   width: 100%;
   border: none;
@@ -380,20 +380,21 @@ footer {
   }
 
   .cvbyker {
-    font-size: 1.875em;
+    /*font-size: 1.875em;*/
+    font-size: 32px;
   }
 
   .ker-care {
     font-size: 1.250em;
   }
 
-  h2 {
+  /*h2 {
     font-size: 1.875em;
-  }
+  }*/
 
-  .welcome-text {
+  /*.welcome-text {
     font-size: 1.5em;
-  }
+  }*/
 
   main {
     display: flex;
