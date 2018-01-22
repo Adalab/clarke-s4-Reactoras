@@ -6,26 +6,27 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/master.css" media="all">
   <link rel="stylesheet" href="scss/core/_variables.css" media="all">
+  <link rel="stylesheet" href="styles/typo.css" media="all">
   <title>CV by KER</title>
 </head>
 
 <body>
-
+<!--v. nuevas clases de typo in todos los butones (palabras llave: typo y button), VERSION RAMA TYPO (Sara)-->
   <header>
-    <p class="cvbyker">Cv by <span class=kerstyle>ker</span></p>
+    <p class="header-typo">Cv by ker</p>
   </header>
 
   <div class="welcome-box">
-    <h2 class="title-lg">tu cv siempre actualizado</h2> <!--Cambiado etiqueta por clase-->
-    <p class="welcome-text">Gracias a <span class=kerstyle>ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
+    <h2 class="title-lg hero-title-typo">tu cv siempre actualizado</h2>
+    <p class="hero-larger-text-typo">Gracias a <span class="uppercase-style">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
     </p>
-    <p class="ker-care"><span class="kerstyle"> ker</span> te cuida</p>
+    <p class="hero-smaller-text-typo"><span class="uppercase-style"> ker</span> te cuida</p>
   </div>
 
   <nav>
-    <button class="tab-button active" type="button" name="button-form">formulario</button>
-    <button class="tab-button" type="button" name="button-cv">cv</button>
-  </nav>
+    <button class="tab-button tab-button-typo active uppercase-style" type="button" name="button-form">formulario</button>
+    <button class="tab-button tab-button-typo" type="button" name="button-cv">cv</button>
+  </nav> <!--añadido tab-button-typo  y uppercase-style como clase de butones in RAMA TYPO (Sara)-->
 
   <main>
 
@@ -33,9 +34,9 @@
 
       <form class="form" action="index.html" method="post">
 
-        <fieldset class="form-contact">
+        <fieldset class="form-contact"> <!--desde form hasta form-cotact modificado desde Sara-->
           <legend>Datos Personales</legend>
-          <button data-id="0" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="0" class="edit-button colored1-button-typo" type="button" name="button">Editar</button>
 
           <div class="contact-input content hidden">
 
@@ -46,21 +47,21 @@
             <input class="contact-field" type="text" name="Linkedin" id="linked" value="" placeholder="linkedin.com/nombredetuperfil">
             <textarea class="contact-field" name="comments" id="description" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
 
-            <p class="form-obl">*Campos obligatorios</p>
-            <button data-id="0" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" id="save1" type="button" name="button">guardar</button>
+            <p class="indicative-text-typo">*Campos obligatorios</p> <!--indicative-text-typo en cambio de form-obl-->
+            <button data-id="0" class="edit-button close colored1-button-typo" type="button" name="button">cerrar</button>
+            <button class="send-input-button colored2-button-typo" id="save1" type="button" name="button">guardar</button>
 
           </div>
         </fieldset>
 
         <fieldset class="form-skills">
           <legend>Habilidades</legend>
-          <button data-id="1" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="1" class="edit-button colored1-button-typo" type="button" name="button">Editar</button>
 
           <div class="skills-input content hidden">
             <input class="user-skills skills-text" type="text" name="firstskill" value="" placeholder="Habilidad*" required>
             <input class="user-new-skills skills-text hidden" type="text" name="firstskill" value="" placeholder="Habilidad*" required>
-            <p class="form-obl">*Campos obligatorios</p>
+            <p class="indicative-text-typo">*Campos obligatorios</p> <!--indicative-text-typo en cambio de form-obl-->
 
             <div class="skills-buttons">
               <img id="add-skills" class="add-button" src="images/add.svg" alt="add button">
@@ -69,20 +70,20 @@
               <img id="quit-skills" class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="1" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="skills-button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="1" class="edit-button close colored1-button-typo" type="button" name="button">cerrar</button>
+            <button id="skills-button" class="send-input-button colored2-button-typo" type="button" name="button">guardar</button>
 
           </div>
         </fieldset>
 
         <fieldset class="form-language">
           <legend>Idiomas</legend>
-          <button data-id="2" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="2" class="edit-button colored1-button-typo" type="button" name="button">Editar</button>
 
           <div class="language-input content hidden">
             <input class="user-language" type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
             <input class="user-level" type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
-            <p class="form-obl">*Campos obligatorios</p>
+            <p class="indicative-text-typo">*Campos obligatorios</p> <!--indicative-text-typo en cambio de form-obl-->
 
             <div class="language-buttons">
               <img id="add-language" class="add-button" src="images/add.svg" alt="add button">
@@ -91,8 +92,8 @@
               <img id="quit-language" class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="2" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="language-button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="2" class="edit-button close colored1-button-typo" type="button" name="button">cerrar</button>
+            <button id="language-button" class="send-input-button colored2-button-typo" type="button" name="button">guardar</button>
 
           </div>
         </fieldset>
@@ -100,13 +101,13 @@
         <fieldset id="form_exp" class="form-experience">
 
           <legend>Experiencia Profesional</legend>
-          <button data-id="3" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="3" class="edit-button colored1-button-typo" type="button" name="button">Editar</button>
 
           <div id="exp_box" class="experience-input content hidden">
             <input id="job" type="text" name="job" value="" placeholder="Puesto*">
             <input id="company" type="text" name="company" value="" placeholder="Empresa*">
             <textarea id="comments" name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
-            <p class="form-obl">*Campos obligatorios</p>
+            <p class="indicative-text-typo">*Campos obligatorios</p> <!--indicative-text-typo en cambio de form-obl-->
 
             <div class="calendar">
               <div class="calendar-start-exp">
@@ -127,20 +128,20 @@
               <img class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="3" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="send_exp_button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="3" class="edit-button close colored1-button-typo" type="button" name="button">cerrar</button>
+            <button id="send_exp_button" class="send-input-button colored2-button-typo" type="button" name="button">guardar</button>
 
           </div>
         </fieldset>
 
         <fieldset class="form-education">
           <legend>Educación</legend>
-          <button data-id="4" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="4" class="edit-button colored1-button-typo" type="button" name="button">Editar</button>
 
           <div class="education-input content hidden">
             <input id="degree" type="text" name="degree" value="" placeholder="Título*" required>
             <input id="university" type="text" name="university" value="" placeholder="Centro de Estudios*" required>
-            <p class="form-obl">*Campos obligatorios</p>
+            <p class="indicative-text-typo">*Campos obligatorios</p> <!--indicative-text-typo en cambio de form-obl-->
             <div class="calendar">
               <div class="calendar-start-educ">
                 <p class="start-educ">Desde*</p>
@@ -160,30 +161,33 @@
               <img class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="4" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="send_educ_button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="4" class="edit-button close colored1-button-typo" type="button" name="button">cerrar</button>
+            <button id="send_educ_button" class="send-input-button colored2-button-typo" type="button" name="button">guardar</button>
 
           </div>
         </fieldset>
 
-        <input class="submit-button" id="save" type="submit" value="enviar datos al cv">
+        <input class="submit-button colored1-button-typo" id="save" type="submit" value="enviar datos al cv">
 
       </form>
     </div>
 
-    <div id="cv_part" class="cv-box hidden" onload="window.print();window.close()"> <!--Yo pondría esto como section, igual que la de arriba-->
+    <div id="cv_part" class="cv-box hidden" onload="window.print();window.close()">
 
       <div class="cv-header">
         <div class="profile">
-          <div class="cv-header-text">
-            <h2 class="title-lg" id="name_surname_out">Nombre Apellido</h2> <!--Cambiado etiqueta por clase-->
-            <h2 class="title-lg"> <span id="prof_out" class="profesion">Profesión</span></h2> <!--Cambiado etiqueta por clase-->
-            <p class="cv-description" id="description_out" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+
+
+          <div class="cv-header-text"> <!--dar a esta clase un nombre que indique que contiene un padding de 15px, ha sido quitato il color: white-->
+            <h2 id="name_surname_out" class="title-lg cv-large-text color1 bold-style">Nombre Apellido</h2> <!--añadidas las clases -->
+            <h2> <span id="prof_out" class="title-lg cv-large-text color1 no-bold-effects">Profesión</span></h2> <!--añadidas las clases y quitaada la clase profesion-->
+            <p class="cv-description cv-small-text color1" id="description_out" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p> <!--añadidas las clases cv-small-text color1-->
+
           </div>
         </div>
         <div class="contact">
-          <ul class="list-contact">
+          <ul class="list-contact cv-small-text"> <!--añadida la clase cv-small-text-->
             <li>
               <img src="images/phone-icon.svg" alt="telefono">
               <span id="phon_out">+34 666 66 66 66</span>
@@ -200,14 +204,19 @@
         </div>
       </div>
       <section class="skills">
-        <h3 class="tittle-md">Habilidades</h3>  <!--Cambiado etiqueta por clase-->
+
+        <h3 class="tittle-md uppercase-style">Habilidades</h3>  <!--Cambiado etiqueta por clase-->
+
         <hr class="red-line">
         <div class="skills-box">
           <ul class="list-skills"></ul>
         </div>
       </section>
       <section class="language">
-        <h3 class="tittle-md">Idiomas</h3><!--Cambiado etiqueta por clase-->
+
+        <h3 class="tittle-md uppercase-style">Idiomas</h3><!--Cambiado etiqueta por clase-->
+
+
         <hr class="red-line">
         <div class="language-box">
           <ul class="list-language">
@@ -219,7 +228,9 @@
         </div>
       </section>
       <section class="experience">
-        <h3 class="tittle-md">Experiencia Profesional</h3> <!--Cambiado etiqueta por clase-->
+
+        <h3 class="tittle-md uppercase-style">Experiencia Profesional</h3>
+
         <hr class="red-line">
         <div class="experience-box">
           <ul class="list-experience">
@@ -237,7 +248,9 @@
         </div>
       </section>
       <section class="education">
-        <h3 class="tittle-md">Educación</h3> <!--Cambiado etiqueta por clase-->
+
+        <h3 class="tittle-md uppercase-style">Educación</h3> <!--Cambiado etiqueta por clase-->
+
         <hr class="red-line">
         <div class="education-box">
           <ul class="list-education">
@@ -255,12 +268,12 @@
         </div>
       </section>
 
-      <input class="print-button" id="print" type="submit" value="imprimir cv">
+      <input class="print-button colored1-button-typo" id="print" type="submit" value="imprimir cv">
 
     </div>
   </main>
 
-  <footer>
+  <footer class="footer-typo"><!--añadida la clase footer-typo-->
     <p>&copy;<span class=kerstyle>ker</span></p>
   </footer>
 

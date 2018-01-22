@@ -1,0 +1,94 @@
+/*variables:
+
+$color1: #a6313a;
+$color2: white;
+$font-family: 'Barlow Semi Condensed', sans-serif;*/
+
+.header-typo{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+.hero-title-typo{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero-larger-text-typo{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.hero-smaller-text-typo{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.uppercase-style{
+  text-transform: uppercase;
+}
+
+.tab-button-typo{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.colored1-button-typo{
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 14px;
+}
+
+.colored2-button-typo{
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a6313a;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 14px;
+}
+
+.indicative-text-typo {
+  color: gray;
+  font-size: 12px;
+  text-align: right;
+}
+
+.cv-large-text{
+  font-size: 30px;
+}
+
+.cv-small-text{
+  font-size: 16px;
+}
+
+.color1{
+  color:white;
+}
+
+.bold-style{
+  font-weight: bold;
+}
+
+.no-bold-effects{
+  font-weight: normal;
+}
+
+.footer-typo{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+/*.active-typo{
+  color: white;
+}*/
