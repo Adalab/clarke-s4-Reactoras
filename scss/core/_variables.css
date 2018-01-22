@@ -1,0 +1,18 @@
+
+/* Colors */
+
+.color-primary {
+  background-color: #a6313a;
+}
+
+.color-light {
+  color: #ffffff;
+}
+
+.color-midtone {
+  color: #F1EDEC;  /* Cambiado en lugar de ligthgray */
+}
+
+.color-dark {
+  color: #171717;
+}
