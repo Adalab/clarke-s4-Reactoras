@@ -34,10 +34,9 @@ p {
 
 /*Estilos del header*/
 
-header {
+header { /*Aquí he quitado text-align:center;*/
   background-color: #a6313a;
   color:white;
-  text-align: center;
   height: 3.125em;
   padding: 0.938em;
   text-transform: uppercase;
@@ -47,8 +46,7 @@ header {
 
 /*Estilos welcome box*/
 
-.welcome-box {
-  text-align: center;
+.welcome-box { /*Aquí he quitado text-align:center;*/
   padding: 1.250em 0.625em;
   background: url(https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg) no-repeat;
   background-size: cover;
@@ -105,7 +103,6 @@ nav{
 .form-obl {
   color: gray;
   font-size: 0.750em;
-  text-align: right;
   margin-bottom: 0em;
 }
 
@@ -129,7 +126,7 @@ nav{
   text-transform: uppercase;
 }
 
-.close {
+.close { /*Aquí quito float:left*/
   width: 45%;
   background-color: #a6313a;
   color: white;
@@ -143,7 +140,7 @@ nav{
   float: left;
 }
 
-.send-input-button {
+.send-input-button { /*Aquí quito float:right*/
   width: 45%;
   background-color: white ;
   color: #a6313a;
@@ -154,8 +151,7 @@ nav{
   font-family: inherit;
   letter-spacing: 2px;
   text-transform: uppercase;
-  float: right;
-}
+  }
 
 /*Estilos botones añadir, subir, bajar y quitar*/
 .skills-buttons, .language-buttons, .experience-buttons, .education-buttons {
@@ -224,7 +220,7 @@ input, textarea {
 
 /*Estilos boton enviar final*/
 
-.submit-button {
+.submit-button { /*Aquí he quitado text-align:center;*/
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
@@ -233,7 +229,6 @@ input, textarea {
   color: white;
   border-radius: 0.938em;
   text-transform: uppercase;
-  text-align: center;
   padding: 0.313em;
   width: 100%;
   border: none;
@@ -279,7 +274,6 @@ input, textarea {
 
 .cv-description {
   width: 100%;
-  text-align: justify;
 }
 
 .contact {
@@ -324,7 +318,7 @@ input, textarea {
 
 /* Estilos botón imprimir CV*/
 
-.print-button {
+.print-button { /*Aquí he quitado text-align:center;*/
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
@@ -333,7 +327,6 @@ input, textarea {
   color: white;
   border-radius: 0.938em;
   text-transform: uppercase;
-  text-align: center;
   padding: 0.313em;
   width: 100%;
   border: none;
@@ -344,10 +337,9 @@ input, textarea {
 
 /*Estilos del footer*/
 
-footer {
+footer { /*Aquí he quitado text-align:center;*/
   background-color: black;
   color:white;
-  text-align: center;
   font-weight: bold;
   height: 30px;
   padding: 5px;
