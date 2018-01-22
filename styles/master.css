@@ -12,24 +12,19 @@
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin: 0 2%;
   font-size: 16px;
 }
 
 h3 {
-  margin-bottom: 0;
+
   text-transform: uppercase;
-  margin-left: 0.938em;
+
 }
 
 h2 {
-  margin: 0.625em 0;
+
   text-transform: uppercase;
   font-size: 1.250em;
-}
-
-p {
-  margin-top: 0;
 }
 
 /*Estilos del header*/
@@ -39,7 +34,6 @@ header {
   color:white;
   text-align: center;
   height: 3.125em;
-  padding: 0.938em;
   text-transform: uppercase;
   letter-spacing: 0.063em;
 }
@@ -49,7 +43,6 @@ header {
 
 .welcome-box {
   text-align: center;
-  padding: 1.250em 0.625em;
   background: url(https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg) no-repeat;
   background-size: cover;
   color: white;
@@ -62,7 +55,6 @@ header {
 }
 
 .welcome-text {
-  padding: 0.625em;
   font-size: 1em;
 }
 
@@ -80,7 +72,6 @@ nav{
   border: 0.063em solid #a6313a;
   border-radius: 0em 0em 0.625em 0.625em;
   width: 50%;
-  padding: 0.938em;
 }
 
 .active {
@@ -94,11 +85,6 @@ nav{
 }
 
 /*Estilos generales del FORMULARIO*/
-/*Estilos del form*/
-
-.form-box {
-  margin-top: 0.938em;
-}
 
 /*Estilos cajas contenedoras del fieldset*/
 
@@ -106,13 +92,11 @@ nav{
   color: gray;
   font-size: 0.750em;
   text-align: right;
-  margin-bottom: 0em;
 }
 
 .form-contact, .form-skills, .form-language, .form-experience, .form-education {
   border: 0.125em solid #a6313a;
   border-radius: 0.938em;
-  margin-bottom: 0.625em;
 }
 
 /*Estilos botones editar, cerrar y guardar de campos colapsables*/
@@ -122,8 +106,6 @@ nav{
   color: white;
   border: none;
   border: 15px;
-  margin: 5px 0;
-  padding: 5px;
   font-family: inherit;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -135,8 +117,6 @@ nav{
   color: white;
   border: 2px solid #a6313a;
   border-radius: : 15px;
-  margin-top: 15px;
-  padding: 5px;
   font-family: inherit;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -149,8 +129,6 @@ nav{
   color: #a6313a;
   border: 2px solid #a6313a;
   border-radius: : 15px;
-  margin-top: 15px;
-  padding: 5px;
   font-family: inherit;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -163,7 +141,6 @@ nav{
   justify-content: space-around;
   border: 1px solid lightgrey;
   border-radius: 5px;
-  margin: 10px 0;
 }
 
 /*tamaño iconos botones añadir, subir, bajar y quitar*/
@@ -180,8 +157,6 @@ input, textarea {
   appearance:         none;
   border:none;
   border-radius: 0.313em;
-  padding: 0.625em;
-  margin:0.5em 0em;
   background: lightgray;
   opacity: 0.5;
   width: 100%;
@@ -189,9 +164,6 @@ input, textarea {
 }
 
 /*Estilos de cajitas fechas*/
-.calendar {
-  margin: 0.125em 0em;
-}
 
 .calendar-start-exp, .calendar-end-exp, .calendar-start-educ, .calendar-end-educ {
   display: flex;
@@ -213,12 +185,10 @@ input, textarea {
 }
 
 .month{
-  padding-left: 25px;
   width: 45%;
 }
 
 .year{
-  padding-left: 10px;
   width: 20%;
 }
 
@@ -234,10 +204,8 @@ input, textarea {
   border-radius: 0.938em;
   text-transform: uppercase;
   text-align: center;
-  padding: 0.313em;
   width: 100%;
   border: none;
-  margin-bottom: 1.250em;
   box-shadow: none;
 }
 

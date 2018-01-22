@@ -5,167 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/master.css" media="all">
+  <link rel="stylesheet" href="styles/_helpers.css" media="all">
   <title>CV by KER</title>
 </head>
 
-<body>
+<body class="margin-general"><!-- añadida class-padding por Katy -->
 
-  <header>
-    <p class="cvbyker">Cv by <span class=kerstyle>ker</span></p>
+  <header class="padding-xs"><!-- añadida class-padding por Katy -->
+    <p class="cvbyker margin-top-zero">Cv by <span class=kerstyle>ker</span></p><!-- añadida class-margin por Katy -->
   </header>
 
-  <div class="welcome-box">
-    <h2>tu cv siempre actualizado</h2>
-    <p class="welcome-text">Gracias a <span class=kerstyle>ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
-    </p>
-    <p class="ker-care"><span class="kerstyle"> ker</span> te cuida</p>
+  <div class="welcome-box padding-md"><!-- añadida class-padding por Katy -->
+    <h2 class="margin-xxs">tu cv siempre actualizado</h2><!-- añadida class-margin por Katy -->
+    <p class="welcome-text margin-top-zero padding-xxs">Gracias a <span class=kerstyle>ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
+    </p><!-- añadida class-margin, padding por Katy -->
+    <p class="ker-care margin-top-zero"><span class="kerstyle"> ker</span> te cuida</p><!-- añadida class-margin por Katy -->
   </div>
 
   <nav>
-    <button class="tab-button active" type="button" name="button-form">formulario</button>
-    <button class="tab-button" type="button" name="button-cv">cv</button>
+    <button class="tab-button active padding-xs" type="button" name="button-form">formulario</button><!-- añadida class- padding por Katy -->
+    <button class="tab-button padding-xs" type="button" name="button-cv">cv</button><!-- añadida class- padding por Katy -->
   </nav>
 
   <main>
 
-    <div class="form-box">
+    <div class="form-box margin-top-xs"><!-- añadida class-margin por Katy -->
 
       <form class="form" action="index.html" method="post">
 
-        <fieldset class="form-contact">
+        <fieldset class="form-contact margin-bottom-xxs"><!-- añadida class-margin por Katy -->
           <legend>Datos Personales</legend>
-          <button data-id="0" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="0" class="edit-button padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button><!-- añadida class-margin,padding por Katy -->
 
           <div class="contact-input content hidden">
 
-            <input class="contact-field" type="text" name="full name" id="name_surname" value="" placeholder="Nombre y Apellidos*" required>
-            <input class="contact-field" type="text" name="profession" id="prof" value="" placeholder="Profesión*" required>
-            <input class="contact-field" type="tel" name="phone" id="phon" value="" placeholder="Teléfono*" required>
-            <input class="contact-field" type="email" name="email" id="mail" value="" placeholder="Correo electrónico*" required>
-            <input class="contact-field" type="text" name="Linkedin" id="linked" value="" placeholder="linkedin.com/nombredetuperfil">
-            <textarea class="contact-field" name="comments" id="description" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea>
+            <input class="contact-field padding-xxs margin-xxxs" type="text" name="full name" id="name_surname" value="" placeholder="Nombre y Apellidos*" required><!-- añadida class-margin,padding por Katy -->
+            <input class="contact-field padding-xxs margin-xxxs" type="text" name="profession" id="prof" value="" placeholder="Profesión*" required><!-- añadida class-margin,padding por Katy -->
+            <input class="contact-field padding-xxs margin-xxxs" type="tel" name="phone" id="phon" value="" placeholder="Teléfono*" required><!-- añadida class-margin,padding por Katy -->
+            <input class="contact-field padding-xxs margin-xxxs" type="email" name="email" id="mail" value="" placeholder="Correo electrónico*" required><!-- añadida class-margin,padding por Katy -->
+            <input class="contact-field padding-xxs margin-xxxs" type="text" name="Linkedin" id="linked" value="" placeholder="linkedin.com/nombredetuperfil"><!-- añadida class-margin,padding por Katy -->
+            <textarea class="contact-field padding-xxs margin-xxxs" name="comments" id="description" rows="8" cols="20" maxlength="300" placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required></textarea><!-- añadida class-margin,padding por Katy -->
 
-            <p class="form-obl">*Campos obligatorios</p>
-            <button data-id="0" class="edit-button close" type="button" name="button">cerrar</button>
-            <button class="send-input-button" id="save1" type="button" name="button">guardar</button>
+            <p class="form-obl margin-top-zero margin-bottom-zero">*Campos obligatorios</p><!-- añadida class-margin por Katy -->
+            <button data-id="0" class="edit-button close margin-md padding-xxxxs" type="button" name="button">cerrar</button><!-- añadida class-margin,padding por Katy -->
+            <button class="send-input-button margin-md padding-xxxxs" id="save1" type="button" name="button">guardar</button><!-- añadida class-margin,padding por Katy -->
 
           </div>
         </fieldset>
 
-        <fieldset class="form-skills">
+        <fieldset class="form-skills margin-bottom-xxs"><!-- añadida class-margin por Katy -->
           <legend>Habilidades</legend>
-          <button data-id="1" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="1" class="edit-button padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
 
           <div class="skills-input content hidden">
-            <input class="user-skills skills-text" type="text" name="firstskill" value="" placeholder="Habilidad*" required>
-            <input class="user-new-skills skills-text hidden" type="text" name="firstskill" value="" placeholder="Habilidad*" required>
-            <p class="form-obl">*Campos obligatorios</p>
+            <input class="user-skills skills-text padding-xxs margin-xxxs" type="text" name="firstskill" value="" placeholder="Habilidad*" required><!-- añadida class-margin,padding por Katy -->
+            <input class="user-new-skills skills-text hidden padding-xxs margin-xxxs" type="text" name="firstskill" value="" placeholder="Habilidad*" required><!-- añadida class-margin,padding por Katy -->
+            <p class="form-obl margin-top-zero">*Campos obligatorios</p><!-- añadida class-margin por Katy -->
 
-            <div class="skills-buttons">
+            <div class="skills-buttons margin-xs"><!-- añadida class-margin por Katy -->
               <img id="add-skills" class="add-button" src="images/add.svg" alt="add button">
               <img class="up-button" src="images/up.svg" alt="up button">
               <img class="down-button" src="images/down.svg" alt="down button">
               <img id="quit-skills" class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="1" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="skills-button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="1" class="edit-button close margin-md padding-xxxxs" type="button" name="button">cerrar</button><!-- añadida class-margin,padding por Katy -->
+            <button id="skills-button" class="send-input-button margin-md padding-xxxxs" type="button" name="button">guardar</button><!-- añadida class-margin,padding por Katy -->
 
           </div>
         </fieldset>
 
-        <fieldset class="form-language">
+        <fieldset class="form-language margin-bottom-xxs"><!-- añadida class-margin por Katy -->
           <legend>Idiomas</legend>
-          <button data-id="2" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="2" class="edit-button padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button><!-- añadida class-margin,padding por Katy -->
 
           <div class="language-input content hidden">
-            <input class="user-language" type="text" name="firstlanguage" value="" placeholder="Idioma*" required>
-            <input class="user-level" type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required>
-            <p class="form-obl">*Campos obligatorios</p>
+            <input class="user-language padding-xxs margin-xxxs" type="text" name="firstlanguage" value="" placeholder="Idioma*" required><!-- añadida class-margin,padding por Katy -->
+            <input class="user-level padding-xxs margin-xxxs" type="text" name="leveltitle" value="" placeholder="Nivel/Título*" required><!-- añadida class-margin,padding por Katy -->
+            <p class="form-obl margin-top-zero">*Campos obligatorios</p><!-- añadida class-margin por Katy -->
 
-            <div class="language-buttons">
+            <div class="language-buttons margin-xs"><!-- añadida class-margin por Katy -->
               <img id="add-language" class="add-button" src="images/add.svg" alt="add button">
               <img class="up-button" src="images/up.svg" alt="up button">
               <img class="down-button" src="images/down.svg" alt="down button">
               <img id="quit-language" class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="2" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="language-button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="2" class="edit-button close margin-md padding-xxxxs" type="button" name="button">cerrar</button><!-- añadida class-margin,padding por Katy -->
+            <button id="language-button" class="send-input-button margin-md padding-xxxxs" type="button" name="button">guardar</button><!-- añadida class-margin,padding por Katy -->
 
           </div>
         </fieldset>
 
-        <fieldset id="form_exp" class="form-experience">
+        <fieldset id="form_exp" class="form-experience margin-bottom-xxs"><!-- añadida class-margin por Katy -->
 
           <legend>Experiencia Profesional</legend>
-          <button data-id="3" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="3" class="edit-button padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button><!-- añadida class-margin,padding por Katy -->
 
           <div id="exp_box" class="experience-input content hidden">
-            <input id="job" type="text" name="job" value="" placeholder="Puesto*">
-            <input id="company" type="text" name="company" value="" placeholder="Empresa*">
-            <textarea id="comments" name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea>
-            <p class="form-obl">*Campos obligatorios</p>
+            <input id="job" class="padding-xxs margin-xxxs" type="text" name="job" placeholder="Puesto*"><!-- añadida class-margin,padding por Katy -->
+            <input id="company" class="padding-xxs margin-xxxs" type="text" name="company" placeholder="Empresa*"><!-- añadida class-margin,padding por Katy -->
+            <textarea id="comments" class="padding-xxs margin-xxxs" name="comments" rows="8" cols="20" maxlength="300" placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)"></textarea><!-- añadida class-margin,padding por Katy -->
+            <p class="form-obl margin-top-zero">*Campos obligatorios</p><!-- añadida class-margin por Katy -->
 
             <div class="calendar">
               <div class="calendar-start-exp">
-                <p class="start-exp">Desde*</p>
-                <select id="start_month_exp" class="month" name="month-exp"></select>
-                <select id="start_year_exp" class="year" name="year-exp"></select>
+                <p class="start-exp margin-top-zero">Desde*</p><!-- añadida class-margin por Katy -->
+                <select id="start_month_exp" class="month padding-left-lg" name="month-exp"></select><!-- añadida class-padding por Katy -->
+                <select id="start_year_exp" class="year padding-left-xs" name="year-exp"></select><!-- añadida class-padding por Katy -->
               </div>
               <div class="calendar-end-exp">
-                <p class="end-exp">Hasta*</p>
-                <select id="end_month_exp" class="month" name="month-exp"></select>
-                <select id="end_year_exp" class="year" name="year-exp"></select>
+                <p class="end-exp margin-top-zero">Hasta*</p><!-- añadida class-margin por Katy -->
+                <select id="end_month_exp" class="month padding-left-lg" name="month-exp"></select><!-- añadida class-padding por Katy -->
+                <select id="end_year_exp" class="year padding-left-xs" name="year-exp"></select><!-- añadida class-padding por Katy -->
               </div>
             </div>
-            <div class="experience-buttons">
+            <div class="experience-buttons margin-xs"><!-- añadida class-margin por Katy -->
               <img id="add_button_exp" class="add-button" src="images/add.svg" alt="add button">
               <img class="up-button" src="images/up.svg" alt="up button">
               <img class="down-button" src="images/down.svg" alt="down button">
               <img class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="3" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="send_exp_button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="3" class="edit-button close margin-md padding-xxxxs" type="button" name="button">cerrar</button><!-- añadida class-margin,padding por Katy -->
+            <button id="send_exp_button" class="send-input-button margin-md padding-xxxxs" type="button" name="button">guardar</button><!-- añadida class-margin,padding por Katy -->
 
           </div>
         </fieldset>
 
-        <fieldset class="form-education">
+        <fieldset class="form-education margin-bottom-xxs"><!-- añadida class-margin por Katy -->
           <legend>Educación</legend>
-          <button data-id="4" class="edit-button" type="button" name="button">Editar</button>
+          <button data-id="4" class="edit-button padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button><!-- añadida class-margin,padding por Katy -->
 
           <div class="education-input content hidden">
-            <input id="degree" type="text" name="degree" value="" placeholder="Título*" required>
-            <input id="university" type="text" name="university" value="" placeholder="Centro de Estudios*" required>
-            <p class="form-obl">*Campos obligatorios</p>
+            <input id="degree" class="padding-xxs margin-xxxs" type="text" name="degree" placeholder="Título*" required>
+            <input id="university" class="padding-xxs margin-xxxs" type="text" name="university" placeholder="Centro de Estudios*" required>
+            <p class="form-obl margin-top-zero">*Campos obligatorios</p><!-- añadida class-margin por Katy -->
             <div class="calendar">
               <div class="calendar-start-educ">
-                <p class="start-educ">Desde*</p>
-                <select id="start_month_educ" class="month" name="month"></select>
-                <select id="start_year_educ" class="year" name="year"></select>
+                <p class="start-educ margin-top-zero">Desde*</p><!-- añadida class-margin por Katy -->
+                <select id="start_month_educ" class="month padding-left-lg" name="month"></select><!-- añadida class-padding por Katy -->
+                <select id="start_year_educ" class="year padding-left-xs" name="year"></select><!-- añadida class-padding por Katy -->
               </div>
               <div class="calendar-end-educ">
-                <p class="end-educ">Hasta*</p>
-                <select id="end_month_educ" class="month" name="month"></select>
-                <select id="end_year_educ" class="year" name="year"></select>
+                <p class="end-educ margin-top-zero">Hasta*</p><!-- añadida class-margin por Katy -->
+                <select id="end_month_educ" class="month padding-left-lg" name="month"></select><!-- añadida class-padding por Katy -->
+                <select id="end_year_educ" class="year padding-left-xs" name="year"></select><!-- añadida class-padding por Katy -->
               </div>
             </div>
-            <div class="education-buttons">
+            <div class="education-buttons margin-xs"><!-- añadida class-margin por Katy -->
               <img id="add_button_educ" class="add-button" src="images/add.svg" alt="add button">
               <img class="up-button" src="images/up.svg" alt="up button">
               <img class="down-button" src="images/down.svg" alt="down button">
               <img class="remove-button" src="images/remove.svg" alt="remove button">
             </div>
 
-            <button data-id="4" class="edit-button close" type="button" name="button">cerrar</button>
-            <button id="send_educ_button" class="send-input-button" type="button" name="button">guardar</button>
+            <button data-id="4" class="edit-button close margin-md padding-xxxxs" type="button" name="button">cerrar</button><!-- añadida class-margin,padding por Katy -->
+            <button id="send_educ_button" class="send-input-button margin-md padding-xxxxs" type="button" name="button">guardar</button><!-- añadida class-margin,padding por Katy -->
 
           </div>
         </fieldset>
 
-        <input class="submit-button" id="save" type="submit" value="enviar datos al cv">
+        <input class="submit-button margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" type="submit" value="enviar datos al cv"><!-- añadida class-margin,padding por Katy -->
 
       </form>
     </div>
@@ -175,10 +176,10 @@
       <div class="cv-header">
         <div class="profile">
           <div class="cv-header-text">
-            <h2 id="name_surname_out">Nombre Apellido</h2>
-            <h2> <span id="prof_out" class="profesion">Profesión</span></h2>
-            <p class="cv-description" id="description_out" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h2 id="name_surname_out" class="margin-top-xxs margin-bottom-xxs margin-left-zero margin-right-zero">Nombre Apellido</h2><!-- añadida class-margin por Katy -->
+            <h2 class="margin-top-xxs margin-bottom-xxs margin-left-zero margin-right-zero"> <span id="prof_out" class="profesion">Profesión</span></h2><!-- añadida class-margin por Katy -->
+            <p class="cv-description margin-top-zero" id="description_out" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p><!-- añadida class-margin por Katy -->
           </div>
         </div>
         <div class="contact">
@@ -199,53 +200,53 @@
         </div>
       </div>
       <section class="skills">
-        <h3>Habilidades</h3>
+        <h3 class="margin-top-zero margin-bottom-zero margin-left-xs">Habilidades</h3><!-- añadida class-margin por Katy -->
         <hr class="red-line">
         <div class="skills-box">
           <ul class="list-skills"></ul>
         </div>
       </section>
       <section class="language">
-        <h3>Idiomas</h3>
+        <h3 class="margin-top-zero margin-bottom-zero margin-left-xs">Idiomas</h3><!-- añadida class-margin por Katy -->
         <hr class="red-line">
         <div class="language-box">
           <ul class="list-language">
             <li>
               <h4>Lenguaje1</h4>
-              <p>Nivel/título</p>
+              <p class="margin-top-zero">Nivel/título</p><!-- añadida class-margin por Katy -->
             </li>
           </ul>
         </div>
       </section>
       <section class="experience">
-        <h3>Experiencia Profesional</h3>
+        <h3 class="margin-top-zero margin-bottom-zero margin-left-xs">Experiencia Profesional</h3><!-- añadida class-margin por Katy -->
         <hr class="red-line">
         <div class="experience-box">
           <ul class="list-experience">
             <li>
-              <p>
+              <p class="margin-top-zero"><!-- añadida class-margin por Katy -->
                 <span id="job_out"class="job">Encargado de planta - </span>
                 <span id="company_out"class="job">Carrefour </span>
                 <span id="start_exp_out">junio 2015</span>
                 <span id="end_exp_out">- septiembre 2016</span>
               </p>
-              <p id="comments_out">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+              <p id="comments_out" class="margin-top-zero">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p><!-- añadida class-margin por Katy -->
             </li>
           </ul>
         </div>
       </section>
       <section class="education">
-        <h3>Educación</h3>
+        <h3 class="margin-top-zero margin-bottom-zero margin-left-xs">Educación</h3><!-- añadida class-margin por Katy -->
         <hr class="red-line">
         <div class="education-box">
           <ul class="list-education">
             <li>
-              <p>
+              <p class="margin-top-zero"><!-- añadida class-margin por Katy -->
                 <span id="degree_out" class="job">Licenciatura en Periodismo - </span>
                 <span id="university_out" class="job">Universidad Rey Juan Carlos I</span>
               </p>
-              <p>
+              <p class="margin-top-zero"><!-- añadida class-margin por Katy -->
                 <span id="start_educ_out">septiembre 2007</span>
                 <span id="end_educ_out">-junio 2013</span>
               </p>
@@ -260,7 +261,7 @@
   </main>
 
   <footer>
-    <p>&copy;<span class=kerstyle>ker</span></p>
+    <p class="margin-top-zero">&copy;<span class=kerstyle>ker</span></p><!-- añadida class-margin por Katy -->
   </footer>
 
   <script type="text/javascript" src="js/main.js"></script>
