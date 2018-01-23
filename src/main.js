@@ -179,7 +179,7 @@ function printCv(){
   winPrint.print();
   window.close();
 
-  document.body.innerHTML = contenidoOriginal;
+  //document.body.innerHTML = contenidoOriginal;  
 }
 
 //Boton final de guardar datos en el CV
