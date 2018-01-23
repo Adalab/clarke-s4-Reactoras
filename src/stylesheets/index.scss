@@ -5,5 +5,11 @@
 
 
 //Components
-@import "components/helpers.scss";
+
 @import "components/typography.scss";
+
+// Layouts
+@import "layouts/header.scss";
+@import "layout/footer.scss";
+
+@import "components/helpers.scss";
