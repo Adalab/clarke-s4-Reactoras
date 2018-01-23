@@ -5,4 +5,6 @@ import './stylesheets/index.css';
 import App from './App';
 import main from './main';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
+
+main();
