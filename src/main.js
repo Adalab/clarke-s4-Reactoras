@@ -1,5 +1,6 @@
 'use strict';
 
+
 /*Funcion para cambiar entre FORM y CV al clicar en las pestañas-nav*/
 var tabButton = document.querySelectorAll('.tab-button');
 var showForm = document.querySelector('.form-box');
@@ -125,19 +126,24 @@ var saveExperience = document.querySelector('#send_exp_button');
 saveExperience.addEventListener('click',fillExperience);
 
 function fillExperience() {
-  var job = document.querySelector('#job').value;
-  var company = document.querySelector('#company').value;
-  var comments = document.querySelector('#comments').value;
-  var startMonthExp = document.querySelector('#start_month_exp').value;
-  var startYearExp = document.querySelector('#start_year_exp').value;
-  var endMonthExp = document.querySelector('#end_month_exp').value;
-  var endYearExp = document.querySelector('#end_year_exp').value;
+  var job = document.querySelector('#job');
+  var company = document.querySelector('#company');
+  var comments = document.querySelector('#comments');
+  var startMonthExp = document.querySelector('#start_month_exp');
+  var startYearExp = document.querySelector('#start_year_exp');
+  var endMonthExp = document.querySelector('#end_month_exp');
+  var endYearExp = document.querySelector('#end_year_exp');
 
-  document.querySelector('#job_out').innerHTML = job;
-  document.querySelector('#company_out').innerHTML = company;
-  document.querySelector('#comments_out').innerHTML = comments;
-  document.querySelector('#start_exp_out').innerHTML = '' + startMonthExp + ' ' + startYearExp;
-  document.querySelector('#end_exp_out').innerHTML = '- ' + endMonthExp + ' ' + endYearExp;
+  document.querySelector('#job_out').innerHTML = job.value;
+  document.querySelector('#company_out').innerHTML = company.value;
+  document.querySelector('#comments_out').innerHTML = comments.value;
+  document.querySelector('#start_exp_out').innerHTML = '' + startMonthExp.value + ' ' + startYearExp.value;
+  document.querySelector('#end_exp_out').innerHTML = '- ' + endMonthExp.value + ' ' + endYearExp.value;
+
+  var arrayCamps = [job,company,comments];
+  var arrayMonths = [startMonthExp,endMonthExp];
+  var arrayYear = [startYearExp,endYearExp];
+  resetForm(arrayCamps,arrayMonths,arrayYear);
 };
 
 //Inputs de sección Educación
@@ -146,19 +152,44 @@ var saveEducation = document.querySelector('#send_educ_button');
 saveEducation.addEventListener('click',fillEducation);
 
 function fillEducation() {
-  var degree = document.querySelector('#degree').value;
-  var university = document.querySelector('#university').value;
-  var startMonthEduc = document.querySelector('#start_month_educ').value;
-  var startYearEduc = document.querySelector('#start_year_educ').value;
-  var endMonthEduc = document.querySelector('#end_month_educ').value;
-  var endYearEduc = document.querySelector('#end_year_educ').value;
+  var degree = document.querySelector('#degree');
+  var university = document.querySelector('#university');
+  var startMonthEduc = document.querySelector('#start_month_educ');
+  var startYearEduc = document.querySelector('#start_year_educ');
+  var endMonthEduc = document.querySelector('#end_month_educ');
+  var endYearEduc = document.querySelector('#end_year_educ');
 
-  document.querySelector('#degree_out').innerHTML = degree;
-  document.querySelector('#university_out').innerHTML = university;
-  document.querySelector('#start_educ_out').innerHTML = '' + startMonthEduc + ' ' + startYearEduc;
-  document.querySelector('#end_educ_out').innerHTML = '- ' + endMonthEduc + ' ' + endYearEduc;
+  document.querySelector('#degree_out').innerHTML = degree.value;
+  document.querySelector('#university_out').innerHTML = university.value;
+  document.querySelector('#start_educ_out').innerHTML = '' + startMonthEduc.value+ ' ' + startYearEduc.value;
+  document.querySelector('#end_educ_out').innerHTML = '- ' + endMonthEduc.value + ' ' + endYearEduc.value;
+
+  var arrayCamps = [degree, university];
+  var arrayMonths = [startMonthEduc,endMonthEduc];
+  var arrayYear = [startYearEduc,endYearEduc];
+  resetForm(arrayCamps,arrayMonths,arrayYear);
 };
 
+// Resetear formulario sección Experiencia y Educación
+
+function resetForm(listCamps,listMonths,listYear) {
+  for (var i = 0; i < listCamps.length; i++) {
+    listCamps[i].value = '';
+  }
+resetMonth(listMonths);
+resetYear(listYear);
+
+};
+function resetMonth(monthList) {
+  for (var i = 0; i < monthList.length; i++) {
+    monthList[i].selectedIndex = 0;
+  }
+};
+function resetYear(yearList) {
+  for (var i = 0; i < yearList.length; i++) {
+    yearList[i].selectedIndex = 0;
+  }
+};
 
 //Imprimir CV
 
@@ -179,7 +210,7 @@ function printCv(){
   winPrint.print();
   window.close();
 
-  //document.body.innerHTML = contenidoOriginal;
+  // document.body.innerHTML = contenidoOriginal;
 }
 
 //Boton final de guardar datos en el CV
