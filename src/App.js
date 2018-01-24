@@ -160,18 +160,18 @@ class App extends Component {
               </div>
             </div>
             <section className="skills section-cv">
-              <h3>Habilidades</h3>  {/*Cambiado etiqueta por clase*/}
+              <h3>Habilidades</h3>
               <hr className="red-line" />
               <div className="box-cv">
                 <ul className="list-skills">
-                <li>
-                  <h4>Habilidad1</h4>
-                </li>
+                  <li>
+                    <h4>Habilidad1</h4>
+                  </li>
                 </ul>
               </div>
             </section>
             <section className="language section-cv">
-              <h3>Idiomas</h3>{/*Cambiado etiqueta por clase*/}
+              <h3>Idiomas</h3>
               <hr className="red-line" />
               <div className="box-cv">
                 <ul className="list-language">
@@ -201,7 +201,7 @@ class App extends Component {
               </div>
             </section>
             <section className="education section-cv">
-              <h3>Educación</h3> {/*Cambiado etiqueta por clase*/}
+              <h3>Educación</h3>
               <hr className="red-line" />
               <div className="box-cv">
                 <ul className="list-education">
