@@ -96,6 +96,14 @@ p {
 .bold {
   font-weight: bold; }
 
+.welcome-box {
+  background: url("https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg") no-repeat;
+  background-size: cover; }
+  @media all and (min-width: 1024px) {
+    .welcome-box {
+      height: 320px;
+      padding: 20px 60px; } }
+
 .tab-button {
   background-color: white;
   color: #a6313a;
