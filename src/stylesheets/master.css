@@ -92,18 +92,6 @@ nav{
 
 /*Estilos cajas contenedoras del fieldset*/
 
-.form-obl {
-  color: gray;
-  font-size: 0.750em;
-  margin-bottom: 0em;
-}
-
-
-.form-contact, .form-skills, .form-language, .form-experience, .form-education {
-  border: 0.125em solid #a6313a;
-  border-radius: 0.938em;
-  margin-bottom: 0.625em;
-}
 
 /*Estilos botones editar, cerrar y guardar de campos colapsables*/
 .edit-button {

@@ -21,28 +21,28 @@ class App extends Component {
         <main>
           <div className="form-box margin-top-xs">
             <form className="form" action="index.html" method="post">
-              <fieldset className="form-contact margin-bottom-xxs"> {/*desde form hasta form-cotact modificado desde Sara*/}
+              <fieldset className="default-fieldset"> {/*desde form hasta form-cotact modificado desde Sara*/}
                 <legend>Datos Personales</legend>
                 <button data-id={0} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div className="contact-input content hidden">
-                  <input className="contact-field padding-xxs margin-xxxs" type="text" name="full name" id="name_surname"  placeholder="Nombre y Apellidos*" required />
-                  <input className="contact-field padding-xxs margin-xxxs" type="text" name="profession" id="prof"  placeholder="Profesión*" required />
-                  <input className="contact-field padding-xxs margin-xxxs" type="tel" name="phone" id="phon"  placeholder="Teléfono*" required />
-                  <input className="contact-field padding-xxs margin-xxxs" type="email" name="email" id="mail"  placeholder="Correo electrónico*" required />
-                  <input className="contact-field padding-xxs margin-xxxs" type="text" name="Linkedin" id="linked"  placeholder="linkedin.com/nombredetuperfil" />
-                  <textarea className="contact-field padding-xxs margin-xxxs" name="comments" id="description" rows={8} cols={20} maxLength={300} placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required defaultValue={""} />
-                  <p className="indicative-text-typo text-right form-obl margin-top-zero margin-bottom-zero">*Campos obligatorios</p> {/*indicative-text-typo en cambio de form-obl*/}
+                  <input className="contact-field default-input-txtarea" type="text" name="full name" id="name_surname"  placeholder="Nombre y Apellidos*" required />
+                  <input className="contact-field default-input-txtarea" type="text" name="profession" id="prof"  placeholder="Profesión*" required />
+                  <input className="contact-field default-input-txtarea" type="tel" name="phone" id="phon"  placeholder="Teléfono*" required />
+                  <input className="contact-field default-input-txtarea" type="email" name="email" id="mail"  placeholder="Correo electrónico*" required />
+                  <input className="contact-field default-input-txtarea" type="text" name="Linkedin" id="linked"  placeholder="linkedin.com/nombredetuperfil" />
+                  <textarea className="contact-field default-input-txtarea" name="comments" id="description" rows={8} cols={20} maxLength={300} placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required defaultValue={""} />
+                  <p className="indicative-text-typo">*Campos obligatorios</p> 
                   <button data-id={0} className="edit-button close left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
                   <button className="send-input-button colored2-button-typo right margin-md padding-xxxxs" id="save1" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
-              <fieldset className="form-skills margin-bottom-xxs">
+              <fieldset className="default-fieldset">
                 <legend>Habilidades</legend>
                 <button data-id={1} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div className="skills-input content hidden">
-                  <input className="user-skills skills-text padding-xxs margin-xxxs" type="text" name="firstskill"  placeholder="Habilidad*" required />
-                  <input className="user-new-skills skills-text hidden padding-xxs margin-xxxs" type="text" name="firstskill"  placeholder="Habilidad*" required />
-                  <p className="indicative-text-typo text-right form-obl margin-top-zero">*Campos obligatorios</p> {/*indicative-text-typo en cambio de form-obl*/}
+                  <input className="user-skills skills-text default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*" required />
+                  <input className="user-new-skills skills-text hidden default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*" required />
+                  <p className="indicative-text-typo">*Campos obligatorios</p>
                   <div className="skills-buttons margin-xs">
                     <img id="add-skills" className="add-button" src="images/add.svg" alt="add button" />
                     <img className="up-button" src="images/up.svg" alt="up button" />
@@ -53,13 +53,13 @@ class App extends Component {
                   <button id="skills-button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
-              <fieldset className="form-language margin-bottom-xxs">
+              <fieldset className="default-fieldset">
                 <legend>Idiomas</legend>
                 <button data-id={2} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div className="language-input content hidden">
-                  <input className="user-language padding-xxs margin-xxxs" type="text" name="firstlanguage"  placeholder="Idioma*" required />
-                  <input className="user-level padding-xxs margin-xxxs" type="text" name="leveltitle"  placeholder="Nivel/Título*" required />
-                  <p className="indicative-text-typo text-right margin-top-zero">*Campos obligatorios</p> {/*indicative-text-typo en cambio de form-obl*/}
+                  <input className="user-language default-input-txtarea" type="text" name="firstlanguage"  placeholder="Idioma*" required />
+                  <input className="user-level default-input-txtarea" type="text" name="leveltitle"  placeholder="Nivel/Título*" required />
+                  <p className="indicative-text-typo">*Campos obligatorios</p>
                   <div className="language-buttons margin-xs">
                     <img id="add-language" className="add-button" src="images/add.svg" alt="add button" />
                     <img className="up-button" src="images/up.svg" alt="up button" />
@@ -70,14 +70,14 @@ class App extends Component {
                   <button id="language-button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
-              <fieldset id="form_exp" className="form-experience margin-bottom-xxs">
+              <fieldset id="form_exp" className="default-fieldset">
                 <legend>Experiencia Profesional</legend>
                 <button data-id={3} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div id="exp_box" className="experience-input content hidden">
-                  <input id="job" className="padding-xxs margin-xxxs" type="text" name="job" placeholder="Puesto*" />
-                  <input id="company" className="padding-xxs margin-xxxs" type="text" name="company"  placeholder="Empresa*" />
-                  <textarea id="comments" className="padding-xxs margin-xxxs" name="comments" rows={8} cols={20} maxLength={300} placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)" defaultValue={""} />
-                  <p className="indicative-text-typo text-right form-obl margin-top-zero">*Campos obligatorios</p> {/*indicative-text-typo en cambio de form-obl*/}
+                  <input id="job" className="default-input-txtarea" type="text" name="job" placeholder="Puesto*" />
+                  <input id="company" className="default-input-txtarea" type="text" name="company"  placeholder="Empresa*" />
+                  <textarea id="comments" className="default-input-txtarea" name="comments" rows={8} cols={20} maxLength={300} placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)" defaultValue={""} />
+                  <p className="indicative-text-typo ">*Campos obligatorios</p>
                   <div className="calendar">
                     <div className="calendar-start-exp">
                       <p className="start-exp margin-top-zero">Desde*</p>
@@ -100,13 +100,13 @@ class App extends Component {
                   <button id="send_exp_button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
-              <fieldset className="form-education margin-bottom-xxs">
+              <fieldset className="default-fieldset">
                 <legend>Educación</legend>
                 <button data-id={4} className="edit-button colored1-button-typo margin-xxxxs padding-xxxxs" type="button" name="button">Editar</button>
                 <div className="education-input content hidden">
-                  <input id="degree" className="padding-xxs margin-xxxs" type="text" name="degree"  placeholder="Título*" required />
-                  <input id="university" className="padding-xxs margin-xxxs" type="text" name="university"  placeholder="Centro de Estudios*" required />
-                  <p className="indicative-text-typo text-right form-obl margin-top-zero">*Campos obligatorios</p> {/*indicative-text-typo en cambio de form-obl*/}
+                  <input id="degree" className="default-input-txtarea" type="text" name="degree"  placeholder="Título*" required />
+                  <input id="university" className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*" required />
+                  <p className="indicative-text-typo ">*Campos obligatorios</p>
                   <div className="calendar">
                     <div className="calendar-start-educ">
                       <p className="start-educ margin-top-zero">Desde*</p>
