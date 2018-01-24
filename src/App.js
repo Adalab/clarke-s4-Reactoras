@@ -15,7 +15,7 @@ class App extends Component {
           <p className="hero-smaller-text-typo margin-top-zero"><span className="uppercase-style"> ker</span> te cuida</p>
         </div>
         <nav>
-          <button className="tab-button active tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
+          <button className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
           <button className="tab-button tab-button-typo padding-xs" type="button" name="button-cv">cv</button>
         </nav> {/*añadido tab-button-typo  y uppercase-style como clase de butones in RAMA TYPO (Sara)*/}
         <main>
@@ -23,7 +23,7 @@ class App extends Component {
             <form className="form" action="index.html" method="post">
               <fieldset className="default-fieldset"> {/*desde form hasta form-cotact modificado desde Sara*/}
                 <legend>Datos Personales</legend>
-                <button data-id={0} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
+                <button data-id={0} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div className="contact-input content hidden">
                   <input className="contact-field default-input-txtarea" type="text" name="full name" id="name_surname"  placeholder="Nombre y Apellidos*" required />
                   <input className="contact-field default-input-txtarea" type="text" name="profession" id="prof"  placeholder="Profesión*" required />
@@ -31,14 +31,14 @@ class App extends Component {
                   <input className="contact-field default-input-txtarea" type="email" name="email" id="mail"  placeholder="Correo electrónico*" required />
                   <input className="contact-field default-input-txtarea" type="text" name="Linkedin" id="linked"  placeholder="linkedin.com/nombredetuperfil" />
                   <textarea className="contact-field default-input-txtarea" name="comments" id="description" rows={8} cols={20} maxLength={300} placeholder="Perfil*(Escribe una pequeña descripción de ti. Máx:300 caracteres.)" required defaultValue={""} />
-                  <p className="indicative-text-typo">*Campos obligatorios</p> 
-                  <button data-id={0} className="edit-button close left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                  <button className="send-input-button colored2-button-typo right margin-md padding-xxxxs" id="save1" type="button" name="button">guardar</button>
+                  <p className="indicative-text-typo">*Campos obligatorios</p>
+                  <button data-id={0} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
+                  <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id="save1" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
               <fieldset className="default-fieldset">
                 <legend>Habilidades</legend>
-                <button data-id={1} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
+                <button data-id={1} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div className="skills-input content hidden">
                   <input className="user-skills skills-text default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*" required />
                   <input className="user-new-skills skills-text hidden default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*" required />
@@ -49,13 +49,13 @@ class App extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img id="quit-skills" className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
-                  <button data-id={1} className="edit-button close left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                  <button id="skills-button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
+                  <button data-id={1} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
+                  <button id="skills-button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
               <fieldset className="default-fieldset">
                 <legend>Idiomas</legend>
-                <button data-id={2} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
+                <button data-id={2} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div className="language-input content hidden">
                   <input className="user-language default-input-txtarea" type="text" name="firstlanguage"  placeholder="Idioma*" required />
                   <input className="user-level default-input-txtarea" type="text" name="leveltitle"  placeholder="Nivel/Título*" required />
@@ -66,13 +66,13 @@ class App extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img id="quit-language" className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
-                  <button data-id={2} className="edit-button close left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                  <button id="language-button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
+                  <button data-id={2} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
+                  <button id="language-button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
               <fieldset id="form_exp" className="default-fieldset">
                 <legend>Experiencia Profesional</legend>
-                <button data-id={3} className="edit-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
+                <button data-id={3} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
                 <div id="exp_box" className="experience-input content hidden">
                   <input id="job" className="default-input-txtarea" type="text" name="job" placeholder="Puesto*" />
                   <input id="company" className="default-input-txtarea" type="text" name="company"  placeholder="Empresa*" />
@@ -96,13 +96,13 @@ class App extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
-                  <button data-id={3} className="edit-button close left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                  <button id="send_exp_button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
+                  <button data-id={3} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
+                  <button id="send_exp_button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
               <fieldset className="default-fieldset">
                 <legend>Educación</legend>
-                <button data-id={4} className="edit-button colored1-button-typo margin-xxxxs padding-xxxxs" type="button" name="button">Editar</button>
+                <button data-id={4} className="edit-button squared-primaryColor-width100-button colored1-button-typo margin-xxxxs padding-xxxxs" type="button" name="button">Editar</button>
                 <div className="education-input content hidden">
                   <input id="degree" className="default-input-txtarea" type="text" name="degree"  placeholder="Título*" required />
                   <input id="university" className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*" required />
@@ -125,11 +125,11 @@ class App extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
-                  <button data-id={4} className="edit-button close left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                  <button id="send_educ_button" className="send-input-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
+                  <button data-id={4} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
+                  <button id="send_educ_button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
-              <input className="submit-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" type="submit" defaultValue="enviar datos al cv" />
+              <input className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" type="submit" defaultValue="enviar datos al cv" />
             </form>
           </div>
           <div id="cv_part" className="cv-box" onload="window.print();window.close()">
@@ -214,7 +214,7 @@ class App extends Component {
                 </ul>
               </div>
             </section>
-            <input className="print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
+            <input className="rounded-primaryColor-width100-button print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
           </div>
         </main>
         <footer className="footer-typo text-center">{/*añadida la clase footer-typo*/}
