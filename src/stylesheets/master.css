@@ -33,30 +33,30 @@ p {
 
 /*Estilos del header*/
 
-header { /*Aquí he quitado text-align:center;*/
-  background-color: #a6313a;
+/*header { /*Aquí he quitado text-align:center;*/
+  /*background-color: #a6313a;
   color:white;
   height: 3.125em;
   padding: 0.938em;
   text-transform: uppercase;
   letter-spacing: 0.063em;
-}
+}*/
 
 
 /*Estilos welcome box*/
-
+/*
 .welcome-box { /*Aquí he quitado text-align:center;*/
-  padding: 1.250em 0.625em;
+  /*padding: 1.250em 0.625em;
   background: url('https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg') no-repeat;
   background-size: cover;
   color: white;
-}
-
+}*/
+/*
 .white-line {
   height: 0.125em;
   background-color: white;
   border:none;
-}
+}*/
 
 /*Estilos de botones de formulario y curriculum*/
 
@@ -307,13 +307,13 @@ input, textarea {
 
 /*Estilos del footer*/
 
-footer {
+/*footer {
   background-color: black;
   color:white;
   font-weight: bold;
   height: 30px;
   padding: 5px;
-}
+}*/
 
 /*MEDIAQUERIES*/
 
@@ -332,18 +332,18 @@ footer {
 
 @media all and (min-width:1024px){
 
-  .welcome-box {
+  /*.welcome-box {
     height: 20em;
     padding:20px 60px;
-  }
+  }*/
 
-  header {
+  /*header {
     height: 75px;
-  }
+  }*/
 
-  .cvbyker {
+  /*.cvbyker {
     font-size: 32px;
-  }
+  }*/
 
   .ker-care {
     font-size: 1.250em;

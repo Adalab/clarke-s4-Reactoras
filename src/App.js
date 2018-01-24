@@ -5,11 +5,11 @@ class App extends Component {
     return (
       <div>
         {/*v. nuevas clases de typo in todos los butones (palabras llave: typo y button), VERSION RAMA TYPO (Sara)*/}
-        <header className="text-center padding-xs">
-          <p className="header-typo margin-top-zero">Cv by ker</p>
+        <header className="header-container text-center padding-xs color-primary color-light uppercase-style">
+          <p className="header-typo margin-top-zero">cv by ker</p>
         </header>
-        <div className="welcome-box text-center padding-md">
-          <h2 className="title-lg hero-title-typo margin-xxs">tu cv siempre actualizado</h2>
+        <div className="welcome-box text-center padding-md color-light">
+          <h2 className="hero-title-typo margin-xxs uppercase-style">tu cv siempre actualizado</h2>
           <p className="hero-larger-text-typo margin-top-zero padding-xxs">Gracias a <span className="uppercase-style">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
           </p>
           <p className="hero-smaller-text-typo margin-top-zero"><span className="uppercase-style"> ker</span> te cuida</p>
@@ -217,7 +217,7 @@ class App extends Component {
             <input className="print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
           </div>
         </main>
-        <footer className="footer-typo text-center">{/*añadida la clase footer-typo*/}
+        <footer className="footer-container footer-typo bold-style text-center padding-xxxxxs color-secondary">{/*añadida la clase footer-typo*/}
           <p>©<span className="kerstyle">ker</span></p>
         </footer>
       </div>

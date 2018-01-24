@@ -1,0 +1,8 @@
+.welcome-box {
+  background: url('https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg') no-repeat;
+  background-size: cover;
+  @media all and (min-width:1024px){
+      height: $height-quaternary;
+      padding:20px 60px;
+    }
+}

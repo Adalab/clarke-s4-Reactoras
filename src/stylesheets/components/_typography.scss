@@ -4,42 +4,53 @@ $color1: #a6313a;
 $color2: white;
 $font-family: 'Barlow Semi Condensed', sans-serif;*/
 
-.header-typo{
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 32px;
-  color: white;
+.header-typo {
+  font-family: $font-family;
+  font-size: $mainBodySize;
+  color: $color2;
+  @media all and (min-width:1024px){
+    font-size: $font-size-quinary;
+    }
 }
 
-.hero-title-typo{
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 36px;
-  color: white;
+.hero-title-typo {
+  font-family: $font-family;
+  font-size: $font-size-tertiary;
+  color: $color2;
+  @media all and (min-width:1024px){
+    font-size: $font-size-quaternary;
+    }
+}
+
+.hero-larger-text-typo {
+  font-family: $font-family;
+  font-size: $mainBodySize;
+  color: $color2;
+  @media all and (min-width:1024px){
+    font-size: $font-size-tertiary;
+    }
+}
+
+.hero-smaller-text-typo {
+  font-family: $font-family;
+  font-size: $mainBodySize;
+  color: $color2;
+  @media all and (min-width:1024px){
+    font-size: $font-size-tertiary;
+    }
+}
+
+.uppercase-style {
   text-transform: uppercase;
 }
 
-.hero-larger-text-typo{
+.tab-button-typo {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 24px;
-  color: white;
-}
-
-.hero-smaller-text-typo{
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 20px;
-  color: white;
-}
-
-.uppercase-style{
-  text-transform: uppercase;
-}
-
-.tab-button-typo{
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 16px;
 }
 
-.colored1-button-typo{
+.colored1-button-typo {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -48,7 +59,7 @@ $font-family: 'Barlow Semi Condensed', sans-serif;*/
   font-size: 14px;
 }
 
-.colored2-button-typo{
+.colored2-button-typo {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -63,30 +74,30 @@ $font-family: 'Barlow Semi Condensed', sans-serif;*/
   text-align: right;
 }
 
-.cv-large-text{
+.cv-large-text {
   font-size: 30px;
 }
 
-.cv-small-text{
+.cv-small-text {
   font-size: 16px;
 }
 
-.color1{
+.color1 {
   color:white;
 }
 
-.bold-style{
+.bold-style {
   font-weight: bold;
 }
 
-.no-bold-effects{
+.no-bold-effects {
   font-weight: normal;
 }
 
-.footer-typo{
+.footer-typo {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 20px;
-  color: white;
+  font-size: 16px;
+  color: $color2;
 }
 
 /*.active-typo{
