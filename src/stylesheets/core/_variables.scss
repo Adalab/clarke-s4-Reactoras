@@ -1,18 +1,57 @@
 
-/* Colors */
+/* Colors class*/
 
 .color-primary {
-  background-color: #a6313a;
+  background-color:$color1;
+}
+
+.color-secondary {
+  background-color:$color4;
 }
 
 .color-light {
-  color: #ffffff;
+  color:$color2;
 }
 
 .color-midtone {
-  color: #F1EDEC;  /* Cambiado en lugar de ligthgray */
+  color:$color3;
 }
 
 .color-dark {
-  color: #171717;
+  color:$color4;
 }
+
+
+/* Variables*/
+
+/* Font family*/
+
+$font-family: 'Barlow Semi Condensed', sans-serif;
+
+/* Colors*/
+
+$color1: #a6313a;
+$color2: #ffffff;
+$color3: #F1EDEC;
+$color4: #171717;
+
+/* Font size */
+
+$mainBodySize: 16px;
+$font-size-primary: 12px;
+$font-size-secondary: 14px;
+$font-size-tertiary: 20px;
+$font-size-quaternary: 30px;
+$font-size-quinary: 32px;
+
+/* Height container size */
+
+$height-primary: 30px;
+$height-secondary: 50px;
+$height-tertiary: 75px;
+$height-quaternary: 320px;
+
+/* Letter spacing */
+
+$space-primary: 1px;
+$space-secondary: 2px;

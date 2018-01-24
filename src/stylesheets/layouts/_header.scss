@@ -1,0 +1,7 @@
+.header-container {
+  height: $height-secondary;
+  letter-spacing: $space-primary;
+  @media all and (min-width:1024px){
+      height: $height-tertiary;
+    }
+}
