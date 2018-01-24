@@ -3,11 +3,16 @@
 @import "core/generals.scss";
 @import "core/variables.scss";
 
+
+
 // Layouts
 @import "layouts/header.scss";
 @import "layouts/footer.scss";
+@import "layouts/forms.scss";
 @import "layouts/cv.scss";
 
+
 //Components
+@import "components/buttons.scss";
 @import "components/typography.scss";
 @import "components/helpers.scss";

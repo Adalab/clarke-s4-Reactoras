@@ -73,48 +73,7 @@ nav{
   margin-top: 0.938em;
 }
 
-/*Estilos cajas contenedoras del fieldset*/
 
-.form-obl {
-  color: gray;
-  font-size: 0.750em;
-  margin-bottom: 0em;
-}
-
-
-.form-contact, .form-skills, .form-language, .form-experience, .form-education {
-  border: 0.125em solid #a6313a;
-  border-radius: 0.938em;
-  margin-bottom: 0.625em;
-}
-
-/*Estilos botones editar, cerrar y guardar de campos colapsables*/
-.edit-button {
-  width: 100%;
-  background-color: #a6313a;
-  border: none;
-  border: 15px;
-  margin: 5px 0;
-  padding: 5px;
-}
-
-.close {
-  width: 45%;
-  background-color: #a6313a;
-  border: 2px solid #a6313a;
-  /*border-radius: 15px;*/
-  margin-top: 15px;
-  padding: 5px;
-}
-
-.send-input-button { /*Aquí quito float:right*/
-  width: 45%;
-  background-color: white ;
-  border: 2px solid #a6313a;
-  border-radius: 15px;
-  margin-top: 15px;
-  padding: 5px;
-}
 
 /*Estilos botones añadir, subir, bajar y quitar*/
 .skills-buttons, .language-buttons, .experience-buttons, .education-buttons {
@@ -179,22 +138,6 @@ input, textarea {
 .year{
   padding-left: 10px;
   width: 20%;
-}
-
-/*Estilos boton enviar final*/
-
-.submit-button { /*Aquí he quitado text-align:center;*/
-  -webkit-appearance: none;
-  -moz-appearance:    none;
-  appearance:         none;
-  background-color: #a6313a;
-  opacity: 1;
-  border-radius: 0.938em;
-  padding: 0.313em;
-  width: 100%;
-  border: none;
-  margin-bottom: 1.250em;
-  box-shadow: none;
 }
 
 
@@ -294,13 +237,7 @@ footer {
     font-size: 1.250em;
   }
 
-  /*h2 {
-    font-size: 1.875em;
-  }*/
-
-  /*.welcome-text {
-    font-size: 1.5em;
-  }*/
+  
 
   main {
     display: flex;

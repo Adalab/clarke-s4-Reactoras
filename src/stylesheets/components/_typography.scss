@@ -1,8 +1,8 @@
-/*variables:
+/*variables:*/
 
 $color1: #a6313a;
 $color2: white;
-$font-family: 'Barlow Semi Condensed', sans-serif;*/
+$font-family: 'Barlow Semi Condensed', sans-serif;
 
 .header-typo{
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -57,6 +57,9 @@ $font-family: 'Barlow Semi Condensed', sans-serif;*/
   color: gray;
   font-size: 12px;
   text-align: right;
+  margin-bottom: 0;
+  margin-top: 0;
+
 }
 
 .cv-large-text{

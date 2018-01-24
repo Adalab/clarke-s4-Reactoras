@@ -1,0 +1,57 @@
+.tab-button {
+ background-color: white;
+ color:#a6313a;
+ border: 0.063em solid #a6313a;
+ border-radius: 0em 0em 0.625em 0.625em;
+ width: 50%;
+ padding: 0.938em; //Katy? este padding esta solo en header y este button
+ text-transform: uppercase;
+}
+
+.active-state-button { //en cambio de active
+ background-color: #a6313a;
+ color:white;
+ border:#a6313a;
+}
+
+//edit button se deja en el JSX solo para el JS (eventos)
+.squared-primaryColor-width100-button{ //todos los butones editar
+width: 100%;
+background-color: #a6313a;
+border: none;
+border: 15px;
+margin: 5px 0;  //Hay este margin solo en este button
+padding: 5px; //katy
+}
+
+.squared-primaryColor-width45-button{ //todos los butones ccerrar
+ width: 45%;
+ background-color: #a6313a;
+ border: 2px solid #a6313a;
+ /*border-radius: 15px;*/
+margin-top: 15px; //katy
+ padding: 5px; //katy
+}
+
+.rounded-lightColor-width45-button{ //todos los buttones guardar
+ width: 45%;
+ background-color: white ;
+ border: 2px solid #a6313a;
+ border-radius: 15px;
+ margin-top: 15px;
+ padding: 5px;
+}
+
+.rounded-primaryColor-width100-button{ // era la clase submit button y print-button*/
+ -webkit-appearance: none;
+ -moz-appearance:    none;
+ appearance:         none;
+ background-color: #a6313a;
+ opacity: 1;
+ border-radius: 0.938em;
+ padding: 0.313em;
+ width: 100%;
+ border: none;
+ margin-bottom: 1.250em;
+ box-shadow: none;
+}

@@ -1,0 +1,19 @@
+.default-input-txtarea {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  border:none;
+  border-radius: 0.313em;
+  padding: 0.625em;
+  margin:0.5em 0em;
+  background: lightgray;
+  opacity: 0.5;
+  width: 100%;
+  font-family: inherit;
+}
+
+.default-fieldset {
+  border: 0.125em solid #a6313a;
+  border-radius: 0.938em;
+  margin-bottom: 0.625em
+}

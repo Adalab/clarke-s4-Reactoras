@@ -13,7 +13,7 @@ function legacyCode() {
     showCv.classList.toggle('hidden');
     showForm.classList.toggle('hidden');
     for (var i = 0; i < tabButton.length; i++) {
-      tabButton[i].classList.toggle('active');
+      tabButton[i].classList.toggle('active-state-button');
     }
   }
 
