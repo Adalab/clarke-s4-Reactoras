@@ -6,13 +6,13 @@ class App extends Component {
       <div>
         {/*v. nuevas clases de typo in todos los butones (palabras llave: typo y button), VERSION RAMA TYPO (Sara)*/}
         <header className="header-container text-center padding-xs color-primary color-light uppercase-style">
-          <p className="header-typo margin-top-zero">cv by ker</p>
+          <p className="header-typo">cv by ker</p>
         </header>
         <div className="welcome-box text-center padding-md color-light">
           <h2 className="hero-title-typo margin-xxs uppercase-style">tu cv siempre actualizado</h2>
-          <p className="hero-larger-text-typo margin-top-zero padding-xxs">Gracias a <span className="uppercase-style">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
+          <p className="hero-larger-text-typo padding-xxs">Gracias a <span className="uppercase-style">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
           </p>
-          <p className="hero-smaller-text-typo margin-top-zero"><span className=" "> ker</span> te cuida</p>
+          <p className="hero-smaller-text-typo"><span className="uppercase-style"> ker</span> te cuida</p>
         </div>
         <nav>
 
@@ -82,12 +82,12 @@ class App extends Component {
                   <p className="indicative-text-typo ">*Campos obligatorios</p>
                   <div className="calendar">
                     <div className="calendar-start-exp">
-                      <p className="start-exp margin-top-zero">Desde*</p>
+                      <p className="start-exp">Desde*</p>
                       <select id="start_month_exp" className="month padding-left-lg" name="month-exp" />
                       <select id="start_year_exp" className="year padding-left-xs" name="year-exp" />
                     </div>
                     <div className="calendar-end-exp">
-                      <p className="end-exp margin-top-zero">Hasta*</p>
+                      <p className="end-exp">Hasta*</p>
                       <select id="end_month_exp" className="month padding-left-lg" name="month-exp" />
                       <select id="end_year_exp" className="year padding-left-xs" name="year-exp" />
                     </div>
@@ -111,12 +111,12 @@ class App extends Component {
                   <p className="indicative-text-typo ">*Campos obligatorios</p>
                   <div className="calendar">
                     <div className="calendar-start-educ">
-                      <p className="start-educ margin-top-zero">Desde*</p>
+                      <p className="start-educ">Desde*</p>
                       <select id="start_month_educ" className="month padding-left-lg" name="month" />
                       <select id="start_year_educ" className="year padding-left-xs" name="year" />
                     </div>
                     <div className="calendar-end-educ">
-                      <p className="end-educ margin-top-zero">Hasta*</p>
+                      <p className="end-educ">Hasta*</p>
                       <select id="end_month_educ" className="month padding-left-lg" name="month" />
                       <select id="end_year_educ" className="year padding-left-xs" name="year" />
                     </div>
@@ -224,7 +224,7 @@ class App extends Component {
           </div>
         </main>
         <footer className="footer-container footer-typo bold-style text-center padding-xxxxxs color-secondary">{/*añadida la clase footer-typo*/}
-          <p>©<span className="kerstyle">ker</span></p>
+          <p>©<span className="uppercase-style">ker</span></p>
         </footer>
       </div>
     );

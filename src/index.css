@@ -20,7 +20,7 @@ p {
   background-color: #a6313a; }
 
 .color-secondary {
-  background-color: #171717; }
+  background-color: #000000; }
 
 .color-light {
   color: #ffffff; }
@@ -29,7 +29,7 @@ p {
   color: #F1EDEC; }
 
 .color-dark {
-  color: #171717; }
+  color: #000000; }
 
 .header-container {
   height: 50px;
@@ -155,35 +155,30 @@ p {
   margin-bottom: 1.250em;
   box-shadow: none; }
 
-/*variables:*/
 .header-typo {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
-  color: white; }
+  color: #ffffff; }
   @media all and (min-width: 1024px) {
     .header-typo {
-      font-size: 32px; } }
+      font-size: 30px; } }
 
 .hero-title-typo {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 20px;
-  color: white; }
+  color: #ffffff; }
   @media all and (min-width: 1024px) {
     .hero-title-typo {
       font-size: 30px; } }
 
 .hero-larger-text-typo {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
-  color: white; }
+  color: #ffffff; }
   @media all and (min-width: 1024px) {
     .hero-larger-text-typo {
-      font-size: 20px; } }
+      font-size: 24px; } }
 
 .hero-smaller-text-typo {
-  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 16px;
-  color: white; }
+  color: #ffffff; }
   @media all and (min-width: 1024px) {
     .hero-smaller-text-typo {
       font-size: 20px; } }
@@ -191,13 +186,8 @@ p {
 .uppercase-style {
   text-transform: uppercase; }
 
-.tab-button-typo {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  letter-spacing: 2px;
-  font-size: 16px; }
-
 .colored1-button-typo {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -235,13 +225,9 @@ p {
   font-weight: normal; }
 
 .footer-typo {
-  font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 16px;
-  color: white; }
+  color: #ffffff; }
 
-/*.active-typo{
-  color: white;
-}*/
 .text-center {
   text-align: center; }
 
@@ -283,9 +269,6 @@ p {
   padding-left: 1.875em; }
 
 /* MARGIN */
-.margin-top-zero {
-  margin-top: 0; }
-
 .margin-top-xxxs {
   margin-top: 0.5em; }
 
@@ -306,9 +289,6 @@ p {
 
 .margin-right-zero {
   margin-right: 0; }
-
-.margin-general {
-  margin: 0 2%; }
 
 .margin-xxxxs {
   margin: 0.375em 0; }
