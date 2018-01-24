@@ -10,14 +10,16 @@ class App extends Component {
         </header>
         <div className="welcome-box text-center padding-md">
           <h2 className="title-lg hero-title-typo margin-xxs">tu cv siempre actualizado</h2>
-          <p className="hero-larger-text-typo margin-top-zero padding-xxs">Gracias a <span className="uppercase-style">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
+          <p className="hero-larger-text-typo margin-top-zero padding-xxs">Gracias a <span className=" ">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
           </p>
-          <p className="hero-smaller-text-typo margin-top-zero"><span className="uppercase-style"> ker</span> te cuida</p>
+          <p className="hero-smaller-text-typo margin-top-zero"><span className=" "> ker</span> te cuida</p>
         </div>
         <nav>
+
           <button className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
+
           <button className="tab-button tab-button-typo padding-xs" type="button" name="button-cv">cv</button>
-        </nav> {/*añadido tab-button-typo  y uppercase-style como clase de butones in RAMA TYPO (Sara)*/}
+        </nav> {/*añadido tab-button-typo  y   como clase de butones in RAMA TYPO (Sara)*/}
         <main>
           <div className="form-box margin-top-xs">
             <form className="form" action="index.html" method="post">
@@ -159,17 +161,21 @@ class App extends Component {
                 </ul>
               </div>
             </div>
-            <section className="skills">
-              <h3 className="tittle-md uppercase-style">Habilidades</h3>  {/*Cambiado etiqueta por clase*/}
+            <section className="skills section-cv">
+              <h3>Habilidades</h3>  {/*Cambiado etiqueta por clase*/}
               <hr className="red-line" />
-              <div className="skills-box">
-                <ul className="list-skills" />
+              <div className="box-cv">
+                <ul className="list-skills">
+                <li>
+                  <h4>Habilidad1</h4>
+                </li>
+                </ul>
               </div>
             </section>
-            <section className="language">
-              <h3 className="tittle-md uppercase-style">Idiomas</h3>{/*Cambiado etiqueta por clase*/}
+            <section className="language section-cv">
+              <h3>Idiomas</h3>{/*Cambiado etiqueta por clase*/}
               <hr className="red-line" />
-              <div className="language-box">
+              <div className="box-cv">
                 <ul className="list-language">
                   <li>
                     <h4>Lenguaje1</h4>
@@ -178,15 +184,15 @@ class App extends Component {
                 </ul>
               </div>
             </section>
-            <section className="experience">
-              <h3 className="tittle-md uppercase-style">Experiencia Profesional</h3>
+            <section className="experience section-cv">
+              <h3>Experiencia Profesional</h3>
               <hr className="red-line" />
-              <div className="experience-box">
+              <div className="box-cv">
                 <ul className="list-experience">
                   <li>
                     <p>
-                      <span id="job_out" className="job">Encargado de planta - </span>
-                      <span id="company_out" className="job">Carrefour </span>
+                      <span id="job_out"  className="bold">Encargado de planta - </span>
+                      <span id="company_out"  className="bold">Carrefour </span>
                       <span id="start_exp_out">junio 2015</span>
                       <span id="end_exp_out">- septiembre 2016</span>
                     </p>
@@ -196,15 +202,15 @@ class App extends Component {
                 </ul>
               </div>
             </section>
-            <section className="education">
-              <h3 className="tittle-md uppercase-style">Educación</h3> {/*Cambiado etiqueta por clase*/}
+            <section className="education section-cv">
+              <h3>Educación</h3> {/*Cambiado etiqueta por clase*/}
               <hr className="red-line" />
-              <div className="education-box">
+              <div className="box-cv">
                 <ul className="list-education">
                   <li>
                     <p>
-                      <span id="degree_out" className="job">Licenciatura en Periodismo - </span>
-                      <span id="university_out" className="job">Universidad Rey Juan Carlos I</span>
+                      <span id="degree_out"  className="bold">Licenciatura en Periodismo - </span>
+                      <span id="university_out"  className="bold">Universidad Rey Juan Carlos I</span>
                     </p>
                     <p>
                       <span id="start_educ_out">septiembre 2007</span>

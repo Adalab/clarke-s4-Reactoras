@@ -4,14 +4,15 @@
 @import "core/variables.scss";
 
 
-//Components
-
-@import "components/typography.scss";
-@import "components/buttons.scss";
 
 // Layouts
 @import "layouts/header.scss";
 @import "layouts/footer.scss";
 @import "layouts/forms.scss";
+@import "layouts/cv.scss";
 
+
+//Components
+@import "components/buttons.scss";
+@import "components/typography.scss";
 @import "components/helpers.scss";
