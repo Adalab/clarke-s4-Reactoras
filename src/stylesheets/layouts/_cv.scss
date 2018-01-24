@@ -1,0 +1,45 @@
+
+//Section CV
+
+.section-cv h3 {
+  margin-bottom: 0;
+  margin-left: 0.938em;
+  text-transform: uppercase;
+}
+
+.red-line {
+  height: 2px;
+  background-color: #a6313a;
+  border:none;
+  margin-top: 3px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.box-cv {
+  background-color: lightgray;
+  padding: 5px;
+}
+
+.list-language, .list-skills {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.list-experience {
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.list-education {
+  display: flex;
+  padding: 20px 20px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+//Dentro de experiencia y educación, los títulos llevan estos spans:
+
+.bold {
+  font-weight: bold;
+}
