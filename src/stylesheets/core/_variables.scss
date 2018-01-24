@@ -1,27 +1,3 @@
-
-/* Colors class*/
-
-.color-primary {
-  background-color:$color1;
-}
-
-.color-secondary {
-  background-color:$color4;
-}
-
-.color-light {
-  color:$color2;
-}
-
-.color-midtone {
-  color:$color3;
-}
-
-.color-dark {
-  color:$color4;
-}
-
-
 /* Variables*/
 
 /* Font family*/
@@ -55,3 +31,26 @@ $height-quaternary: 320px;
 
 $space-primary: 1px;
 $space-secondary: 2px;
+
+
+/* Colors class*/
+
+.color-primary {
+  background-color:$color1;
+}
+
+.color-secondary {
+  background-color:$color4;
+}
+
+.color-light {
+  color:$color2;
+}
+
+.color-midtone {
+  color:$color3;
+}
+
+.color-dark {
+  color:$color4;
+}
