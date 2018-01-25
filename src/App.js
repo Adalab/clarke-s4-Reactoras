@@ -5,10 +5,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/*v. nuevas clases de typo in todos los butones (palabras llave: typo y button), VERSION RAMA TYPO (Sara)*/}
-        // <header className="header-container text-center padding-xs color-primary color-light uppercase-style">
-        //   <p className="header-typo">cv by ker</p>
-        // </header>
+    
       <Header/>
 
         <div className="welcome-box text-center padding-md color-light">
