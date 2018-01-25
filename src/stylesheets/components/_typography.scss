@@ -1,20 +1,12 @@
-/*variables:*/
-
-$color1: #a6313a;
-$color2: white;
-$font-family: 'Barlow Semi Condensed', sans-serif;
-
 .header-typo {
-  font-family: $font-family;
   font-size: $mainBodySize;
   color: $color2;
   @media all and (min-width:1024px){
-    font-size: $font-size-quinary;
+    font-size: $font-size-quaternary;
     }
 }
 
 .hero-title-typo {
-  font-family: $font-family;
   font-size: $font-size-tertiary;
   color: $color2;
   @media all and (min-width:1024px){
@@ -23,16 +15,14 @@ $font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .hero-larger-text-typo {
-  font-family: $font-family;
   font-size: $mainBodySize;
   color: $color2;
   @media all and (min-width:1024px){
-    font-size: $font-size-tertiary;
+    font-size: $font-size-senary;
     }
 }
 
 .hero-smaller-text-typo {
-  font-family: $font-family;
   font-size: $mainBodySize;
   color: $color2;
   @media all and (min-width:1024px){
@@ -44,14 +34,14 @@ $font-family: 'Barlow Semi Condensed', sans-serif;
   text-transform: uppercase;
 }
 
-.tab-button-typo {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  letter-spacing: 2px;
-  font-size: 16px;
-}
+// .tab-button-typo {
+//   font-family: 'Barlow Semi Condensed', sans-serif;
+//   letter-spacing: 1px;
+//   font-size: 16px;
+// }
 
 .colored1-button-typo {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -98,11 +88,6 @@ $font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .footer-typo {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 16px;
+  font-size: $mainBodySize;
   color: $color2;
 }
-
-/*.active-typo{
-  color: white;
-}*/
