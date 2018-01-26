@@ -62,7 +62,7 @@ function legacyCode() {
   var skillsButton = document.querySelector('#skills-button');
   var cvSkills = document.querySelector('.list-skills');
 
-  skillsButton.addEventListener('click', skillsToCv);
+  // skillsButton.addEventListener('click', skillsToCv);
 
   function skillsToCv() {
     var userSkills = document.querySelectorAll('.skills-text');

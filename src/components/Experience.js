@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Collapse  from './components/Collapse';
+import Collapse  from './Collapse';
 
 
 class Experience extends Component {
@@ -34,8 +34,6 @@ class Experience extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
-                  <button data-id={3} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                  <button id="send_exp_button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </Collapse>
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Collapse  from './components/Collapse';
+import Collapse  from './Collapse';
 
 
 class Languages extends Component {
@@ -20,9 +20,7 @@ class Languages extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img id="quit-language" className="remove-button" src="images/remove.svg" alt="remove button" />
                 </div>
-              <button data-id={2} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-              <button id="language-button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
-            </div>
+          </div>
           </Collapse>
 
       </div>

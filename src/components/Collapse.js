@@ -11,29 +11,24 @@ class Collapse extends Component {
     this.handleClickCollapse = this.handleClickCollapse.bind(this);
   }
 
-  handleClickCollapse =() => {
-    this.setState({collapsed:this.state.collapsed});
+  handleClickCollapse() {
+    this.setState({collapsed: !this.state.collapsed});
 
   }
   render() {
-    const className = this.state.collapsed ? 'hidden' : '';
+    const hiddenClass = this.state.collapsed ? 'hidden' : '';
 
     return (
-      <div>
+      <fieldset className="default-fieldset">
+          <legend>{this.props.legend}</legend>
+          <button onClick={this.handleClickCollapse} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
+          <div className={`contact-input content ${hiddenClass}`}>
+              {this.props.children}
+              <button  onClick={this.handleClickCollapse} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
+              <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button">guardar</button>
 
-            <Collapse className="default-fieldset">
-                <legend>{this.props.legend}</legend>
-                <button data-id={`button${this.props.buttonNumber}`} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
-                <div className={this.props.innerClassname} 'content hidden'>
-                    {this.props.children}
-                </div>
-                <p className="indicative-text-typo">*Campos obligatorios</p>
-                <button data-id={`button${this.props.buttonNumber}`} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-                <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id="save1" type="button" name="button">guardar</button>
-
-            </Collapse>
-
-      </div>
+          </div>
+      </fieldset>
     );
   }
 }
