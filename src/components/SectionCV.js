@@ -1,31 +1,60 @@
 import React from 'react';
+import ElementListCV from "./ElementListCV";
 
 
-class SectionCV extends Component {
+class SectionCV extends React.Component {
   render() {
     return (
-      <section className="section-cv">
-        <h3>{this.props.titleSectionCV}</h3>
-        <hr className="red-line" />
-        <div className="box-cv">
-          <ul className={this.props.classListCV}>
-            <li>
-              <h4>{this.props.titleSectionCV}</h4>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div>
+        <ElementListCV
+        titleSectionCV="Habilidades"
+        classListCV = "list-skills"
+        titleListCV = "Habilidad1"
+        >
+          <h4>Habilidad1</h4>
+        </ElementListCV>
 
+        <ElementListCV
+          titleSectionCV="Idiomas"
+          classListCV = "list-language"
+          titleListCV = "Lenguaje1"
+        >
+          <h4>Lenguaje1</h4>
+          <p>Nivel/título</p>
+        </ElementListCV>
+
+        <ElementListCV
+        titleSectionCV="Experiencia profesional"
+        classListCV = "list-experience"
+        titleListCV =  "Encargado de planta - Carrefour junio 2015 - septiembre 2016"
+        >
+          <p>
+            <span id="job_out"  className="bold">Encargado de planta - </span>
+            <span id="company_out"  className="bold">Carrefour </span>
+            <span id="start_exp_out">junio 2015</span>
+            <span id="end_exp_out">- septiembre 2016</span>
+          </p>
+          <p id="comments_out">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </ElementListCV>
+
+        <ElementListCV
+          titleSectionCV="Educación"
+          classListCV = "list-education"
+          titleListCV =  "Licenciatura en Periodismo - Universidad Rey Juan Carlos I"
+        >
+          <p>
+            <span id="degree_out"  className="bold">Licenciatura en Periodismo - </span>
+            <span id="university_out"  className="bold">Universidad Rey Juan Carlos I</span>
+          </p>
+          <p>
+            <span id="start_educ_out">septiembre 2007</span>
+            <span id="end_educ_out">-junio 2013</span>
+          </p>
+        </ElementListCV>
+      </div>
     );
   }
 }
 
-
-
-
-
-
-
-
-
-export default App;
+export default SectionCV;
