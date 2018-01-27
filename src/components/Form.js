@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import PersonalData from './PersonalData';
 import Skills from './Skills';
 import Languages from './Languages'
 import Experience from './Experience';
 import Education from './Education';
-
-
 
 
 class Form extends Component {
@@ -16,6 +13,9 @@ class Form extends Component {
       <form className="form" action="index.html" method="post">
         <PersonalData />
         <Skills />
+        <Languages />
+        <Experience />
+        <Education />
       </form>
      </div>
     );

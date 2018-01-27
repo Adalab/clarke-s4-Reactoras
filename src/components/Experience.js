@@ -6,12 +6,7 @@ class Experience extends Component {
 
   render() {
     return (
-      <div>
-
-              <Collapse id="form_exp" className="default-fieldset">
-                <legend>Experiencia Profesional</legend>
-                <button data-id={3} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
-                <div id="exp_box" className="experience-input content hidden">
+            <Collapse legend= "Experiencia Profesional">
                   <input id="job" className="default-input-txtarea" type="text" name="job" placeholder="Puesto*" />
                   <input id="company" className="default-input-txtarea" type="text" name="company"  placeholder="Empresa*" />
                   <textarea id="comments" className="default-input-txtarea" name="comments" rows={8} cols={20} maxLength={300} placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)" defaultValue={""} />
@@ -34,11 +29,9 @@ class Experience extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
-                </div>
+                
               </Collapse>
 
-
-      </div>
     );
   }
 }

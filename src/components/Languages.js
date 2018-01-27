@@ -6,11 +6,8 @@ class Languages extends Component {
 
   render() {
     return (
-      <div>
-          <Collapse className="default-fieldset">
-            <legend>Idiomas</legend>
-            <button data-id={2} className="edit-button squared-primaryColor-width100-button colored1-button-typo padding-xxxxs margin-xxxxs" type="button" name="button">Editar</button>
-            <div className="language-input content hidden">
+
+          <Collapse legend = "Idiomas">
                 <input className="user-language default-input-txtarea" type="text" name="firstlanguage"  placeholder="Idioma*" required />
                 <input className="user-level default-input-txtarea" type="text" name="leveltitle"  placeholder="Nivel/Título*" required />
                 <p className="indicative-text-typo">*Campos obligatorios</p>
@@ -20,10 +17,8 @@ class Languages extends Component {
                     <img className="down-button" src="images/down.svg" alt="down button" />
                     <img id="quit-language" className="remove-button" src="images/remove.svg" alt="remove button" />
                 </div>
-          </div>
-          </Collapse>
 
-      </div>
+          </Collapse>
 
     );
   }
