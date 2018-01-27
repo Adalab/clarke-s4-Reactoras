@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import WelcomeBox from './components/WelcomeBox';
 
 class App extends Component {
   render() {
     return (
       <div>
-    
+
       <Header/>
 
-        <div className="welcome-box text-center padding-md color-light">
-          <h2 className="hero-title-typo margin-xxs uppercase-style">tu cv siempre actualizado</h2>
-          <p className="hero-larger-text-typo padding-xxs">Gracias a <span className="uppercase-style">ker</span> puedes realizar tu currículum de forma más sencilla. Introduce tus datos en el siguiente formulario y observa cómo se actualiza en tiempo real. Cuando hayas terminado podrás imprimirlo o guardarlo en formato PDF. Recuerda que siempre podrás volver y actualizarlo cada vez que lo necesitas.
-          </p>
-          <p className="hero-smaller-text-typo"><span className="uppercase-style"> ker</span> te cuida</p>
-        </div>
-        <nav>
+      <WelcomeBox/>
 
+        <nav>
           <button className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
 
           <button className="tab-button tab-button-typo padding-xs" type="button" name="button-cv">cv</button>
@@ -223,9 +220,9 @@ class App extends Component {
             <input className="rounded-primaryColor-width100-button print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
           </div>
         </main>
-        <footer className="footer-container footer-typo bold-style text-center padding-xxxxxs color-secondary">{/*añadida la clase footer-typo*/}
-          <p>©<span className="uppercase-style">ker</span></p>
-        </footer>
+
+        <Footer/>
+
       </div>
     );
   }
