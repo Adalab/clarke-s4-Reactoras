@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SectionCV from "./components/SectionCV";
 import CloseButton from "./components/CloseButton";
-
+import NavSection from "./components/NavSection";
 
 class App extends Component {
   render() {
@@ -17,12 +17,9 @@ class App extends Component {
           </p>
           <p className="hero-smaller-text-typo"><span className="uppercase-style"> ker</span> te cuida</p>
         </div>
-        <nav>
 
-          <button className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
+        <NavSection/>
 
-          <button className="tab-button tab-button-typo padding-xs" type="button" name="button-cv">cv</button>
-        </nav> {/*añadido tab-button-typo  y   como clase de butones in RAMA TYPO (Sara)*/}
         <main>
           <div className="form-box margin-top-xs">
             <form className="form" action="index.html" method="post">

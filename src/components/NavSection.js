@@ -17,7 +17,7 @@ class NavSection extends React.Component {
 
   }
   render() {
-    const hiddenClass = this.state.collapsed ? 'hidden' : '';
+    const activeClass = this.state.collapsed ? 'active-state-button' : '';
 
     return (
       <nav>
