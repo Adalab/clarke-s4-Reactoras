@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SectionCV from "./components/SectionCV";
+import CloseButton from "./components/CloseButton";
 
 
 class App extends Component {
