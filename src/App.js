@@ -134,7 +134,7 @@ class App extends Component {
               <input className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" type="submit" defaultValue="enviar datos al cv" />
             </form>
           </div>
-          <div id="cv_part" className="cv-box" onload="window.print();window.close()">
+          <div id="cv_part" className="cv-box hidden" onload="window.print();window.close()">
             <div className="cv-header">
               <div className="profile">
                 <div className="cv-header-text"> {/*dar a esta clase un nombre que indique que contiene un padding de 15px, ha sido quitato il color: white*/}

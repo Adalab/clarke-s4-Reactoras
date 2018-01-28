@@ -14,6 +14,21 @@ class NavSection extends React.Component {
 
   handleClickNavSection() {
     this.setState({collapsed: !this.state.collapsed});
+    const tabButton = document.querySelectorAll('.tab-button');
+    const showForm = document.querySelector('.form-box');
+    const showCv = document.querySelector('.cv-box');
+
+    for (let i = 0; i < tabButton.length; i++) {
+      tabButton[i].addEventListener('click', switchCv);
+    }
+
+    function switchCv () {
+      showCv.classList.toggle('hidden');
+      showForm.classList.toggle('hidden');
+      for (let i = 0; i < tabButton.length; i++) {
+        tabButton[i].classList.toggle('active-state-button');
+      }
+    }
 
   }
   render() {
