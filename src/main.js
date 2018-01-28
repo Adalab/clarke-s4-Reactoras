@@ -201,6 +201,7 @@ function legacyCode() {
 
     var divPrint = document.getElementById('cv_part');
     divPrint.style.display="block";
+
     var winPrint = window.open('','','left=0,width=800,height=900');
     winPrint.document.write('<link rel="stylesheet" href="styles/master.css" media="all">');
     winPrint.document.write(divPrint.innerHTML);

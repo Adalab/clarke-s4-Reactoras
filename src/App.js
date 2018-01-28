@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Form from './components/Form';
+import PrintSection from './components/PrintSection';
+
 
 
 class App extends Component {
@@ -111,7 +113,7 @@ class App extends Component {
                 </ul>
               </div>
             </section>
-            <input className="rounded-primaryColor-width100-button print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
+            <PrintSection />
           </div>
         </main>
         <footer className="footer-container footer-typo bold-style text-center padding-xxxxxs color-secondary">{/*añadida la clase footer-typo*/}
