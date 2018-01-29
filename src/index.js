@@ -8,5 +8,4 @@ import main from './main';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-
-main();
+// main();

@@ -13,7 +13,9 @@ class Skills extends Component {
           <input className="user-skills skills-text default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*" required />
           </div>
   <p className="indicative-text-typo">*Campos obligatorios</p>
+
           <div className="skills-buttons margin-xs">
+
             <img  /*onClick={this.AddOption}*/ id="#add-skills" className="add-button" src="images/add.svg" alt="add button" />
             <img className="up-button" src="images/up.svg" alt="up button" />
             <img className="down-button" src="images/down.svg" alt="down button" />
