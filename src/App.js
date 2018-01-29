@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from './components/Form';
 import PrintSection from './components/PrintSection';
+import ChangeOrderButtons from './components/ChangeOrderButtons';
 
 
 
@@ -27,7 +28,7 @@ class App extends Component {
         <main>
           <Form />
 {/*onload="window.print();window.close()"*/}
-          <div id="cv_part" className="cv-box" >
+          <div id="cv_part" className="cv-box" onload="window.print();window.close()" >
             <div className="cv-header">
               <div className="profile">
                 <div className="cv-header-text"> {/*dar a esta clase un nombre que indique que contiene un padding de 15px, ha sido quitato il color: white*/}

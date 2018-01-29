@@ -9,6 +9,7 @@ class Collapse extends Component {
     }
 
     this.handleClickCollapse = this.handleClickCollapse.bind(this);
+  
   }
 
   handleClickCollapse() {
