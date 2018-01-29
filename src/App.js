@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import WelcomeBox from './components/WelcomeBox';
+import NavSection from './components/NavSection';
 import SectionCV from "./components/SectionCV";
 import Footer from './components/Footer';
 import Form from './components/Form';
@@ -47,19 +48,16 @@ class App extends Component {
 
       <WelcomeBox/>
 
-      <nav>
-      <button className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
+      <NavSection/>
 
-      <button className="tab-button tab-button-typo padding-xs" type="button" name="button-cv">cv</button>
-      </nav> {/*añadido tab-button-typo  y   como clase de butones in RAMA TYPO (Sara)*/}
       <main>
 
       <Form />
 
-      {/*onload="window.print();window.close()"*/}
 
 
-      <div id="cv_part" className="cv-box" onload="window.print();window.close()" >
+
+      <div id="cv_part" className="cv-box hidden" onload="window.print();window.close()" >
       <div className="cv-header">
       <div className="profile">
       <div className="cv-header-text"> {/*dar a esta clase un nombre que indique que contiene un padding de 15px, ha sido quitato il color: white*/}

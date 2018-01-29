@@ -18,8 +18,11 @@ float: right;
 float:left;
 }
 
-.hidden {
+.cv-box.hidden {
 display: none;
+@media all and (min-width:768px){
+display: block;
+  }
 }
 
 /* PADDINGS */

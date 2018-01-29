@@ -248,8 +248,11 @@ p {
 .left {
   float: left; }
 
-.hidden {
+.cv-box.hidden {
   display: none; }
+  @media all and (min-width: 768px) {
+    .cv-box.hidden {
+      display: block; } }
 
 /* PADDINGS */
 .padding-xxxxxs {
