@@ -1,8 +1,40 @@
 import React, { Component } from 'react';
 import SectionCV from "./components/SectionCV";
+import SendDataButton from "./components/SendDataButton"
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: "Nombre Apellido",
+      profession: "Profesión",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      phone: "+34 666 66 66 66",
+      mail: "adalab@adalab.com",
+      linkedin: "linkedin.com/adalab",
+      skill: "habilidad1",
+      languageTittle: "Lenguaje1",
+      languageContent: "Nivel/título",
+      experienceTittle: "Encargado de planta",
+      experienceCompany: "Carrefour",
+      experienceFromMonth: "junio",
+      experienceFromYear: "2016",
+      experienceToMonth: "julio",
+      experienceToYear: "2017",
+      experienceContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      educationTittle: "Licenciatura en Periodismo",
+      educationCenter: "Universidad Rey Juan Carlos I",
+      educationCompany: "Carrefour",
+      educationFromMonth: "junio",
+      educationFromYear: "2016",
+      educationToMonth: "julio",
+      educationToYear: "2017"
+    }
+  }
+
+
   render() {
     return (
       <div>
@@ -133,7 +165,7 @@ class App extends Component {
                   <button id="send_educ_button" className="rounded-lightColor-width45-button right colored2-button-typo margin-md padding-xxxxs" type="button" name="button">guardar</button>
                 </div>
               </fieldset>
-              <input className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" type="submit" defaultValue="enviar datos al cv" />
+              <SendDataButton/>
             </form>
           </div>
           <div id="cv_part" className="cv-box" onload="window.print();window.close()">
