@@ -1,6 +1,13 @@
 .footer-container {
   height: $height-primary;
   @media all and (min-width:1024px){
-      height: $height-secondary;
+    height: $height-secondary;
+    &.padding-xxxxxs {
+      padding: 20px 5px 5px 5px;
     }
+    &.footer-typo {
+      font-size: $font-size-tertiary;
+      color: $color2;
+    }
+  }
 }
