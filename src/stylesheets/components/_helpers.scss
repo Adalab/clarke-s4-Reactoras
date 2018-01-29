@@ -18,7 +18,11 @@ float: right;
 float:left;
 }
 
-.cv-box.hidden {
+.hidden {
+display: none;
+}
+
+.hidden-cv {
 display: none;
 @media all and (min-width:768px){
 display: block;
