@@ -4,6 +4,7 @@ import Skills from './Skills';
 import Languages from './Languages'
 import Experience from './Experience';
 import Education from './Education';
+import SendDataButton from "./SendDataButton"
 
 
 class Form extends Component {
@@ -16,6 +17,7 @@ class Form extends Component {
         <Languages />
         <Experience />
         <Education />
+        <SendDataButton/>
       </form>
      </div>
     );

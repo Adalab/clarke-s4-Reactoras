@@ -9,9 +9,7 @@ class ElementListCV extends React.Component {
         <hr className="red-line" />
         <div className="box-cv">
           <ul className={this.props.classListCV}>
-            <li>
               { this.props.children }
-            </li>
           </ul>
         </div>
       </section>
