@@ -143,35 +143,6 @@ input, textarea {
 
 /*ESTILOS CV*/
 
-/*Estilos Cabecera CV*/
-
-.profile {
-  background-color: black;
-  width: 100%;
-}
-
-.cv-header-text {
-  padding: 15px;
-}
-
-.cv-description {
-  width: 100%;
-}
-
-.contact {
-  background-color: #a6313a;
-
-}
-.contact ul {
-  list-style: none;
-  margin-top: 0;
-  padding: 15px;
-}
-
-.contact li img {
-  width: 30px;
-  padding-right: 10px;
-}
 
 /*estilos EXPERIENCIA, LENGUAJE, HABILIDADES*/
 
