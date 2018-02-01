@@ -23,8 +23,8 @@ class NavSection extends React.Component {
     }
 
     function switchCv () {
-      showCv.classList.toggle('hidden');
-      showForm.classList.toggle('hidden');
+      showCv.classList.toggle('hidden-cv');
+      showForm.classList.toggle('hidden-cv');
       for (let i = 0; i < tabButton.length; i++) {
         tabButton[i].classList.toggle('active-state-button');
       }
