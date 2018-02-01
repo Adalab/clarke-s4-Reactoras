@@ -62,7 +62,7 @@ function legacyCode() {
   var skillsButton = document.querySelector('#skills-button');
   var cvSkills = document.querySelector('.list-skills');
 
-  skillsButton.addEventListener('click', skillsToCv);
+  // skillsButton.addEventListener('click', skillsToCv);
 
   function skillsToCv() {
     var userSkills = document.querySelectorAll('.skills-text');
@@ -201,6 +201,7 @@ function legacyCode() {
 
     var divPrint = document.getElementById('cv_part');
     divPrint.style.display="block";
+
     var winPrint = window.open('','','left=0,width=800,height=900');
     winPrint.document.write('<link rel="stylesheet" href="styles/master.css" media="all">');
     winPrint.document.write(divPrint.innerHTML);

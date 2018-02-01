@@ -251,6 +251,12 @@ p {
 .hidden {
   display: none; }
 
+.hidden-cv {
+  display: none; }
+  @media all and (min-width: 768px) {
+    .hidden-cv {
+      display: block; } }
+
 /* PADDINGS */
 .padding-xxxxxs {
   padding: 5px; }
