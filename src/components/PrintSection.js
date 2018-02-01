@@ -32,9 +32,9 @@ class PrintSection extends Component {
   }
   render() {
     return (
-
-      <input onClick = {this.handleClickPrint} className="rounded-primaryColor-width100-button print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
-
+      <div>
+      <input id="print-cv" onClick  = {this.handleClickPrint} className="rounded-primaryColor-width100-button print-button text-center colored1-button-typo" id="print" type="submit" defaultValue="imprimir cv" />
+      </div>
     );
   }
 }

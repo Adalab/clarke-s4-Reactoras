@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import WelcomeBox from './components/WelcomeBox';
 import NavSection from './components/NavSection';
-import SectionCV from "./components/SectionCV";
-import CloseButton from "./components/CloseButton";
-import NavSection from "./components/NavSection";
-import Footer from './components/Footer';
 import Form from './components/Form';
-import PrintSection from './components/PrintSection';
+import CloseButton from "./components/CloseButton";
 import ChangeOrderButtons from './components/ChangeOrderButtons';
+import SectionCVHeader from "./components/SectionCVHeader";
+import SectionCV from "./components/SectionCV";
+import PrintSection from './components/PrintSection';
+import Footer from './components/Footer';
+
 
 
 class App extends Component {
@@ -49,19 +50,25 @@ class App extends Component {
       <Header/>
 
       <WelcomeBox/>
-      
+
       <NavSection/>
-      
+
       <main>
 
        <Form />
 
-       <SectionCV/>  
+       <div className="cv-box hidden-cv">
 
-       <PrintSection />
-      
+       <div id="cv_part">
+       <SectionCVHeader/>
+       <SectionCV/>
+       </div>
+
+       <PrintSection/>
+       </div>
+
        </main>
-      
+
         <Footer/>
 
        </div>

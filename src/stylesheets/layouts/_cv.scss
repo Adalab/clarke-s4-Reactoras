@@ -43,3 +43,14 @@
 .bold {
   font-weight: bold;
 }
+
+.cv-box {
+  @media all and (min-width:1024px) {
+    display: block;
+    width:65%;
+    margin:20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 10px 10px;
+  }
+}

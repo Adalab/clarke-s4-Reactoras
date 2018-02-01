@@ -101,6 +101,15 @@ p {
 .bold {
   font-weight: bold; }
 
+@media all and (min-width: 1024px) {
+  .cv-box {
+    display: block;
+    width: 65%;
+    margin: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 10px 10px; } }
+
 .welcome-box {
   background: url("https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg") no-repeat;
   background-size: cover; }
@@ -135,7 +144,7 @@ p {
   width: 45%;
   background-color: #a6313a;
   border: 2px solid #a6313a;
-  /*border-radius: 15px;*/
+  border-radius: 15px;
   margin-top: 15px;
   padding: 5px; }
 
