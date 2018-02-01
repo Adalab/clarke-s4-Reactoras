@@ -17,13 +17,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: "Nombre Apellido",
+      name: "",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       phone: "+34 666 66 66 66",
       mail: "adalab@adalab.com",
       linkedin: "linkedin.com/adalab",
-      skill: "habilidad1",
+      skill: "patata",
       languageTittle: "Lenguaje1",
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
@@ -41,6 +41,26 @@ class App extends Component {
       educationToMonth: "julio",
       educationToYear: "2017"
     }
+    this.handleSendData = this.handleSendData.bind(this);
+  }
+
+  handleSendData(event) {
+    const inputTitleSkill = document.querySelector("#IDtitleSectionCV");
+
+    const formData = new FormData(inputTitleSkill);
+
+    const entries = {};
+    for (let entry of formData.entries()) {
+      const nombreDeLaPropiedad = entry[0];
+      const value = entry[1];
+      entries[nombreDeLaPropiedad] = value;
+    }
+
+    console.log(entries);
+
+    this.setState({
+     skill: entries.nombreDeLaPropiedad //pero del formulario
+   });
   }
 
   render() {
@@ -55,13 +75,16 @@ class App extends Component {
 
       <main>
 
-       <Form />
+       <Form
+          handleClick={ this.handleSendData }
+       />
 
        <div className="cv-box hidden-cv">
 
        <div id="cv_part">
        <SectionCVHeader/>
-       <SectionCV/>
+       <SectionCV
+        titleSectionCV =  {this.state.skill}/>
        </div>
 
        <PrintSection/>

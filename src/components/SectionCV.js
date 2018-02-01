@@ -8,7 +8,7 @@ class SectionCV extends React.Component {
     return (
       <div>
         <ElementListCV
-        titleSectionCV="Habilidades"
+        titleSectionCV={this.props.titleSectionCV}
         classListCV = "list-skills"
         titleListCV = "Habilidad1"
         >

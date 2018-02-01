@@ -17,7 +17,7 @@ class Form extends Component {
         <Languages />
         <Experience />
         <Education />
-        <SendDataButton/>
+        <SendDataButton onClick={ this.props.sendData }/>
       </form>
      </div>
     );
