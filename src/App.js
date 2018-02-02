@@ -17,7 +17,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      name: "",
+      name: "Álex Guerrero",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       phone: "+34 666 66 66 66",
@@ -116,16 +116,19 @@ this.setState({
        <div className="cv-box hidden-cv">
 
        <div id="cv_part">
-       <SectionCVHeader/>
+       <SectionCVHeader nameForm ={ this.state.name}
+       professionForm ={ this.state.profession}
+       descriptionForm ={ this.state.description}
+       phoneForm ={ this.state.phone}
+       mailForm ={ this.state.mail}
+       linkedinForm ={ this.state.linkedin}
+
+
+       />
        <SectionCV
         titleSectionCV =  {this.state.skill}
  sara={this.state.languageTittle} nivel={this.state.languageContent}
- nameForm ={ this.state.name}
- professionForm ={ this.state.profession}
- descriptionForm ={ this.state.description}
- phoneForm ={ this.state.phone}
- mailForm ={ this.state.mail}
- linkedinForm ={ this.state.linkedin}
+
  skillForm ={ this.state.skill}
  languageTittleForm ={ this.state.languageTittle}
  languageContentForm ={ this.state.languageContent}
