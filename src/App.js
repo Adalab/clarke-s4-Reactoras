@@ -118,7 +118,7 @@ this.setState({
        <SectionCVHeader/>
        <SectionCV
         titleSectionCV =  {this.state.skill}
- sara={this.state.languageTittle}/>
+ sara={this.state.languageTittle} nivel={this.state.languageContent}/>
        </div>
 
        <PrintSection/>
