@@ -3,8 +3,6 @@ import ElementListCV from "./ElementListCV";
 import SectionCVHeader from "./SectionCVHeader";
 
 
-
-
 class SectionCV extends React.Component {
   render() {
 
@@ -71,5 +69,6 @@ class SectionCV extends React.Component {
     );
   }
 }
+
 
 export default SectionCV;
