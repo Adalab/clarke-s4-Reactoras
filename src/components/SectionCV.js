@@ -1,19 +1,22 @@
 import React from 'react';
 import ElementListCV from "./ElementListCV";
+import SectionCVHeader from "./SectionCVHeader";
+
 
 
 
 class SectionCV extends React.Component {
   render() {
+
     return (
       <div>
         <ElementListCV
         titleSectionCV={this.props.titleSectionCV}
         classListCV = "list-skills"
         titleListCV = "Habilidad1"
-        >
+     >
           <li>
-            <h4>Habilidad1</h4>
+            <h4>{ this.props.skillForm}</h4>
           </li>
         </ElementListCV>
 
@@ -23,8 +26,8 @@ class SectionCV extends React.Component {
           titleListCV = "Lenguaje1"
         >
           <li>
-            <h4>{this.props.sara}</h4>
-            <p>{this.props.nivel}</p>
+            <h4>{ this.props.languageTittleForm}</h4>
+            <p>{ this.props.languageContentForm}</p>
           </li>
         </ElementListCV>
 
@@ -35,12 +38,14 @@ class SectionCV extends React.Component {
         >
           <li>
             <p>
-              <span id="job_out"  className="bold">Encargado de planta - </span>
-              <span id="company_out"  className="bold">Carrefour </span>
-              <span id="start_exp_out">junio 2015</span>
-              <span id="end_exp_out">- septiembre 2016</span>
+              <span id="job_out"  className="bold">{ this.props.experienceTittleForm}</span>
+              <span id="company_out"  className="bold">{ this.props.experienceCompanyForm}</span>
+              <span id="start_exp_out">{ this.props.experienceFromMonthForm}
+              { this.props.experienceFromYearForm}-</span>
+              <span id="end_exp_out">- ={ this.props.experienceToMonthForm}
+              { this.props.experienceToYearForm}</span>
             </p>
-            <p id="comments_out">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p id="comments_out">{ this.props.experienceContentForm}
             </p>
           </li>
         </ElementListCV>
@@ -52,12 +57,13 @@ class SectionCV extends React.Component {
         >
           <li>
             <p>
-              <span id="degree_out"  className="bold">Licenciatura en Periodismo - </span>
-              <span id="university_out"  className="bold">Universidad Rey Juan Carlos I</span>
+              <span id="degree_out"  className="bold">{ this.props.educationTittleForm} - </span>
+              <span id="university_out"  className="bold">{this.props.educationCenterForm}</span>
             </p>
             <p>
-              <span id="start_educ_out">septiembre 2007</span>
-              <span id="end_educ_out">-junio 2013</span>
+              <span id="start_educ_out">{ this.props.educationFromMonthForm} { this.props.educationFromYearForm}-</span>
+              <span id="end_educ_out">-{ this.props.educationToMonthForm}
+              { this.props.educationToYearForm}</span>
             </p>
           </li>
         </ElementListCV>

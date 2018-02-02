@@ -7,9 +7,10 @@ class SectionCVHeader extends Component {
       <div className="cv-header">
         <div className="profile">
           <div className="cv-header-text">
-          <h2 id="name_surname_out">Nombre Apellido</h2>
-          <h2> <span id="prof_out" className="profesion">Profesión</span></h2>
-          <p className="cv-description" id="description_out" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+          <h2 id="name_surname_out">{ this.props.nameForm}</h2>
+          <h2> <span id="prof_out" className="profesion">{ this.props.professionForm}</span></h2>
+          <p className="cv-description" id="description_out" >{ this.props.descriptionForm}
           </p>
           </div>
         </div>
@@ -17,15 +18,15 @@ class SectionCVHeader extends Component {
           <ul className="list-contact">
           <li>
           <img src="images/phone-icon.svg" alt="telefono" />
-          <span id="phon_out">+34 666 66 66 66</span>
+          <span id="phon_out">{ this.props.phoneForm}</span>
           </li>
           <li>
           <img src="images/mail-icon.svg" alt="mail" />
-          <span id="mail_out">adalab@adalab.com</span>
+          <span id="mail_out">{ this.props.mailForm}</span>
           </li>
           <li>
           <img src="images/linkedin-icon.svg" alt="linkedin" />
-          <span id="linked_out">linkedin.com/adalab</span>
+          <span id="linked_out">{ this.props.linkedinForm}</span>
           </li>
           </ul>
         </div>

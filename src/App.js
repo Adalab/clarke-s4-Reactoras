@@ -24,6 +24,7 @@ class App extends Component {
       mail: "adalab@adalab.com",
       linkedin: "linkedin.com/adalab",
       skill: "patata",
+
       languageTittle: "Lenguaje1",
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
@@ -109,7 +110,7 @@ this.setState({
       <main>
 
        <Form
-          handleClick={ this.handleSendData } elenita={this.setField}
+          handleClick={ this.handleSendData }
        />
 
        <div className="cv-box hidden-cv">
@@ -118,7 +119,30 @@ this.setState({
        <SectionCVHeader/>
        <SectionCV
         titleSectionCV =  {this.state.skill}
- sara={this.state.languageTittle} nivel={this.state.languageContent}/>
+ sara={this.state.languageTittle} nivel={this.state.languageContent}
+ nameForm ={ this.state.name}
+ professionForm ={ this.state.profession}
+ descriptionForm ={ this.state.description}
+ phoneForm ={ this.state.phone}
+ mailForm ={ this.state.mail}
+ linkedinForm ={ this.state.linkedin}
+ skillForm ={ this.state.skill}
+ languageTittleForm ={ this.state.languageTittle}
+ languageContentForm ={ this.state.languageContent}
+ experienceTittleForm ={ this.state.experienceTittle}
+ experienceCompanyForm ={ this.state.xperienceCompany}
+ experienceFromMonthForm ={ this.state.experienceFromMonth}
+ experienceFromYearForm ={ this.state.experienceFromYear}
+ experienceToMonthForm ={ this.state.experienceToMonth}
+ experienceToYearForm ={ this.state.experienceToYear}
+ experienceContentForm ={ this.state.experienceContent}
+ educationTittleForm ={ this.state.educationTittle}
+ educationCenterForm ={this.state.educationCenter}
+ educationCompanyForm ={ "Carrefour"}
+ educationFromMonthForm ={ this.state.educationFromMonth}
+ educationFromYearForm ={ this.state.educationFromYear}
+ educationToMonthForm ={ this.state.educationToMonth}
+ educationToYearForm ={ this.state.educationToYear} onChange= {this.handleSendData} />
        </div>
 
        <PrintSection/>
