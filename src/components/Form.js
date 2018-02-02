@@ -11,13 +11,14 @@ class Form extends Component {
   render() {
     return (
     <div className="form-box margin-top-xs">
-      <form className="form" action="index.html" method="post">
+      <form className="form" onSubmit={this.props.handleClick}>
         <PersonalData />
         <Skills />
-        <Languages />
+        <Languages  />
         <Experience />
         <Education />
-        <SendDataButton onClick={ this.props.sendData }/>
+        <input type="submit" className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" value="enviar datos al cv"/ >
+
       </form>
      </div>
     );

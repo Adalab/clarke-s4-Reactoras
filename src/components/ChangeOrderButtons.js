@@ -15,7 +15,7 @@
 //         return(
 //              <div className = "skills-container">
 //                     {this.props.children}
-//                     <input className="user-skills skills-text default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*" required />
+//                     <input className="user-skills skills-text default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*"  />
 //              </div>
 //
 //         );

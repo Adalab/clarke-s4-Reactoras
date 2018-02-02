@@ -8,7 +8,7 @@ class Experience extends Component {
     return (
             <Collapse legend= "Experiencia Profesional">
 <div>
-                  <input id="job" className="default-input-txtarea" type="text" name="job" placeholder="Puesto*" />
+                  <input id="job" className="default-input-txtarea" type="text" name="job" value={this.props.value} placeholder="Puesto*" />
                   <input id="company" className="default-input-txtarea" type="text" name="company"  placeholder="Empresa*" />
                   <textarea id="comments" className="default-input-txtarea" name="comments" rows={8} cols={20} maxLength={300} placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)" defaultValue={""} />
 

@@ -7,8 +7,8 @@ class Education extends Component {
     return (
       <Collapse legend= "Educación">
         <div className = "educ-container">
-          <input id="degree" className="default-input-txtarea" type="text" name="degree"  placeholder="Título*" required />
-          <input id="university" className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*" required />
+          <input id="degree" className="default-input-txtarea" type="text" name="degree"  placeholder="Título*"  />
+          <input id="university" className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*"  />
 
           <div className="calendar">
             <div className="calendar-start-educ">

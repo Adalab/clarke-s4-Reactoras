@@ -24,7 +24,7 @@ class App extends Component {
       mail: "adalab@adalab.com",
       linkedin: "linkedin.com/adalab",
       skill: "patata",
-      languageTittle: "Lenguaje1",
+      languageTitle: "Lenguaje1",
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
       experienceCompany: "Carrefour",
@@ -45,22 +45,26 @@ class App extends Component {
   }
 
   handleSendData(event) {
-    const inputTitleSkill = document.querySelector("#IDtitleSectionCV");
+    console.log('hola');
+    const inputTitleSkill = event.target;
+    console.log(inputTitleSkill);
 
     const formData = new FormData(inputTitleSkill);
 
     const entries = {};
     for (let entry of formData.entries()) {
-      const nombreDeLaPropiedad = entry[0];
+      const nombreDelInput = entry[0];
       const value = entry[1];
-      entries[nombreDeLaPropiedad] = value;
+      entries[nombreDelInput] = value;
     }
 
     console.log(entries);
 
     this.setState({
-     skill: entries.nombreDeLaPropiedad //pero del formulario
+     languageTitle: entries.firstlanguage //pero del formulario
    });
+
+   event.preventDefault();
   }
 
   render() {
@@ -76,7 +80,7 @@ class App extends Component {
       <main>
 
        <Form
-          handleClick={ this.handleSendData }
+          handleClick={ this.handleSendData } value={this.state.languageTittle}
        />
 
        <div className="cv-box hidden-cv">

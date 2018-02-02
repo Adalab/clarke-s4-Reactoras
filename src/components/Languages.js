@@ -8,8 +8,8 @@ class Languages extends Component {
     return (
 
           <Collapse legend = "Idiomas">
-                <input className="user-language default-input-txtarea" type="text" name="firstlanguage"  placeholder="Idioma*" required />
-                <input className="user-level default-input-txtarea" type="text" name="leveltitle"  placeholder="Nivel/Título*" required />
+                <input id="anita" className="user-language default-input-txtarea" type="text" name="firstlanguage" value={this.props.value}  placeholder="Idioma*"  />
+                <input className="user-level default-input-txtarea" type="text" name="leveltitle" value={this.props.value} placeholder="Nivel/Título*"  />
                 <p className="indicative-text-typo">*Campos obligatorios</p>
                 <div className="language-buttons margin-xs">
                     <img id="add-language" className="add-button" src="images/add.svg" alt="add button" />
