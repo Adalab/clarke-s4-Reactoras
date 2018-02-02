@@ -10,7 +10,7 @@ class Skills extends Component {
       <Collapse legend="Habilidades">
 
 <div  className = "skills-container">
-          <input className="user-skills skills-text default-input-txtarea" type="text" name="firstskill"  placeholder="Habilidad*"  />
+          <input className="user-skills skills-text default-input-txtarea" onChange ={this.props.elenita} type="text" name="firstskill"  placeholder="Habilidad*"  />
           </div>
   <p className="indicative-text-typo">*Campos obligatorios</p>
 

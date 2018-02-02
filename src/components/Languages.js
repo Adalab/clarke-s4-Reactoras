@@ -3,13 +3,23 @@ import Collapse  from './Collapse';
 
 
 class Languages extends Component {
-
+// constructor(props){
+// super(props);
+// this.state = {
+// inputValue:'';
+// }
+// this.changeInputText = this.changeInputText.bind(this);
+// }
+//
+// changeInputText(event){
+// this.setState()
+// }
   render() {
     return (
 
           <Collapse legend = "Idiomas">
-                <input id="anita" className="user-language default-input-txtarea" type="text" name="firstlanguage" value={this.props.value}  placeholder="Idioma*"  />
-                <input className="user-level default-input-txtarea" type="text" name="leveltitle" value={this.props.value} placeholder="Nivel/Título*"  />
+                <input onChange ={this.props.elenita} id="anita" className="user-language default-input-txtarea" type="text" name="firstlanguage" value={this.props.value}  placeholder="Idioma*"  />
+                <input onChange ={this.props.elenita} className="user-level default-input-txtarea" type="text" name="leveltitle" value={this.props.value} placeholder="Nivel/Título*"  />
                 <p className="indicative-text-typo">*Campos obligatorios</p>
                 <div className="language-buttons margin-xs">
                     <img id="add-language" className="add-button" src="images/add.svg" alt="add button" />

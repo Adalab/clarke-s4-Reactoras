@@ -23,8 +23,8 @@ class SectionCV extends React.Component {
           titleListCV = "Lenguaje1"
         >
           <li>
-            <h4>Lenguaje1</h4>
-            <p>Nivel/título</p>
+            <h4>{this.props.sara}</h4>
+            <p>{this.props.nivel}</p>
           </li>
         </ElementListCV>
 

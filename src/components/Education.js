@@ -7,8 +7,8 @@ class Education extends Component {
     return (
       <Collapse legend= "Educación">
         <div className = "educ-container">
-          <input id="degree" className="default-input-txtarea" type="text" name="degree"  placeholder="Título*"  />
-          <input id="university" className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*"  />
+          <input id="degree" onChange ={this.props.elenita} className="default-input-txtarea" type="text" name="degree"  placeholder="Título*"  />
+          <input id="university" onChange ={this.props.elenita} className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*"  />
 
           <div className="calendar">
             <div className="calendar-start-educ">

@@ -24,7 +24,7 @@ class App extends Component {
       mail: "adalab@adalab.com",
       linkedin: "linkedin.com/adalab",
       skill: "patata",
-      languageTitle: "Lenguaje1",
+      languageTittle: "Lenguaje1",
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
       experienceCompany: "Carrefour",
@@ -42,6 +42,7 @@ class App extends Component {
       educationToYear: "2017"
     }
     this.handleSendData = this.handleSendData.bind(this);
+    {/*// this.setField = this.setField.bind(this);*/}
   }
 
   handleSendData(event) {
@@ -59,9 +60,37 @@ class App extends Component {
     }
 
     console.log(entries);
+{/*setField(event){
+     this.setState({
+ [event.target.name]:event.target.value
+})
+    event.preventDefault();
+}*/}
 
-    this.setState({
-     languageTitle: entries.firstlanguage //pero del formulario
+this.setState({
+      name: entries.fullname,
+      profession: entries.profession,
+      description: entries.comments,
+      phone: entries.phone,
+      mail: entries.email,
+      linkedin: entries.Linkedin,
+      skill: entries.firstskill,
+      languageTittle: entries.firstlanguage,
+      languageContent: entries.leveltitle,
+      experienceTittle: entries.job,
+      experienceCompany: entries.company,
+      experienceFromMonth: entries.monthexp,
+      experienceFromYear: entries.yearexp,
+      experienceToMonth: entries.monthexp,
+      experienceToYear: entries.yearexp,
+      experienceContent: entries.comments,
+      educationTittle: entries.degree,
+      educationCenter:entries.university,
+      educationCompany: "Carrefour",
+      educationFromMonth: entries.month,
+      educationFromYear: entries.year,
+      educationToMonth: entries.month,
+      educationToYear: entries.year
    });
 
    event.preventDefault();
@@ -80,7 +109,7 @@ class App extends Component {
       <main>
 
        <Form
-          handleClick={ this.handleSendData } value={this.state.languageTittle}
+          handleClick={ this.handleSendData } elenita={this.setField}
        />
 
        <div className="cv-box hidden-cv">
@@ -88,7 +117,8 @@ class App extends Component {
        <div id="cv_part">
        <SectionCVHeader/>
        <SectionCV
-        titleSectionCV =  {this.state.skill}/>
+        titleSectionCV =  {this.state.skill}
+ sara={this.state.languageTittle}/>
        </div>
 
        <PrintSection/>
