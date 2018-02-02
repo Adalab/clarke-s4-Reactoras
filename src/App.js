@@ -23,8 +23,8 @@ class App extends Component {
       phone: "+34 666 66 66 66",
       mail: "adalab@adalab.com",
       linkedin: "linkedin.com/adalab",
-      skill: "patata",
-
+      skill: "Habilidades",
+      firstskill: 'Habilidad1',
       languageTittle: "Lenguaje1",
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
@@ -75,7 +75,8 @@ this.setState({
       phone: entries.phone,
       mail: entries.email,
       linkedin: entries.Linkedin,
-      skill: entries.firstskill,
+      skill: entries.skill,
+      firstskill: entries.firstskill,
       languageTittle: entries.firstlanguage,
       languageContent: entries.leveltitle,
       experienceTittle: entries.job,
@@ -126,10 +127,8 @@ this.setState({
 
        />
        <SectionCV
-        titleSectionCV =  {this.state.skill}
- sara={this.state.languageTittle} nivel={this.state.languageContent}
-
- skillForm ={ this.state.skill}
+   skillForm ={ this.state.skill}
+ firstskillForm ={this.state.firstskill}
  languageTittleForm ={ this.state.languageTittle}
  languageContentForm ={ this.state.languageContent}
  experienceTittleForm ={ this.state.experienceTittle}
@@ -145,7 +144,8 @@ this.setState({
  educationFromMonthForm ={ this.state.educationFromMonth}
  educationFromYearForm ={ this.state.educationFromYear}
  educationToMonthForm ={ this.state.educationToMonth}
- educationToYearForm ={ this.state.educationToYear} onChange= {this.handleSendData} />
+ educationToYearForm ={ this.state.educationToYear} onChange= {this.handleSendData}
+ />
        </div>
 
        <PrintSection/>

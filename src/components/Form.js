@@ -20,6 +20,7 @@ changeInputText(event){
 this.setState({
 inputValue: event.target.value
 })
+
 }
   render() {
     return (

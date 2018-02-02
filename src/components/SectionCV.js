@@ -11,12 +11,12 @@ class SectionCV extends React.Component {
     return (
       <div>
         <ElementListCV
-        titleSectionCV={this.props.titleSectionCV}
+        titleSectionCV="Habilidades"
         classListCV = "list-skills"
         titleListCV = "Habilidad1"
      >
           <li>
-            <h4>{ this.props.skillForm}</h4>
+            <h4>{this.props.firstskillForm}</h4>
           </li>
         </ElementListCV>
 
@@ -42,7 +42,7 @@ class SectionCV extends React.Component {
               <span id="company_out"  className="bold">{ this.props.experienceCompanyForm}</span>
               <span id="start_exp_out">{ this.props.experienceFromMonthForm}
               { this.props.experienceFromYearForm}-</span>
-              <span id="end_exp_out">- ={ this.props.experienceToMonthForm}
+              <span id="end_exp_out">{ this.props.experienceToMonthForm}
               { this.props.experienceToYearForm}</span>
             </p>
             <p id="comments_out">{ this.props.experienceContentForm}
@@ -62,7 +62,7 @@ class SectionCV extends React.Component {
             </p>
             <p>
               <span id="start_educ_out">{ this.props.educationFromMonthForm} { this.props.educationFromYearForm}-</span>
-              <span id="end_educ_out">-{ this.props.educationToMonthForm}
+              <span id="end_educ_out">{ this.props.educationToMonthForm}
               { this.props.educationToYearForm}</span>
             </p>
           </li>
