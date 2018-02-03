@@ -56,7 +56,7 @@ class App extends Component {
       entries[nombreDelInput] = value;
     }
 
-    
+
     this.setState({
       name: entries.fullname,
       profession: entries.profession,
@@ -77,10 +77,10 @@ class App extends Component {
       experienceContent: entries.comments,
       educationTittle: entries.degree,
       educationCenter:entries.university,
-      educationFromMonth: entries.month,
-      educationFromYear: entries.year,
-      educationToMonth: entries.month,
-      educationToYear: entries.year
+      educationFromMonth: entries.montheduc,
+      educationFromYear: entries.yeareduc,
+      educationToMonth: entries.montheduc,
+      educationToYear: entries.yeareduc
     });
 
     event.preventDefault();

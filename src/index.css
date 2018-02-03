@@ -4,12 +4,16 @@
 /* Font size */
 /* Height container size */
 /* Letter spacing */
+/* Size inputs,selects,textarea */
 /* Colors class*/
 .color-primary {
   background-color: #a6313a; }
 
 .color-secondary {
   background-color: #000000; }
+
+.color-tertiary {
+  background-color: #ffffff; }
 
 .color-light {
   color: #ffffff; }
@@ -66,6 +70,20 @@ p {
   border: 0.125em solid #a6313a;
   border-radius: 0.938em;
   margin-bottom: 0.625em; }
+
+.month, .year {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #a6313a;
+  border-radius: 0px; }
+
+.month {
+  width: 45%; }
+
+.year {
+  width: 20%; }
 
 #name_surname_out {
   font-size: 40px; }

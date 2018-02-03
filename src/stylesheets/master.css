@@ -118,7 +118,7 @@ input, textarea {
   width: 80%;
 }
 
-.month, .year {
+/*.month, .year {
   -webkit-appearance: none;
   -moz-appearance:    none;
   appearance:         none;
@@ -138,7 +138,7 @@ input, textarea {
 .year{
   padding-left: 10px;
   width: 20%;
-}
+}*/
 
 
 /*ESTILOS CV*/

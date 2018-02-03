@@ -13,13 +13,13 @@ class Education extends Component {
           <div className="calendar">
             <div className="calendar-start-educ">
                 <p className="start-educ">Desde*</p>
-                <select id="start_month_educ" className="month padding-left-lg" name="month" />
-                <select id="start_year_educ" className="year padding-left-xs" name="year" />
+                <select id="start_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheduc" />
+                <select id="start_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareduc" />
             </div>
             <div className="calendar-end-educ">
               <p className="end-educ">Hasta*</p>
-              <select id="end_month_educ" className="month padding-left-lg" name="month" />
-              <select id="end_year_educ" className="year padding-left-xs" name="year" />
+              <select id="end_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheduc" />
+              <select id="end_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareduc" />
             </div>
 
           </div>

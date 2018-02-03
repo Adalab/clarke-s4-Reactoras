@@ -8,12 +8,30 @@
   margin:0.5em 0em;
   background: lightgray;
   opacity: 0.5;
-  width: 100%;
+  width: $width-quaternary;
   font-family: inherit;
 }
 
 .default-fieldset {
-  border: 0.125em solid #a6313a;
+  border: 0.125em solid $color1;
   border-radius: 0.938em;
   margin-bottom: 0.625em
+}
+
+.month, .year {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  border: none;
+  border-bottom: 1px solid $color1;
+  border-radius: 0px;
+
+}
+
+.month {
+  width: $width-secondary;
+}
+
+.year {
+  width: $width-primary;
 }
