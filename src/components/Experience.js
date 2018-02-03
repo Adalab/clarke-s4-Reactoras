@@ -5,7 +5,6 @@ import Collapse  from './Collapse';
 class Experience extends Component {
   static defaultProps = {
     monthexp: ['Mes','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
-
   }
 
   render() {
@@ -23,12 +22,12 @@ class Experience extends Component {
                   <div className="calendar">
                     <div className="calendar-start-exp">
                       <p className="start-exp">Desde*</p>
-                      <select id="start_month_exp" className="month color-tertiary color-dark padding-left-lg" ref="monthexp">{monthOptions}</select>
+                      <select id="start_month_exp" className="month color-tertiary color-dark padding-left-lg" name="monthexpstart" ref="monthexp">{monthOptions}</select>
                       <select id="start_year_exp" className="year color-tertiary color-dark padding-left-xs" ref="yearexp"></select>
                     </div>
                     <div className="calendar-end-exp">
                       <p className="end-exp">Hasta*</p>
-                      <select id="end_month_exp" className="month color-tertiary color-dark padding-left-lg" ref="monthexp">{monthOptions}</select>
+                      <select id="end_month_exp" className="month color-tertiary color-dark padding-left-lg" name="monthexpend" ref="monthexp">{monthOptions}</select>
                       <select id="end_year_exp" className="year color-tertiary color-dark padding-left-xs" ref="yearexp"></select>
                     </div>
 

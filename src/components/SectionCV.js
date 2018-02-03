@@ -39,7 +39,7 @@ class SectionCV extends React.Component {
               <span id="job_out"  className="bold">{ this.props.experienceTittleForm}</span>
               <span id="company_out"  className="bold">{ this.props.experienceCompanyForm}</span>
               <span id="start_exp_out">{ this.props.experienceFromMonthForm}
-              { this.props.experienceFromYearForm}-</span>
+              { this.props.experienceFromYearForm} -</span>
               <span id="end_exp_out">{ this.props.experienceToMonthForm}
               { this.props.experienceToYearForm}</span>
             </p>
@@ -59,7 +59,7 @@ class SectionCV extends React.Component {
               <span id="university_out"  className="bold">{this.props.educationCenterForm}</span>
             </p>
             <p>
-              <span id="start_educ_out">{ this.props.educationFromMonthForm} { this.props.educationFromYearForm}-</span>
+              <span id="start_educ_out">{ this.props.educationFromMonthForm} { this.props.educationFromYearForm} -</span>
               <span id="end_educ_out">{ this.props.educationToMonthForm}
               { this.props.educationToYearForm}</span>
             </p>
