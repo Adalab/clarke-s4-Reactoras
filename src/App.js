@@ -71,16 +71,16 @@ class App extends Component {
       experienceTittle: entries.job,
       experienceCompany: entries.company,
       experienceFromMonth: entries.monthexpstart,
-      experienceFromYear: entries.yearexp,
+      experienceFromYear: entries.yearexpstart,
       experienceToMonth: entries.monthexpend,
-      experienceToYear: entries.yearexp,
+      experienceToYear: entries.yearexpend,
       experienceContent: entries.comments,
       educationTittle: entries.degree,
       educationCenter:entries.university,
       educationFromMonth: entries.montheducstart,
-      educationFromYear: entries.yeareduc,
+      educationFromYear: entries.yeareducstart,
       educationToMonth: entries.montheducend,
-      educationToYear: entries.yeareduc
+      educationToYear: entries.yeareducend
     });
 
     event.preventDefault();
