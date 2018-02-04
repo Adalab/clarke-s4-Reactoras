@@ -26,11 +26,15 @@ inputValue: event.target.value
     return (
     <div className="form-box margin-top-xs">
       <form className="form" onSubmit={this.props.handleClick}>
-        <PersonalData changeInputText={this.changeInputText}  />
-        <Skills changeInputText={this.changeInputText}  />
-        <Languages changeInputText={this.changeInputText}  />
-        <Experience changeInputText={this.changeInputText} />
-        <Education changeInputText={this.changeInputText}  />
+        <PersonalData changeInputText={this.changeInputText} sendLocalPersonalData={this.props.sendPersonalData} />
+        <Skills changeInputText={this.changeInputText}
+        sendLocalSkills={this.props.sendSkills} />
+        <Languages changeInputText={this.changeInputText}
+        sendLocalLanguages={this.props.sendLanguages} />
+        <Experience changeInputText={this.changeInputText}
+        sendLocalExperiencie={this.props.sendExperiencie} />
+        <Education changeInputText={this.changeInputText}
+        sendLocalEducation={this.props.sendEducation} />
         <input type="submit" className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" value="enviar datos al cv"/ >
 
       </form>

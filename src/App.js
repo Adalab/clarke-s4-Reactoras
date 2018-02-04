@@ -42,8 +42,125 @@ class App extends Component {
       educationToYear: "2017"
     }
     this.handleSendData = this.handleSendData.bind(this);
-    {/*// this.setField = this.setField.bind(this);*/}
+    this.onHandleSendLocalPersonalData = this.onHandleSendLocalPersonalData.bind(this);
+    this.onHandleSendSkills = this.onHandleSendSkills.bind(this);
+    this.onHandleSendLanguages = this.onHandleSendLanguages.bind(this);
+    this.onHandleSendExperiencie = this.onHandleSendExperiencie.bind(this);
+    this.onHandleSendEducation = this.onHandleSendEducation.bind(this);
   }
+
+  onHandleSendLocalPersonalData(event){
+    const currentTarget = event.target;
+    const formData = new FormData(currentTarget);
+
+    const entries = {};
+    for (let entry of formData.entries()) {
+      const nombreDelInput = entry[0];
+      const value = entry[1];
+      entries[nombreDelInput] = value;
+    }
+
+
+    this.setState({
+      name: entries.fullname,
+      profession: entries.profession,
+      description: entries.comments,
+      phone: entries.phone,
+      mail: entries.email,
+      linkedin: entries.Linkedin
+    });
+
+    event.preventDefault();
+  }
+
+  onHandleSendSkills(event){
+    const currentTarget = event.target;
+    const formData = new FormData(currentTarget);
+
+    const entries = {};
+    for (let entry of formData.entries()) {
+      const nombreDelInput = entry[0];
+      const value = entry[1];
+      entries[nombreDelInput] = value;
+    }
+
+
+    this.setState({
+      skill: entries.skill,
+      firstskill: entries.firstskill
+    });
+
+    event.preventDefault();
+  }
+
+  onHandleSendLanguages(event){
+    const currentTarget = event.target;
+    const formData = new FormData(currentTarget);
+
+    const entries = {};
+    for (let entry of formData.entries()) {
+      const nombreDelInput = entry[0];
+      const value = entry[1];
+      entries[nombreDelInput] = value;
+    }
+
+    this.setState({
+      languageTittle: entries.firstlanguage,
+      languageContent: entries.leveltitle
+    });
+
+    event.preventDefault();
+  }
+
+
+  onHandleSendExperiencie(event){
+    const currentTarget = event.target;
+    const formData = new FormData(currentTarget);
+
+    const entries = {};
+    for (let entry of formData.entries()) {
+      const nombreDelInput = entry[0];
+      const value = entry[1];
+      entries[nombreDelInput] = value;
+    }
+
+    this.setState({
+      experienceTittle: entries.job,
+      experienceCompany: entries.company,
+      experienceFromMonth: entries.monthexpstart,
+      experienceFromYear: entries.yearexpstart,
+      experienceToMonth: entries.monthexpend,
+      experienceToYear: entries.yearexpend,
+      experienceContent: entries.comments
+    });
+
+    event.preventDefault();
+  }
+
+
+  onHandleSendEducation(event){
+    const currentTarget = event.target;
+    const formData = new FormData(currentTarget);
+
+    const entries = {};
+    for (let entry of formData.entries()) {
+      const nombreDelInput = entry[0];
+      const value = entry[1];
+      entries[nombreDelInput] = value;
+    }
+
+    this.setState({
+      educationTittle: entries.degree,
+      educationCenter:entries.university,
+      educationFromMonth: entries.montheducstart,
+      educationFromYear: entries.yeareducstart,
+      educationToMonth: entries.montheducend,
+      educationToYear: entries.yeareducend
+    });
+
+    event.preventDefault();
+  }
+
 
   handleSendData(event) {
     const currentTarget = event.target;
@@ -100,6 +217,11 @@ class App extends Component {
 
       <Form
       handleClick={ this.handleSendData }
+      sendPersonalData={this.onHandleSendLocalPersonalData}
+      sendSkills={this.onHandleSendSkills}
+      sendLanguages={this.onHandleSendLanguages}
+      sendExperiencie={this.onHandleSendExperiencie}
+      sendEducation={this.onHandleSendEducation}
       />
 
       <div className="cv-box hidden-cv">
