@@ -42,7 +42,7 @@ class App extends Component {
       educationToYear: "2017"
     }
     this.handleSendData = this.handleSendData.bind(this);
-    {/*// this.setField = this.setField.bind(this);*/}
+    this.handleInsertPhoto = this.handleInsertPhoto.bind(this);
   }
 
   handleSendData(event) {
@@ -55,8 +55,6 @@ class App extends Component {
       const value = entry[1];
       entries[nombreDelInput] = value;
     }
-
-
     this.setState({
       name: entries.fullname,
       profession: entries.profession,
@@ -82,8 +80,23 @@ class App extends Component {
       educationToMonth: entries.montheducend,
       educationToYear: entries.yeareducend
     });
-
     event.preventDefault();
+  }
+
+  handleInsertPhoto(event) {
+    const input = document.querySelector("#photo");
+    const img = document.querySelector('.photo-CV');
+    const files = input.files;
+    if (files && files.length > 0) {
+      showImage(files[0], img);
+    }
+    function showImage(image, imgTag) {
+      const fr = new FileReader();
+      fr.onload = function () {
+        imgTag.src = fr.result;
+      }
+      fr.readAsDataURL(image);
+    }
   }
 
   render() {
@@ -100,6 +113,7 @@ class App extends Component {
 
       <Form
       handleClick={ this.handleSendData }
+      actionInsertPhoto= { this.handleInsertPhoto }
       />
 
       <div className="cv-box hidden-cv">
