@@ -33,6 +33,11 @@ $height-quaternary: 320px;
 $space-primary: 1px;
 $space-secondary: 2px;
 
+/* Size inputs,selects,textarea */
+$width-primary: 20%;
+$width-secondary: 45%;
+$width-tertiary: 65%;
+$width-quaternary: 100%;
 
 /* Colors class*/
 
@@ -42,6 +47,10 @@ $space-secondary: 2px;
 
 .color-secondary {
   background-color:$color4;
+}
+
+.color-tertiary {
+  background-color:$color2;
 }
 
 .color-light {

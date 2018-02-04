@@ -3,7 +3,20 @@ import Collapse  from './Collapse';
 
 
 class Education extends Component {
+
+  static defaultProps = {
+    montheduc: ['Mes','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+    yearexp: ['Año','1950','1951','1952','1953','1954','1955','1956','1957','1958','1959','1960','1961','1962','1963','1967','1968','1969','1970','1971','1972','1973','1974','1975']
+  }
+
   render() {
+    let monthOptions = this.props.montheduc.map((montheduc) => {
+          return <option key={montheduc} value={montheduc} >{montheduc}</option>
+    });
+    let yearOptions = this.props.yearexp.map((yearexp) => {
+          return <option key={yearexp} value={yearexp} >{yearexp}</option>
+    });
+
     return (
       <Collapse legend= "Educación">
         <div className = "educ-container">
@@ -13,13 +26,13 @@ class Education extends Component {
           <div className="calendar">
             <div className="calendar-start-educ">
                 <p className="start-educ">Desde*</p>
-                <select id="start_month_educ" className="month padding-left-lg" name="month" />
-                <select id="start_year_educ" className="year padding-left-xs" name="year" />
+                <select id="start_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducstart" ref="montheduc">{monthOptions}</select>
+                <select id="start_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducstart" ref="yeareduc">{yearOptions}</select>
             </div>
             <div className="calendar-end-educ">
               <p className="end-educ">Hasta*</p>
-              <select id="end_month_educ" className="month padding-left-lg" name="month" />
-              <select id="end_year_educ" className="year padding-left-xs" name="year" />
+              <select id="end_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducend" ref="montheduc">{monthOptions}</select>
+              <select id="end_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducend" ref="yeareduc">{yearOptions}</select>
             </div>
 
           </div>

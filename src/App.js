@@ -29,16 +29,16 @@ class App extends Component {
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
       experienceCompany: "Carrefour",
-      experienceFromMonth: "junio",
+      experienceFromMonth: " junio",
       experienceFromYear: "2016",
-      experienceToMonth: "julio",
+      experienceToMonth: " julio",
       experienceToYear: "2017",
       experienceContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       educationTittle: "Licenciatura en Periodismo",
       educationCenter: "Universidad Rey Juan Carlos I",
-      educationFromMonth: "junio",
+      educationFromMonth: " junio",
       educationFromYear: "2016",
-      educationToMonth: "julio",
+      educationToMonth: " julio",
       educationToYear: "2017"
     }
     this.handleSendData = this.handleSendData.bind(this);
@@ -56,7 +56,7 @@ class App extends Component {
       entries[nombreDelInput] = value;
     }
 
-    
+
     this.setState({
       name: entries.fullname,
       profession: entries.profession,
@@ -70,17 +70,17 @@ class App extends Component {
       languageContent: entries.leveltitle,
       experienceTittle: entries.job,
       experienceCompany: entries.company,
-      experienceFromMonth: entries.monthexp,
-      experienceFromYear: entries.yearexp,
-      experienceToMonth: entries.monthexp,
-      experienceToYear: entries.yearexp,
+      experienceFromMonth: entries.monthexpstart,
+      experienceFromYear: entries.yearexpstart,
+      experienceToMonth: entries.monthexpend,
+      experienceToYear: entries.yearexpend,
       experienceContent: entries.comments,
       educationTittle: entries.degree,
       educationCenter:entries.university,
-      educationFromMonth: entries.month,
-      educationFromYear: entries.year,
-      educationToMonth: entries.month,
-      educationToYear: entries.year
+      educationFromMonth: entries.montheducstart,
+      educationFromYear: entries.yeareducstart,
+      educationToMonth: entries.montheducend,
+      educationToYear: entries.yeareducend
     });
 
     event.preventDefault();
