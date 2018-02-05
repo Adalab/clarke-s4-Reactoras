@@ -46,6 +46,8 @@ class Education extends Component {
           <img className="down-button" src="images/down.svg" alt="down button" />
           <img className="remove-button" src="images/remove.svg" alt="remove button" />
         </div>
+
+        <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="submit" name="button" onSubmit={this.props.sendLocalEducation}>guardar</button>
       </Collapse>
 
     );
