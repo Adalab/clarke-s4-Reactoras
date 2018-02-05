@@ -19,8 +19,6 @@ class PersonalData extends Component {
 
         <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button" onClick={this.props.sendLocalPersonalData}>guardar</button>
 
-        <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="reset" name="button" >reset</button>
-
       </Collapse>
 
       </div>

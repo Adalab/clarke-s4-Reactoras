@@ -105,11 +105,24 @@ class Form extends Component {
 
         <Education changeInputText={this.changeInputText}
         sendLocalEducation={this.props.sendEducation}
+
         inputEducation1a={this.props.inputEducation1b}
         updateInputEducation1a={this.props.updateInputEducation1b}
 
         inputEducation2a={this.props.inputEducation2b}
-        updateInputEducation2a={this.props.updateInputEducation2b} />
+        updateInputEducation2a={this.props.updateInputEducation2b}
+
+        inputEducation3a={this.props.inputEducation3b}
+        updateInputEducation3a={this.props.updateInputEducation3b}
+
+        inputEducation4a={this.props.inputEducation4b}
+        updateInputEducation4a={this.props.updateInputEducation4b}
+
+        inputEducation5a={this.props.inputEducation5b}
+        updateInputEducation5a={this.props.updateInputEducation5b}
+
+        inputEducation6a={this.props.inputEducation6b}
+        updateInputEducation6a={this.props.updateInputEducation6b}  />
         <div>
             <label htmlFor="photo" className="insert-photo-input colored1-button-typo rounded-primaryColor-width100-button">Insertar fotografía
             </label>
