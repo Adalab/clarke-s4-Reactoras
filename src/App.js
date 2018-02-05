@@ -20,6 +20,7 @@ class App extends Component {
       inputPersonal4: '',
       inputPersonal5: '',
       inputPersonal6: '',
+      inputSkills: '',
       name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -56,6 +57,8 @@ class App extends Component {
     this.updateInputPersonal4 = this.updateInputPersonal4.bind(this);
     this.updateInputPersonal5 = this.updateInputPersonal5.bind(this);
     this.updateInputPersonal6 = this.updateInputPersonal6.bind(this);
+
+    this.updateInputSkills = this.updateInputSkills.bind(this);
   }
 
   updateInputPersonal1(event){
@@ -106,18 +109,15 @@ class App extends Component {
     event.preventDefault();
   }
 
-  onHandleSendSkills(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
+  updateInputSkills(event){
     this.setState({
-      skill: entries.skill,
-      firstskill: entries.firstskill
+      inputSkills: event.target.value
+    });
+  }
+
+  onHandleSendSkills(event){
+    this.setState({
+      firstskill: this.state.inputSkills
     });
     event.preventDefault();
   }
@@ -247,6 +247,9 @@ class App extends Component {
         updateInputPersonal5b = {this.updateInputPersonal5}
         inputPersonal6b = {this.state.inputPersonal6}
         updateInputPersonal6b = {this.updateInputPersonal6}
+
+        inputSkillsb = {this.state.inputSkills}
+        updateInputSkillsb={this.updateInputSkills}
       />
 
       <div className="cv-box hidden-cv">

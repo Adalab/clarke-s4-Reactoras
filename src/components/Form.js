@@ -64,7 +64,11 @@ class Form extends Component {
          />
 
         <Skills changeInputText={this.changeInputText}
-        sendLocalSkills={this.props.sendSkills}  />
+        sendLocalSkills={this.props.sendSkills}
+
+        inputSkillsa={this.props.inputSkillsb}
+        updateInputSkillsa={this.props.updateInputSkillsb} />
+
         <Languages changeInputText={this.changeInputText}
         sendLocalLanguages={this.props.sendLanguages} />
         <Experience changeInputText={this.changeInputText}
