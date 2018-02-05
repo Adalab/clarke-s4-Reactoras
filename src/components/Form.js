@@ -89,7 +89,19 @@ class Form extends Component {
         updateInputExperience2a={this.props.updateInputExperience2b}
 
         inputExperience3a={this.props.inputExperience3b}
-        updateInputExperience3a={this.props.updateInputExperience3b}/>
+        updateInputExperience3a={this.props.updateInputExperience3b}
+
+        inputExperience4a={this.props.inputExperience4b}
+        updateInputExperience4a={this.props.updateInputExperience4b}
+
+        inputExperience5a={this.props.inputExperience5b}
+        updateInputExperience5a={this.props.updateInputExperience5b}
+
+        inputExperience6a={this.props.inputExperience6b}
+        updateInputExperience6a={this.props.updateInputExperience6b}
+
+        inputExperience7a={this.props.inputExperience7b}
+        updateInputExperience7a={this.props.updateInputExperience7b}/>
 
         <Education changeInputText={this.changeInputText}
         sendLocalEducation={this.props.sendEducation}
