@@ -43,3 +43,22 @@
   align-items: center;
   margin-bottom: 0px;
 }
+
+.hidden-box-form {
+  display: none;
+}
+
+.show-box-form {
+  display: block;
+  animation: show-display 1s;
+}
+
+@keyframes show-display {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
