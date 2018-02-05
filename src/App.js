@@ -26,6 +26,10 @@ class App extends Component {
       inputExperience1: '',
       inputExperience2: '',
       inputExperience3: '',
+      inputExperience4: '',
+      inputExperience5: '',
+      inputExperience6: '',
+      inputExperience7: '',
       inputEducation1: '',
       inputEducation2: '',
       name: "Nombre Apellido",
@@ -73,6 +77,10 @@ class App extends Component {
     this.updateInputExperience1 = this.updateInputExperience1.bind(this);
     this.updateInputExperience2 = this.updateInputExperience2.bind(this);
     this.updateInputExperience3 = this.updateInputExperience3.bind(this);
+    this.updateInputExperience4 = this.updateInputExperience4.bind(this);
+    this.updateInputExperience5 = this.updateInputExperience5.bind(this);
+    this.updateInputExperience6 = this.updateInputExperience6.bind(this);
+    this.updateInputExperience7 = this.updateInputExperience7.bind(this);
 
     this.updateInputEducation1 = this.updateInputEducation1.bind(this);
     this.updateInputEducation2 = this.updateInputEducation2.bind(this);
@@ -180,12 +188,40 @@ updateInputExperience3(event){
   });
 }
 
+updateInputExperience4(event){
+  this.setState({
+    inputExperience4: event.target.value
+  });
+}
+
+updateInputExperience5(event){
+  this.setState({
+    inputExperience5: event.target.value
+  });
+}
+
+updateInputExperience6(event){
+  this.setState({
+    inputExperience6: event.target.value
+  });
+}
+
+updateInputExperience7(event){
+  this.setState({
+    inputExperience7: event.target.value
+  });
+}
+
 
   onHandleSendExperiencie(event){
     this.setState({
       experienceTittle: this.state.inputExperience1,
       experienceCompany: this.state.inputExperience2,
-      experienceContent: this.state.inputExperience3
+      experienceContent: this.state.inputExperience3,
+      experienceFromMonth: this.state.inputExperience4,
+      experienceFromYear: this.state.inputExperience5,
+      experienceToMonth: this.state.inputExperience6,
+      experienceToYear: this.state.inputExperience7
     });
     event.preventDefault();
   }
@@ -303,6 +339,18 @@ updateInputExperience3(event){
 
         inputExperience3b = {this.state.inputExperience3}
         updateInputExperience3b = {this.updateInputExperience3}
+
+        inputExperience4b = {this.state.inputExperience4}
+        updateInputExperience4b = {this.updateInputExperience4}
+
+        inputExperience5b = {this.state.inputExperience5}
+        updateInputExperience5b = {this.updateInputExperience5}
+
+        inputExperience6b = {this.state.inputExperience6}
+        updateInputExperience6b = {this.updateInputExperience6}
+
+        inputExperience7b = {this.state.inputExperience7}
+        updateInputExperience7b = {this.updateInputExperience7}
 
         inputEducation1b = {this.state.inputEducation1}
         updateInputEducation1b = {this.updateInputEducation1}

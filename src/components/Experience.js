@@ -30,13 +30,13 @@ class Experience extends Component {
                   <div className="calendar">
                     <div className="calendar-start-exp">
                       <p className="start-exp">Desde*</p>
-                      <select id="start_month_exp" className="month color-tertiary color-dark padding-left-lg" name="monthexpstart" ref="monthexp">{monthOptions}</select>
-                      <select id="start_year_exp" className="year color-tertiary color-dark padding-left-xs" name="yearexpstart" ref="yearexp">{yearOptions}</select>
+                      <select id="start_month_exp" className="month color-tertiary color-dark padding-left-lg" name="monthexpstart" ref="monthexp" value={this.props.inputExperience4a} onChange={this.props.updateInputExperience4a}>{monthOptions}</select>
+                      <select id="start_year_exp" className="year color-tertiary color-dark padding-left-xs" name="yearexpstart" ref="yearexp" value={this.props.inputExperience5a} onChange={this.props.updateInputExperience5a}>{yearOptions}</select>
                     </div>
                     <div className="calendar-end-exp">
                       <p className="end-exp">Hasta*</p>
-                      <select id="end_month_exp" className="month color-tertiary color-dark padding-left-lg" name="monthexpend" ref="monthexp">{monthOptions}</select>
-                      <select id="end_year_exp" className="year color-tertiary color-dark padding-left-xs" name="yearexpend" ref="yearexp">{yearOptions}</select>
+                      <select id="end_month_exp" className="month color-tertiary color-dark padding-left-lg" name="monthexpend" ref="monthexp" value={this.props.inputExperience6a} onChange={this.props.updateInputExperience6a}>{monthOptions}</select>
+                      <select id="end_year_exp" className="year color-tertiary color-dark padding-left-xs" name="yearexpend" ref="yearexp" value={this.props.inputExperience7a} onChange={this.props.updateInputExperience7a}>{yearOptions}</select>
                     </div>
 
                   </div>
