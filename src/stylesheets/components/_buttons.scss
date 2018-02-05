@@ -1,58 +1,50 @@
 .tab-button {
- background-color: white;
- color:#a6313a;
- border: 0.063em solid #a6313a;
- border-radius: 0em 0em 0.625em 0.625em;
- width: 50%;
- padding: 0.938em; //Katy? este padding esta solo en header y este button
+ color:$color1;
+ border: $space-primary solid $color1;
+ border-radius: $border-cero $border-cero $border-primary $border-primary;
+ width: $width-quinary;
  text-transform: uppercase;
+   @media all and (min-width:768px) {
+     display: none;
+   }
 }
 
-.active-state-button { //en cambio de active
- background-color: #a6313a;
- color:white;
- border:#a6313a;
+.active-state-button {
+ background-color: $color1;
+ color:$color2;
+ border:$color1;
 }
 
-//edit button se deja en el JSX solo para el JS (eventos)
-.squared-primaryColor-width100-button{ //todos los butones editar
-width: 100%;
-background-color: #a6313a;
+.squared-primaryColor-width100-button{
+width: $width-quaternary;
+background-color: $color1;
 border: none;
-border: 15px;
-margin: 5px 0;  //Hay este margin solo en este button
-padding: 5px; //katy
+border: $border-secondary;
 }
 
-.squared-primaryColor-width45-button{ //todos los butones ccerrar
- width: 45%;
- background-color: #a6313a;
- border: 2px solid #a6313a;
- border-radius: 15px;
-  margin-top: 15px; //katy
- padding: 5px; //katy
+.squared-primaryColor-width45-button{
+ width: $width-secondary;
+ background-color: $color1;
+ border: $space-secondary solid $color1;
+ border-radius: $border-secondary;
 }
 
-.rounded-lightColor-width45-button{ //todos los buttones guardar
- width: 45%;
- background-color: white ;
- border: 2px solid #a6313a;
- border-radius: 15px;
- margin-top: 15px;
- padding: 5px;
+.rounded-lightColor-width45-button{
+ width: $width-secondary;
+ background-color: $color2 ;
+ border: $space-secondary solid $color1;
+ border-radius: $border-secondary;
 }
 
-.rounded-primaryColor-width100-button{ // era la clase submit button y print-button*/
+.rounded-primaryColor-width100-button{
  -webkit-appearance: none;
  -moz-appearance:    none;
  appearance:         none;
- background-color: #a6313a;
+ background-color: $color1;
  opacity: 1;
- border-radius: 0.938em;
- padding: 0.313em;
- width: 100%;
+ border-radius: $border-secondary;
+ width: $width-quaternary;
  border: none;
- margin-bottom: 1.250em;
  box-shadow: none;
 }
 

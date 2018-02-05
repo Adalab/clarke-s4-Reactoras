@@ -6,7 +6,7 @@ class SectionCVHeader extends Component {
     return (
       <div className="cv-header">
         <div className="profile">
-          <div className="cv-header-text">
+          <div className="cv-header-text padding-xs">
 
           <img className="photo-CV"/>
 
@@ -17,7 +17,7 @@ class SectionCVHeader extends Component {
           </div>
         </div>
         <div className="contact">
-          <ul className="list-contact">
+          <ul className="list-contact padding-xs margin-top-zero">
           <li>
           <img src="images/phone-icon.svg" alt="telefono" />
           <span id="phon_out">{ this.props.phoneForm}</span>
