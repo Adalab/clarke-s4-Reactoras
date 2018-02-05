@@ -1,5 +1,4 @@
 
-//Section CV
 
 #name_surname_out {
   font-size: 40px;
@@ -71,8 +70,6 @@
   justify-content: space-between;
 }
 
-//Dentro de experiencia y educación, los títulos llevan estos spans:
-
 .bold {
   font-weight: bold;
 }
@@ -85,5 +82,19 @@
     margin-right: 0;
     margin-bottom: 0;
     padding: 10px 10px;
+  }
+}
+
+.photo-CV {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #a6313a;
+  display: block;
+  margin: 30px 10px 10px 0;
+  float: right;
+  @media all and (min-width:1024px) {
+    margin: 35px;
   }
 }

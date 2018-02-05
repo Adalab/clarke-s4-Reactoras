@@ -25,7 +25,6 @@
   border: none;
   border-bottom: 1px solid $color1;
   border-radius: 0px;
-
 }
 
 .month {
@@ -34,4 +33,13 @@
 
 .year {
   width: $width-primary;
+}
+
+.insert-photo-input {
+  display: block;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
 }

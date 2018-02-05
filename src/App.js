@@ -11,13 +11,12 @@ import PrintSection from './components/PrintSection';
 import Footer from './components/Footer';
 
 
-
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      name: "Álex Guerrero",
+      name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       phone: "+34 666 66 66 66",
@@ -42,7 +41,6 @@ class App extends Component {
       educationToYear: "2017"
     }
     this.handleSendData = this.handleSendData.bind(this);
-    {/*// this.setField = this.setField.bind(this);*/}
   }
 
   handleSendData(event) {
@@ -55,8 +53,6 @@ class App extends Component {
       const value = entry[1];
       entries[nombreDelInput] = value;
     }
-
-
     this.setState({
       name: entries.fullname,
       profession: entries.profession,
@@ -82,7 +78,6 @@ class App extends Component {
       educationToMonth: entries.montheducend,
       educationToYear: entries.yeareducend
     });
-
     event.preventDefault();
   }
 
@@ -99,38 +94,37 @@ class App extends Component {
       <main>
 
       <Form
-      handleClick={ this.handleSendData }
+        handleClick={ this.handleSendData }
       />
 
       <div className="cv-box hidden-cv">
-
-      <div id="cv_part">
-      <SectionCVHeader nameForm ={ this.state.name}
-      professionForm ={ this.state.profession}
-      descriptionForm ={ this.state.description}
-      phoneForm ={ this.state.phone}
-      mailForm ={ this.state.mail}
-      linkedinForm ={ this.state.linkedin}
+        <div id="cv_part">
+          <SectionCVHeader nameForm ={ this.state.name}
+          professionForm ={ this.state.profession}
+          descriptionForm ={ this.state.description}
+          phoneForm ={ this.state.phone}
+          mailForm ={ this.state.mail}
+          linkedinForm ={ this.state.linkedin}
       />
 
       <SectionCV
-      skillForm ={ this.state.skill}
-      firstskillForm ={this.state.firstskill}
-      languageTittleForm ={ this.state.languageTittle}
-      languageContentForm ={ this.state.languageContent}
-      experienceTittleForm ={ this.state.experienceTittle}
-      experienceCompanyForm ={ this.state.xperienceCompany}
-      experienceFromMonthForm ={ this.state.experienceFromMonth}
-      experienceFromYearForm ={ this.state.experienceFromYear}
-      experienceToMonthForm ={ this.state.experienceToMonth}
-      experienceToYearForm ={ this.state.experienceToYear}
-      experienceContentForm ={ this.state.experienceContent}
-      educationTittleForm ={ this.state.educationTittle}
-      educationCenterForm ={this.state.educationCenter}
-      educationFromMonthForm ={ this.state.educationFromMonth}
-      educationFromYearForm ={ this.state.educationFromYear}
-      educationToMonthForm ={ this.state.educationToMonth}
-      educationToYearForm ={ this.state.educationToYear} onChange= {this.handleSendData}
+        skillForm ={ this.state.skill}
+        firstskillForm ={this.state.firstskill}
+        languageTittleForm ={ this.state.languageTittle}
+        languageContentForm ={ this.state.languageContent}
+        experienceTittleForm ={ this.state.experienceTittle}
+        experienceCompanyForm ={ this.state.xperienceCompany}
+        experienceFromMonthForm ={ this.state.experienceFromMonth}
+        experienceFromYearForm ={ this.state.experienceFromYear}
+        experienceToMonthForm ={ this.state.experienceToMonth}
+        experienceToYearForm ={ this.state.experienceToYear}
+        experienceContentForm ={ this.state.experienceContent}
+        educationTittleForm ={ this.state.educationTittle}
+        educationCenterForm ={this.state.educationCenter}
+        educationFromMonthForm ={ this.state.educationFromMonth}
+        educationFromYearForm ={ this.state.educationFromYear}
+        educationToMonthForm ={ this.state.educationToMonth}
+        educationToYearForm ={ this.state.educationToYear} onChange= {this.handleSendData}
       />
       </div>
 
