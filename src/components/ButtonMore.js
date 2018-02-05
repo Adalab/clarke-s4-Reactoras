@@ -18,8 +18,8 @@ class ButtonMore extends Component {
     this.setState ={
        skills:this.state.skills.push('Otra habilidad') }
 
-
-      const repeatedItemSkills = `<input className="user-skills skills-text default-input-txtarea" data-id="i" type="text" name="firstskill"  placeholder="Habilidad*"/>`
+      
+      const repeatedItemSkills = `<input className="user-skills skills-text default-input-txtarea" data-id="0" type="text" name="firstskill"  placeholder="Habilidad*"/>`
     	const skillsElement = document.querySelector('.user-skills');
     	skillsElement.insertAdjacentHTML('afterend', repeatedItemSkills);
 
