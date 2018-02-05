@@ -49,16 +49,55 @@ class Form extends Component {
           inputPersonal2a={this.props.inputPersonal2b}
           updateInputPersonal2a={this.props.updateInputPersonal2b}
 
+          inputPersonal3a={this.props.inputPersonal3b}
+          updateInputPersonal3a={this.props.updateInputPersonal3b}
+
+          inputPersonal4a={this.props.inputPersonal4b}
+          updateInputPersonal4a={this.props.updateInputPersonal4b}
+
+          inputPersonal5a={this.props.inputPersonal5b}
+          updateInputPersonal5a={this.props.updateInputPersonal5b}
+
+          inputPersonal6a={this.props.inputPersonal6b}
+          updateInputPersonal6a={this.props.updateInputPersonal6b}
+
          />
 
         <Skills changeInputText={this.changeInputText}
-        sendLocalSkills={this.props.sendSkills}  />
+        sendLocalSkills={this.props.sendSkills}
+
+        inputSkillsa={this.props.inputSkillsb}
+        updateInputSkillsa={this.props.updateInputSkillsb} />
+
         <Languages changeInputText={this.changeInputText}
-        sendLocalLanguages={this.props.sendLanguages} />
+        sendLocalLanguages={this.props.sendLanguages}
+
+        inputLanguage1a={this.props.inputLanguage1b}
+        updateInputLanguage1a={this.props.updateInputLanguage1b}
+
+        inputLanguage2a={this.props.inputLanguage2b}
+        updateInputLanguage2a={this.props.updateInputLanguage2b}
+        />
+
         <Experience changeInputText={this.changeInputText}
-        sendLocalExperiencie={this.props.sendExperiencie} />
+        sendLocalExperiencie={this.props.sendExperiencie}
+
+        inputExperience1a={this.props.inputExperience1b}
+        updateInputExperience1a={this.props.updateInputExperience1b}
+
+        inputExperience2a={this.props.inputExperience2b}
+        updateInputExperience2a={this.props.updateInputExperience2b}
+
+        inputExperience3a={this.props.inputExperience3b}
+        updateInputExperience3a={this.props.updateInputExperience3b}/>
+
         <Education changeInputText={this.changeInputText}
-        sendLocalEducation={this.props.sendEducation} />
+        sendLocalEducation={this.props.sendEducation}
+        inputEducation1a={this.props.inputEducation1b}
+        updateInputEducation1a={this.props.updateInputEducation1b}
+
+        inputEducation2a={this.props.inputEducation2b}
+        updateInputEducation2a={this.props.updateInputEducation2b} />
         <div>
             <label htmlFor="photo" className="insert-photo-input colored1-button-typo rounded-primaryColor-width100-button">Insertar fotografía
             </label>

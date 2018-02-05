@@ -16,6 +16,18 @@ class App extends Component {
     this.state = {
       inputPersonal1: '',
       inputPersonal2: '',
+      inputPersonal3: '',
+      inputPersonal4: '',
+      inputPersonal5: '',
+      inputPersonal6: '',
+      inputSkills: '',
+      inputLanguage1: '',
+      inputLanguage2: '',
+      inputExperience1: '',
+      inputExperience2: '',
+      inputExperience3: '',
+      inputEducation1: '',
+      inputEducation2: '',
       name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -48,6 +60,22 @@ class App extends Component {
     this.onHandleSendEducation = this.onHandleSendEducation.bind(this);
     this.updateInputPersonal1 = this.updateInputPersonal1.bind(this);
     this.updateInputPersonal2 = this.updateInputPersonal2.bind(this);
+    this.updateInputPersonal3 = this.updateInputPersonal3.bind(this);
+    this.updateInputPersonal4 = this.updateInputPersonal4.bind(this);
+    this.updateInputPersonal5 = this.updateInputPersonal5.bind(this);
+    this.updateInputPersonal6 = this.updateInputPersonal6.bind(this);
+
+    this.updateInputSkills = this.updateInputSkills.bind(this);
+
+    this.updateInputLanguage1 = this.updateInputLanguage1.bind(this);
+    this.updateInputLanguage2 = this.updateInputLanguage2.bind(this);
+
+    this.updateInputExperience1 = this.updateInputExperience1.bind(this);
+    this.updateInputExperience2 = this.updateInputExperience2.bind(this);
+    this.updateInputExperience3 = this.updateInputExperience3.bind(this);
+
+    this.updateInputEducation1 = this.updateInputEducation1.bind(this);
+    this.updateInputEducation2 = this.updateInputEducation2.bind(this);
   }
 
   updateInputPersonal1(event){
@@ -62,83 +90,128 @@ class App extends Component {
     });
   }
 
+  updateInputPersonal3(event){
+    this.setState({
+      inputPersonal3: event.target.value
+    });
+  }
+
+  updateInputPersonal4(event){
+    this.setState({
+      inputPersonal4: event.target.value
+    });
+  }
+
+  updateInputPersonal5(event){
+    this.setState({
+      inputPersonal5: event.target.value
+    });
+  }
+
+  updateInputPersonal6(event){
+    this.setState({
+      inputPersonal6: event.target.value
+    });
+  }
+
   onHandleSendLocalPersonalData(event){
     this.setState({
       name: this.state.inputPersonal1,
-      profession: this.state.inputPersonal2
+      profession: this.state.inputPersonal2,
+      phone: this.state.inputPersonal3,
+      mail: this.state.inputPersonal4,
+      linkedin: this.state.inputPersonal5,
+      description: this.state.inputPersonal6
     });
     event.preventDefault();
+  }
+
+  updateInputSkills(event){
+    this.setState({
+      inputSkills: event.target.value
+    });
   }
 
   onHandleSendSkills(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
     this.setState({
-      skill: entries.skill,
-      firstskill: entries.firstskill
+      firstskill: this.state.inputSkills
     });
     event.preventDefault();
   }
+
+
+  updateInputLanguage1(event){
+    this.setState({
+      inputLanguage1: event.target.value
+    });
+  }
+
+  updateInputLanguage2(event){
+    this.setState({
+      inputLanguage2: event.target.value
+    });
+  }
+
 
   onHandleSendLanguages(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
     this.setState({
-      languageTittle: entries.firstlanguage,
-      languageContent: entries.leveltitle
+      languageTittle: this.state.inputLanguage1,
+      languageContent: this.state.inputLanguage2
     });
     event.preventDefault();
   }
+
+
+updateInputExperience1(event){
+  this.setState({
+    inputExperience1: event.target.value
+  });
+}
+
+updateInputExperience2(event){
+  this.setState({
+    inputExperience2: event.target.value
+  });
+}
+
+updateInputExperience3(event){
+  this.setState({
+    inputExperience3: event.target.value
+  });
+}
+
 
   onHandleSendExperiencie(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
     this.setState({
-      experienceTittle: entries.job,
-      experienceCompany: entries.company,
-      experienceFromMonth: entries.monthexpstart,
-      experienceFromYear: entries.yearexpstart,
-      experienceToMonth: entries.monthexpend,
-      experienceToYear: entries.yearexpend,
-      experienceContent: entries.comments
+      experienceTittle: this.state.inputExperience1,
+      experienceCompany: this.state.inputExperience2,
+      experienceContent: this.state.inputExperience3
     });
     event.preventDefault();
   }
 
-  onHandleSendEducation(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
+
+  updateInputEducation1(event){
     this.setState({
-      educationTittle: entries.degree,
-      educationCenter:entries.university,
-      educationFromMonth: entries.montheducstart,
-      educationFromYear: entries.yeareducstart,
-      educationToMonth: entries.montheducend,
-      educationToYear: entries.yeareducend
+      inputEducation1: event.target.value
+    });
+  }
+
+  updateInputEducation2(event){
+    this.setState({
+      inputEducation2: event.target.value
+    });
+  }
+
+
+  onHandleSendEducation(event){
+    this.setState({
+      educationTittle: this.state.inputEducation1,
+      educationCenter: this.state.inputEducation2,
+      educationFromMonth: '',
+      educationFromYear: '',
+      educationToMonth: '',
+      educationToYear: ''
     });
     event.preventDefault();
   }
@@ -203,6 +276,39 @@ class App extends Component {
         updateInputPersonal1b = {this.updateInputPersonal1}
         inputPersonal2b = {this.state.inputPersonal2}
         updateInputPersonal2b = {this.updateInputPersonal2}
+        inputPersonal3b = {this.state.inputPersonal3}
+        updateInputPersonal3b = {this.updateInputPersonal3}
+        inputPersonal4b = {this.state.inputPersonal4}
+        updateInputPersonal4b = {this.updateInputPersonal4}
+        inputPersonal5b = {this.state.inputPersonal5}
+        updateInputPersonal5b = {this.updateInputPersonal5}
+        inputPersonal6b = {this.state.inputPersonal6}
+        updateInputPersonal6b = {this.updateInputPersonal6}
+
+        inputSkillsb = {this.state.inputSkills}
+        updateInputSkillsb={this.updateInputSkills}
+
+        inputLanguage1b = {this.state.inputLanguage1}
+        updateInputLanguage1b={this.updateInputLanguage1}
+
+        inputLanguage2b = {this.state.inputLanguage2}
+        updateInputLanguage2b={this.updateInputLanguage2}
+
+        inputExperience1b = {this.state.inputExperience1}
+        updateInputExperience1b = {this.updateInputExperience1}
+
+
+        inputExperience2b = {this.state.inputExperience2}
+        updateInputExperience2b = {this.updateInputExperience2}
+
+        inputExperience3b = {this.state.inputExperience3}
+        updateInputExperience3b = {this.updateInputExperience3}
+
+        inputEducation1b = {this.state.inputEducation1}
+        updateInputEducation1b = {this.updateInputEducation1}
+
+        inputEducation2b = {this.state.inputEducation2}
+        updateInputEducation2b = {this.updateInputEducation2}
       />
 
       <div className="cv-box hidden-cv">
