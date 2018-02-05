@@ -20,7 +20,7 @@ class Skills extends Component {
             <img id="quit-skills" className="remove-button" src="images/remove.svg" alt="remove button" />
           </div>
 
-          <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="submit" name="button" onSubmit={this.props.sendLocalSkills}>guardar</button>
+          <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button" onClick={this.props.sendLocalSkills}>guardar</button>
       </Collapse>
     );
   }

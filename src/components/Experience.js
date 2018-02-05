@@ -19,9 +19,9 @@ class Experience extends Component {
     return (
             <Collapse legend= "Experiencia Profesional">
               <div>
-                  <input  onChange ={this.props.elenita}  id="job" className="default-input-txtarea" type="text" name="job" value={this.props.value} placeholder="Puesto*" />
-                  <input onChange ={this.props.elenita}  id="company" className="default-input-txtarea" type="text" name="company"  placeholder="Empresa*" />
-                  <textarea onChange ={this.props.elenita} id="comments" className="default-input-txtarea" name="comments" rows={8} cols={20} maxLength={300} placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)" defaultValue={""} />
+                  <input   id="job" className="default-input-txtarea" type="text" name="job" placeholder="Puesto*" value={this.props.inputExperience1a} onChange={this.props.updateInputExperience1a}/>
+                  <input   id="company" className="default-input-txtarea" type="text" name="company"  placeholder="Empresa*"  placeholder="Idioma*" value={this.props.inputExperience2a} onChange={this.props.updateInputExperience2a}/>
+                  <textarea  id="comments" className="default-input-txtarea" name="comments" rows={8} cols={20} maxLength={300} placeholder="Funciones*(Escribe una pequeña descripción de tu puesto. Máx:300 caracteres.)" defaultValue={""} value={this.props.inputExperience3a} onChange={this.props.updateInputExperience3a}/>
 
                   <div className="calendar">
                     <div className="calendar-start-exp">
@@ -45,7 +45,7 @@ class Experience extends Component {
                     <img className="remove-button" src="images/remove.svg" alt="remove button" />
                   </div>
 
-                  <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="submit" name="button" onSubmit={this.props.sendLocalExperiencie}>guardar</button>
+                  <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button" onClick={this.props.sendLocalExperiencie}>guardar</button>
 
               </Collapse>
 

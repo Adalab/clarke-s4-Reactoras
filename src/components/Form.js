@@ -72,14 +72,25 @@ class Form extends Component {
         <Languages changeInputText={this.changeInputText}
         sendLocalLanguages={this.props.sendLanguages}
 
-        inputLanguage1a={this.inputLanguage1b}
-        updateInputLanguage1a={this.updateInputLanguage1b}
+        inputLanguage1a={this.props.inputLanguage1b}
+        updateInputLanguage1a={this.props.updateInputLanguage1b}
 
-        inputLanguage2a={this.inputLanguage2b}
-        updateInputLanguage2a={this.updateInputLanguage2b}/>
+        inputLanguage2a={this.props.inputLanguage2b}
+        updateInputLanguage2a={this.props.updateInputLanguage2b}
+        />
 
         <Experience changeInputText={this.changeInputText}
-        sendLocalExperiencie={this.props.sendExperiencie} />
+        sendLocalExperiencie={this.props.sendExperiencie}
+
+        inputExperience1a={this.props.inputExperience1b}
+        updateInputExperience1a={this.props.updateInputExperience1b}
+
+        inputExperience2a={this.props.inputExperience2b}
+        updateInputExperience2a={this.props.updateInputExperience2b}
+
+        inputExperience3a={this.props.inputExperience3b}
+        updateInputExperience3a={this.props.updateInputExperience3b}/>
+
         <Education changeInputText={this.changeInputText}
         sendLocalEducation={this.props.sendEducation} />
         <div>
