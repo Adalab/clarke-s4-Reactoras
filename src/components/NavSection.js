@@ -32,8 +32,8 @@ class NavSection extends React.Component {
   render() {
     return (
       <nav>
-      <button onClick={this.handleClickNavSection} className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
-      <button onClick={this.handleClickNavSection} className="tab-button tab-button-typo padding-xs" type="button" name="button-cv">cv</button>
+      <button onClick={this.handleClickNavSection} className="tab-button active-state-button tab-button-typo color-tertiary padding-xs uppercase-style" type="button" name="button-form">formulario</button>
+      <button onClick={this.handleClickNavSection} className="tab-button tab-button-typo color-tertiary padding-xs" type="button" name="button-cv">cv</button>
       </nav>
     );
   }

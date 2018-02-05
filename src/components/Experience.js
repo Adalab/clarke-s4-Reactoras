@@ -5,16 +5,20 @@ import Collapse  from './Collapse';
 class Experience extends Component {
   static defaultProps = {
     monthexp: ['Mes','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
-    yearexp: ['Año','1950','1951','1952','1953','1954','1955','1956','1957','1958','1959','1960','1961','1962','1963','1967','1968','1969','1970','1971','1972','1973','1974','1975']
+  }
+
+  getRange = (arrayLength) => {
+    return Array.from({length: arrayLength}, (x,i) => i + (new Date().getFullYear()) - (arrayLength-1));
   }
 
   render() {
-
-    let monthOptions = this.props.monthexp.map((monthexp) => {
-          return <option key={monthexp} value={monthexp} >{monthexp}</option>
+    let monthOptions = this.props.monthexp.map((monthexp,i) => {
+          const hiddenMonth = (i === 0);
+          return <option key={monthexp} hidden={hiddenMonth} value={monthexp} >{monthexp}</option>
     });
-    let yearOptions = this.props.yearexp.map((yearexp) => {
-          return <option key={yearexp} value={yearexp} >{yearexp}</option>
+    let yearOptions = ['Año'].concat(this.getRange(100)).map((yearexp, i) => {
+          const hiddenYear = (i === 0);
+          return <option key={yearexp} hidden={hiddenYear} value={yearexp} >{yearexp}</option>
     });
     return (
             <Collapse legend= "Experiencia Profesional">
