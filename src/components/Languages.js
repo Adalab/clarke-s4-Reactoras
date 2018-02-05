@@ -3,32 +3,61 @@ import Collapse  from './Collapse';
 
 
 class Languages extends Component {
-// constructor(props){
-// super(props);
-// this.state = {
-// inputValue:'';
-// }
-// this.changeInputText = this.changeInputText.bind(this);
-// }
-//
-// changeInputText(event){
-// this.setState()
-// }
+  constructor(props){
+    super(props);
+    this.state = {
+      languages: [{
+        languageTittle: '',
+        languageContent: ''
+      }]
+    };
+  }
+
+  addOption = () => {
+    this.setState(prevState => {
+      return Object.assign({}, prevState, {languages: [...prevState.languages, {}] })  ;
+    })
+  }
+
+  deleteOption = () => {
+    this.setState(prevState => {
+      return Object.assign({}, prevState, {languages: [...prevState.languages].slice(0, -1) })  ;
+    })
+  }
+
+  updateOption = (event) => {
+    const updateValue = event.target.value;
+    const index = event.target.dataset.index;
+
+    this.setState(prevState => {
+      const languagesCopy = [...prevState.languages];
+      languagesCopy[index] = updateValue;
+
+      return Object.assign({}, prevState, {languages: languagesCopy })  ;
+    })
+  }
   render() {
     return (
 
-          <Collapse legend = "Idiomas">
-                <input onChange ={this.props.elenita} id="anita" className="user-language default-input-txtarea" type="text" name="firstlanguage" value={this.props.value}  placeholder="Idioma*"  />
-                <input onChange ={this.props.elenita} className="user-level default-input-txtarea" type="text" name="leveltitle" value={this.props.value} placeholder="Nivel/Título*"  />
-                <p className="indicative-text-typo">*Campos obligatorios</p>
-                <div className="language-buttons margin-xs">
-                    <img id="add-language" className="add-button" src="images/add.svg" alt="add button" />
-                    <img className="up-button" src="images/up.svg" alt="up button" />
-                    <img className="down-button" src="images/down.svg" alt="down button" />
-                    <img id="quit-language" className="remove-button" src="images/remove.svg" alt="remove button" />
-                </div>
+      <Collapse legend = "Idiomas">
 
-          </Collapse>
+      {this.state.languages.map((language, index)=> {
+        return <div>
+                  <input  key={index} onChange={this.updateOption} data-index={index} className="user-language default-input-txtarea" type="text" name="firstlanguage" defaultValue={language.languageTittle}   placeholder="Idioma*"  />
+                  <input  key={index} onChange={this.updateOption} data-index={index} className="user-level default-input-txtarea" type="text" name="leveltitle" defaultValue={language.languageContent}  placeholder="Nivel/Título*"  />
+                </div>;
+      })}
+
+      <p className="indicative-text-typo">*Campos obligatorios</p>
+      <div className="language-buttons margin-xs">
+
+      <img onClick={this.addOption}  className="add-button" src="images/add.svg" alt="add button" />
+      <img className="up-button" src="images/up.svg" alt="up button" />
+      <img className="down-button" src="images/down.svg" alt="down button" />
+      <img onClick={this.deleteOption} className="remove-button" src="images/remove.svg" alt="remove button" />
+      </div>
+
+      </Collapse>
 
     );
   }

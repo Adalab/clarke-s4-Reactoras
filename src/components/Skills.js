@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Collapse  from './Collapse';
-import ButtonMore  from './ButtonMore';
-import ButtonLess  from './ButtonLess';
+
 
 
 class Skills extends Component {
@@ -52,7 +51,7 @@ class Skills extends Component {
 
           <div className="skills-buttons margin-xs">
 
-            <img onClick={this.addOption} id="add-language" className="add-button" src="images/add.svg" alt="add button" />
+            <img onClick={this.addOption} className="add-button" src="images/add.svg" alt="add button" />
             <img className="up-button" src="images/up.svg" alt="up button" />
             <img className="down-button" src="images/down.svg" alt="down button" />
             <img onClick={this.deleteOption} className="remove-button" src="images/remove.svg" alt="remove button" />
