@@ -4,7 +4,6 @@ import WelcomeBox from './components/WelcomeBox';
 import NavSection from './components/NavSection';
 import Form from './components/Form';
 import CloseButton from "./components/CloseButton";
-import ChangeOrderButtons from './components/ChangeOrderButtons';
 import SectionCVHeader from "./components/SectionCVHeader";
 import SectionCV from "./components/SectionCV";
 import PrintSection from './components/PrintSection';
@@ -24,7 +23,7 @@ class App extends Component {
       mail: "adalab@adalab.com",
       linkedin: "linkedin.com/adalab",
       skill: "Habilidades",
-      firstskill: 'Habilidad1',
+      skills: ['Habilidad1'],
       languageTittle: "Lenguaje1",
       languageContent: "Nivel/título",
       experienceTittle: "Encargado de planta",
@@ -65,7 +64,8 @@ class App extends Component {
       mail: entries.email,
       linkedin: entries.Linkedin,
       skill: entries.skill,
-      firstskill: entries.firstskill,
+      skills: [
+       entries.firstskill],
       languageTittle: entries.firstlanguage,
       languageContent: entries.leveltitle,
       experienceTittle: entries.job,
@@ -115,7 +115,7 @@ class App extends Component {
 
       <SectionCV
       skillForm ={ this.state.skill}
-      firstskillForm ={this.state.firstskill}
+      firstskillForm ={this.state.skills}
       languageTittleForm ={ this.state.languageTittle}
       languageContentForm ={ this.state.languageContent}
       experienceTittleForm ={ this.state.experienceTittle}
