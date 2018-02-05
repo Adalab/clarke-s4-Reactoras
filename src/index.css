@@ -59,18 +59,18 @@ p {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  border-radius: 0.313em;
-  padding: 0.625em;
-  margin: 0.5em 0em;
-  background: lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8px 0;
+  background: #F1EDEC;
   opacity: 0.5;
   width: 100%;
   font-family: inherit; }
 
 .default-fieldset {
-  border: 0.125em solid #a6313a;
-  border-radius: 0.938em;
-  margin-bottom: 0.625em; }
+  border: 1px solid #a6313a;
+  border-radius: 15px;
+  margin-bottom: 10px; }
 
 .month, .year {
   -webkit-appearance: none;
@@ -78,7 +78,7 @@ p {
   appearance: none;
   border: none;
   border-bottom: 1px solid #a6313a;
-  border-radius: 0px; }
+  border-radius: 0; }
 
 .month {
   width: 45%; }
@@ -98,12 +98,11 @@ p {
   font-size: 40px; }
 
 .profile {
-  background-color: black;
+  background-color: #000000;
   width: 100%; }
 
 .cv-header-text {
-  padding: 15px;
-  color: white; }
+  color: #ffffff; }
 
 .cv-description {
   width: 100%; }
@@ -112,13 +111,10 @@ p {
   background-color: #a6313a; }
 
 .contact ul {
-  list-style: none;
-  margin-top: 0;
-  padding: 15px; }
+  list-style: none; }
 
 .contact li img {
-  width: 30px;
-  padding-right: 10px; }
+  width: 30px; }
 
 .section-cv h3 {
   margin-bottom: 0;
@@ -134,7 +130,7 @@ p {
   margin-left: 15px; }
 
 .box-cv {
-  background-color: lightgray;
+  background-color: #F1EDEC;
   padding: 5px; }
 
 .list-language, .list-skills {
@@ -263,8 +259,8 @@ p {
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #ffffff;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 14px; }
 
 .colored2-button-typo {
@@ -272,15 +268,13 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #a6313a;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 14px; }
 
 .indicative-text-typo {
-  color: gray;
+  color: #F1EDEC;
   font-size: 12px;
-  text-align: right;
-  margin-bottom: 0;
-  margin-top: 0; }
+  text-align: right; }
 
 .cv-large-text {
   font-size: 30px; }
@@ -289,7 +283,7 @@ p {
   font-size: 16px; }
 
 .color1 {
-  color: white; }
+  color: #ffffff; }
 
 .bold-style {
   font-weight: bold; }
@@ -347,7 +341,13 @@ p {
 .padding-left-lg {
   padding-left: 30px; }
 
+.padding-right-xs {
+  padding-right: 10px; }
+
 /* MARGIN */
+.margin-top-zero {
+  margin-top: 0; }
+
 .margin-top-xxxs {
   margin-top: 8px; }
 

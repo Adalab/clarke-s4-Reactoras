@@ -3,19 +3,19 @@
   -moz-appearance:    none;
   appearance:         none;
   border:none;
-  border-radius: 0.313em;
-  padding: 0.625em;
-  margin:0.5em 0em;
-  background: lightgray;
+  border-radius: $border-tertiary;
+  padding: 10px;
+  margin:8px 0;
+  background: $color3;
   opacity: 0.5;
   width: $width-quaternary;
   font-family: inherit;
 }
 
 .default-fieldset {
-  border: 0.125em solid $color1;
-  border-radius: 0.938em;
-  margin-bottom: 0.625em
+  border: $space-primary solid $color1;
+  border-radius: $border-secondary;
+  margin-bottom: 10px;
 }
 
 .month, .year {
@@ -23,8 +23,8 @@
   -moz-appearance:    none;
   appearance:         none;
   border: none;
-  border-bottom: 1px solid $color1;
-  border-radius: 0px;
+  border-bottom: $space-primary solid $color1;
+  border-radius: $border-cero;
 }
 
 .month {
