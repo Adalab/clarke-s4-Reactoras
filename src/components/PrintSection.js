@@ -11,9 +11,7 @@ class PrintSection extends Component {
 
   handleClickPrint() {
 
-    const printButton = document.querySelector('#print-cv');
     let newHead = document.querySelector('head');
-    const title =document.title;
     const pdfCv = document.getElementById('cv_part');
     pdfCv.style.display = "block";
     newHead = document.head.innerHTML;

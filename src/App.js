@@ -3,8 +3,6 @@ import Header from './components/Header';
 import WelcomeBox from './components/WelcomeBox';
 import NavSection from './components/NavSection';
 import Form from './components/Form';
-import CloseButton from "./components/CloseButton";
-import ChangeOrderButtons from './components/ChangeOrderButtons';
 import SectionCVHeader from "./components/SectionCVHeader";
 import SectionCV from "./components/SectionCV";
 import PrintSection from './components/PrintSection';

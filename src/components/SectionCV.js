@@ -1,7 +1,5 @@
 import React from 'react';
 import ElementListCV from "./ElementListCV";
-import SectionCVHeader from "./SectionCVHeader";
-
 
 class SectionCV extends React.Component {
   render() {

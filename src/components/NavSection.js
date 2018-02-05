@@ -1,6 +1,4 @@
 import React from 'react';
-import ButtonsNavSection from "./ButtonsNavSection";
-
 
 class NavSection extends React.Component {
   constructor(props) {
@@ -32,8 +30,6 @@ class NavSection extends React.Component {
 
   }
   render() {
-    const activeClass = this.state.collapsed ? 'active-state-button' : '';
-
     return (
       <nav>
       <button onClick={this.handleClickNavSection} className="tab-button active-state-button tab-button-typo padding-xs uppercase-style" type="button" name="button-form">formulario</button>
