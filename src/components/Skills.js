@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Collapse  from './Collapse';
-import ChangeOrderButtons  from './ChangeOrderButtons';
-
 
 class Skills extends Component {
 

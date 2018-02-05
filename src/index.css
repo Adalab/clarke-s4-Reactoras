@@ -85,6 +85,14 @@ p {
 .year {
   width: 20%; }
 
+.insert-photo-input {
+  display: block;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px; }
+
 #name_surname_out {
   font-size: 40px; }
 
@@ -153,6 +161,19 @@ p {
     margin-right: 0;
     margin-bottom: 0;
     padding: 10px 10px; } }
+
+.photo-CV {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #a6313a;
+  display: block;
+  margin: 30px 10px 10px 0;
+  float: right; }
+  @media all and (min-width: 1024px) {
+    .photo-CV {
+      margin: 35px; } }
 
 .welcome-box {
   background: url("https://raw.githubusercontent.com/Adalab/c-s2-ker/master/images/background-welcome.jpg") no-repeat;

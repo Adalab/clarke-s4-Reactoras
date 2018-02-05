@@ -8,6 +8,8 @@ class SectionCVHeader extends Component {
         <div className="profile">
           <div className="cv-header-text">
 
+          <img className="photo-CV"/>
+
           <h2 id="name_surname_out">{ this.props.nameForm}</h2>
           <h2> <span id="prof_out" className="profesion">{ this.props.professionForm}</span></h2>
           <p className="cv-description" id="description_out" >{ this.props.descriptionForm}
