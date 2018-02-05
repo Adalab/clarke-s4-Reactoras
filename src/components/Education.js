@@ -20,8 +20,8 @@ class Education extends Component {
     return (
       <Collapse legend= "Educación">
         <div className = "educ-container">
-          <input id="degree" onChange ={this.props.elenita} className="default-input-txtarea" type="text" name="degree"  placeholder="Título*"  />
-          <input id="university" onChange ={this.props.elenita} className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*"  />
+          <input id="degree"  className="default-input-txtarea" type="text" name="degree"  placeholder="Título*" value={this.props.inputEducation1a} onChange={this.props.updateInputEducation1a} />
+          <input id="university"  className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*" value={this.props.inputEducation2a} onChange={this.props.updateInputEducation2a}  />
 
           <div className="calendar">
             <div className="calendar-start-educ">
@@ -47,7 +47,7 @@ class Education extends Component {
           <img className="remove-button" src="images/remove.svg" alt="remove button" />
         </div>
 
-        <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="submit" name="button" onSubmit={this.props.sendLocalEducation}>guardar</button>
+        <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button" onClick={this.props.sendLocalEducation}>guardar</button>
       </Collapse>
 
     );

@@ -26,6 +26,8 @@ class App extends Component {
       inputExperience1: '',
       inputExperience2: '',
       inputExperience3: '',
+      inputEducation1: '',
+      inputEducation2: '',
       name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -71,6 +73,9 @@ class App extends Component {
     this.updateInputExperience1 = this.updateInputExperience1.bind(this);
     this.updateInputExperience2 = this.updateInputExperience2.bind(this);
     this.updateInputExperience3 = this.updateInputExperience3.bind(this);
+
+    this.updateInputEducation1 = this.updateInputEducation1.bind(this);
+    this.updateInputEducation2 = this.updateInputEducation2.bind(this);
   }
 
   updateInputPersonal1(event){
@@ -185,22 +190,28 @@ updateInputExperience3(event){
     event.preventDefault();
   }
 
-  onHandleSendEducation(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
+
+  updateInputEducation1(event){
     this.setState({
-      educationTittle: entries.degree,
-      educationCenter:entries.university,
-      educationFromMonth: entries.montheducstart,
-      educationFromYear: entries.yeareducstart,
-      educationToMonth: entries.montheducend,
-      educationToYear: entries.yeareducend
+      inputEducation1: event.target.value
+    });
+  }
+
+  updateInputEducation2(event){
+    this.setState({
+      inputEducation2: event.target.value
+    });
+  }
+
+
+  onHandleSendEducation(event){
+    this.setState({
+      educationTittle: this.state.inputEducation1,
+      educationCenter: this.state.inputEducation2,
+      educationFromMonth: '',
+      educationFromYear: '',
+      educationToMonth: '',
+      educationToYear: ''
     });
     event.preventDefault();
   }
@@ -292,6 +303,12 @@ updateInputExperience3(event){
 
         inputExperience3b = {this.state.inputExperience3}
         updateInputExperience3b = {this.updateInputExperience3}
+
+        inputEducation1b = {this.state.inputEducation1}
+        updateInputEducation1b = {this.updateInputEducation1}
+
+        inputEducation2b = {this.state.inputEducation2}
+        updateInputEducation2b = {this.updateInputEducation2}
       />
 
       <div className="cv-box hidden-cv">
