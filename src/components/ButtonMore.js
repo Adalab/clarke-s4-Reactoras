@@ -6,7 +6,7 @@ class ButtonMore extends Component {
     super(props);
     this.state ={
       skills: [
-        'Habilidad'
+        ''
       ]
     }
 
@@ -15,22 +15,18 @@ class ButtonMore extends Component {
   }
 
   addOption(){
-    this.setState ={
-       skills:this.state.skills.push('Otra habilidad') }
-
-      
-      const repeatedItemSkills = `<input className="user-skills skills-text default-input-txtarea" data-id="0" type="text" name="firstskill"  placeholder="Habilidad*"/>`
-    	const skillsElement = document.querySelector('.user-skills');
-    	skillsElement.insertAdjacentHTML('afterend', repeatedItemSkills);
-
+    this.setState(prevState => {
+      return [...prevState.skills, ''];
+    })
   }
+
 
 
   render(){
 
     return(
 
-          <img onClick={this.addOption} id="#add-skills" className="add-button" src="images/add.svg" alt="add button" />
+      <img onClick={this.addOption} id="#add-skills" className="add-button" src="images/add.svg" alt="add button" />
 
     );
   }

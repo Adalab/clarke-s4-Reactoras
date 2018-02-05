@@ -10,14 +10,24 @@ class ButtonLess extends Component {
   }
 
   quitOption(){
-
+    //
     // this.setState ={
-    //    skills:this.state.skills.pop('Otra habilidad') }
+    //    skills:this.state.skills.pop }
 
     const skillsContainer = document.querySelector('.skills-container')
-    const skillsElement = document.querySelector('.user-skills');
-    skillsContainer.removeChild(skillsElement);
-  }
+    const skillsElement = document.querySelectorAll('.user-skills');
+           for (let i = 0; i < skillsElement.length; i++) {
+
+              //  skillsContainer.insertAdjacentHTML('afterend', skillsElement[i]);}
+    // const skillsElement = document.querySelector('.user-skills');
+    /*  skillsElement[i].onclick =()=>{*/
+        skillsContainer.removeChild(skillsElement[i]);
+
+      // }
+    }
+    // const skillsElement = document.querySelectorAll('.user-skills');
+}
+
 
 
   render(){

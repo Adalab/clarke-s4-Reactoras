@@ -24,21 +24,27 @@ class App extends Component {
       linkedin: "linkedin.com/adalab",
       skill: "Habilidades",
       skills: ['Habilidad1'],
-      languageTittle: "Lenguaje1",
-      languageContent: "Nivel/título",
+      languages: [{
+        languageTittle: "Lenguaje1",
+        languageContent: "Nivel/título"
+      }],
+      experiences: [{
       experienceTittle: "Encargado de planta",
       experienceCompany: "Carrefour",
       experienceFromMonth: " junio",
       experienceFromYear: "2016",
       experienceToMonth: " julio",
       experienceToYear: "2017",
-      experienceContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      experienceContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }],
+     education: [{
       educationTittle: "Licenciatura en Periodismo",
       educationCenter: "Universidad Rey Juan Carlos I",
       educationFromMonth: " junio",
       educationFromYear: "2016",
       educationToMonth: " julio",
       educationToYear: "2017"
+    }]
     }
     this.handleSendData = this.handleSendData.bind(this);
     {/*// this.setField = this.setField.bind(this);*/}
@@ -66,27 +72,35 @@ class App extends Component {
       skill: entries.skill,
       skills: [
        entries.firstskill],
-      languageTittle: entries.firstlanguage,
-      languageContent: entries.leveltitle,
-      experienceTittle: entries.job,
-      experienceCompany: entries.company,
-      experienceFromMonth: entries.monthexpstart,
-      experienceFromYear: entries.yearexpstart,
-      experienceToMonth: entries.monthexpend,
-      experienceToYear: entries.yearexpend,
-      experienceContent: entries.comments,
-      educationTittle: entries.degree,
-      educationCenter:entries.university,
-      educationFromMonth: entries.montheducstart,
-      educationFromYear: entries.yeareducstart,
-      educationToMonth: entries.montheducend,
-      educationToYear: entries.yeareducend
+       languages: [
+         {languageTittle: entries.firstlanguage,
+         languageContent: entries.leveltitle}
+       ],
+       experiences: [{
+         experienceTittle: entries.job,
+         experienceCompany: entries.company,
+         experienceFromMonth: entries.monthexpstart,
+         experienceFromYear: entries.yearexpstart,
+         experienceToMonth: entries.monthexpend,
+         experienceToYear: entries.yearexpend,
+         experienceContent: entries.comments,
+       }],
+       education: [{
+         educationTittle: entries.degree,
+         educationCenter:entries.university,
+         educationFromMonth: entries.montheducstart,
+         educationFromYear: entries.yeareducstart,
+         educationToMonth: entries.montheducend,
+         educationToYear: entries.yeareducend
+       }]
+
     });
 
     event.preventDefault();
   }
 
   render() {
+
     return (
       <div>
 

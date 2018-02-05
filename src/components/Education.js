@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Collapse  from './Collapse';
+import ButtonMore  from './ButtonMore';
 
 
 class Education extends Component {
@@ -41,7 +42,7 @@ class Education extends Component {
         <p className="indicative-text-typo ">*Campos obligatorios</p>
 
         <div className="education-buttons margin-xs">
-          <img id="add_button_educ" className="add-button" src="images/add.svg" alt="add button" />
+          <ButtonMore />
           <img className="up-button" src="images/up.svg" alt="up button" />
           <img className="down-button" src="images/down.svg" alt="down button" />
           <img className="remove-button" src="images/remove.svg" alt="remove button" />
