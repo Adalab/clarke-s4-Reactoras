@@ -16,6 +16,10 @@ class App extends Component {
     this.state = {
       inputPersonal1: '',
       inputPersonal2: '',
+      inputPersonal3: '',
+      inputPersonal4: '',
+      inputPersonal5: '',
+      inputPersonal6: '',
       name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -48,6 +52,10 @@ class App extends Component {
     this.onHandleSendEducation = this.onHandleSendEducation.bind(this);
     this.updateInputPersonal1 = this.updateInputPersonal1.bind(this);
     this.updateInputPersonal2 = this.updateInputPersonal2.bind(this);
+    this.updateInputPersonal3 = this.updateInputPersonal3.bind(this);
+    this.updateInputPersonal4 = this.updateInputPersonal4.bind(this);
+    this.updateInputPersonal5 = this.updateInputPersonal5.bind(this);
+    this.updateInputPersonal6 = this.updateInputPersonal6.bind(this);
   }
 
   updateInputPersonal1(event){
@@ -62,10 +70,38 @@ class App extends Component {
     });
   }
 
+  updateInputPersonal3(event){
+    this.setState({
+      inputPersonal3: event.target.value
+    });
+  }
+
+  updateInputPersonal4(event){
+    this.setState({
+      inputPersonal4: event.target.value
+    });
+  }
+
+  updateInputPersonal5(event){
+    this.setState({
+      inputPersonal5: event.target.value
+    });
+  }
+
+  updateInputPersonal6(event){
+    this.setState({
+      inputPersonal6: event.target.value
+    });
+  }
+
   onHandleSendLocalPersonalData(event){
     this.setState({
       name: this.state.inputPersonal1,
-      profession: this.state.inputPersonal2
+      profession: this.state.inputPersonal2,
+      phone: this.state.inputPersonal3,
+      mail: this.state.inputPersonal4,
+      linkedin: this.state.inputPersonal5,
+      description: this.state.inputPersonal6
     });
     event.preventDefault();
   }
@@ -203,6 +239,14 @@ class App extends Component {
         updateInputPersonal1b = {this.updateInputPersonal1}
         inputPersonal2b = {this.state.inputPersonal2}
         updateInputPersonal2b = {this.updateInputPersonal2}
+        inputPersonal3b = {this.state.inputPersonal3}
+        updateInputPersonal3b = {this.updateInputPersonal3}
+        inputPersonal4b = {this.state.inputPersonal4}
+        updateInputPersonal4b = {this.updateInputPersonal4}
+        inputPersonal5b = {this.state.inputPersonal5}
+        updateInputPersonal5b = {this.updateInputPersonal5}
+        inputPersonal6b = {this.state.inputPersonal6}
+        updateInputPersonal6b = {this.updateInputPersonal6}
       />
 
       <div className="cv-box hidden-cv">

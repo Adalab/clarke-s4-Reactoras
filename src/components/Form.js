@@ -49,6 +49,18 @@ class Form extends Component {
           inputPersonal2a={this.props.inputPersonal2b}
           updateInputPersonal2a={this.props.updateInputPersonal2b}
 
+          inputPersonal3a={this.props.inputPersonal3b}
+          updateInputPersonal3a={this.props.updateInputPersonal3b}
+
+          inputPersonal4a={this.props.inputPersonal4b}
+          updateInputPersonal4a={this.props.updateInputPersonal4b}
+
+          inputPersonal5a={this.props.inputPersonal5b}
+          updateInputPersonal5a={this.props.updateInputPersonal5b}
+
+          inputPersonal6a={this.props.inputPersonal6b}
+          updateInputPersonal6a={this.props.updateInputPersonal6b}
+
          />
 
         <Skills changeInputText={this.changeInputText}
