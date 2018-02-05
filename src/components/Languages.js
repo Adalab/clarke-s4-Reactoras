@@ -28,6 +28,8 @@ class Languages extends Component {
                     <img id="quit-language" className="remove-button" src="images/remove.svg" alt="remove button" />
                 </div>
 
+                <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="submit" name="button" onSubmit={this.props.sendLocalLanguages}>guardar</button>
+
           </Collapse>
 
     );

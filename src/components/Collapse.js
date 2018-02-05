@@ -9,7 +9,7 @@ class Collapse extends Component {
     }
 
     this.handleClickCollapse = this.handleClickCollapse.bind(this);
-  
+
   }
 
   handleClickCollapse() {
@@ -26,7 +26,6 @@ class Collapse extends Component {
           <div className={`contact-input content ${hiddenClass}`}>
               {this.props.children}
               <button  onClick={this.handleClickCollapse} className="edit-button squared-primaryColor-width45-button left colored1-button-typo margin-md padding-xxxxs" type="button" name="button">cerrar</button>
-              <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button">guardar</button>
 
           </div>
       </fieldset>

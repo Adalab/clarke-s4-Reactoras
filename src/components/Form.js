@@ -35,25 +35,39 @@ class Form extends Component {
       fr.readAsDataURL(image);
     }
   }
-
   render() {
 
     return (
-      <div className="form-box margin-top-xs">
-        <form className="form" onSubmit={this.props.handleClick}>
-          <PersonalData changeInputText={this.changeInputText}  />
-          <Skills changeInputText={this.changeInputText}  />
-          <Languages changeInputText={this.changeInputText}  />
-          <Experience changeInputText={this.changeInputText} />
-          <Education changeInputText={this.changeInputText}  />
-          <div>
+
+    <div className="form-box margin-top-xs">
+      <form className="form" onSubmit={this.props.handleClick}>
+        <PersonalData  sendLocalPersonalData={this.props.sendPersonalData}
+
+          inputPersonal1a={this.props.inputPersonal1b}
+          updateInputPersonal1a={this.props.updateInputPersonal1b}
+
+          inputPersonal2a={this.props.inputPersonal2b}
+          updateInputPersonal2a={this.props.updateInputPersonal2b}
+
+         />
+
+        <Skills changeInputText={this.changeInputText}
+        sendLocalSkills={this.props.sendSkills}  />
+        <Languages changeInputText={this.changeInputText}
+        sendLocalLanguages={this.props.sendLanguages} />
+        <Experience changeInputText={this.changeInputText}
+        sendLocalExperiencie={this.props.sendExperiencie} />
+        <Education changeInputText={this.changeInputText}
+        sendLocalEducation={this.props.sendEducation} />
+        <div>
             <label htmlFor="photo" className="insert-photo-input colored1-button-typo rounded-primaryColor-width100-button">Insertar fotografía
             </label>
             <input className="hidden" type="file" name="photo" value="" id="photo" onChange= {this.handleInsertPhoto}/>
-          </div>
-          <input type="submit" className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" value="enviar datos al cv"/ >
-        </form>
-      </div>
+         </div>
+        <input type="submit" className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" value="enviar datos al cv"/ >
+
+      </form>
+     </div>
     );
   }
 }
