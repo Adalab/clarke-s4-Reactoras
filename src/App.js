@@ -32,6 +32,10 @@ class App extends Component {
       inputExperience7: '',
       inputEducation1: '',
       inputEducation2: '',
+      inputEducation3: '',
+      inputEducation4: '',
+      inputEducation5: '',
+      inputEducation6: '',
       name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -84,6 +88,10 @@ class App extends Component {
 
     this.updateInputEducation1 = this.updateInputEducation1.bind(this);
     this.updateInputEducation2 = this.updateInputEducation2.bind(this);
+    this.updateInputEducation3 = this.updateInputEducation3.bind(this);
+    this.updateInputEducation4 = this.updateInputEducation4.bind(this);
+    this.updateInputEducation5 = this.updateInputEducation5.bind(this);
+    this.updateInputEducation6 = this.updateInputEducation6.bind(this);
   }
 
   updateInputPersonal1(event){
@@ -239,15 +247,39 @@ updateInputExperience7(event){
     });
   }
 
+  updateInputEducation3(event){
+    this.setState({
+      inputEducation3: event.target.value
+    });
+  }
+
+  updateInputEducation4(event){
+    this.setState({
+      inputEducation4: event.target.value
+    });
+  }
+
+  updateInputEducation5(event){
+    this.setState({
+      inputEducation5: event.target.value
+    });
+  }
+
+  updateInputEducation6(event){
+    this.setState({
+      inputEducation6: event.target.value
+    });
+  }
+
 
   onHandleSendEducation(event){
     this.setState({
       educationTittle: this.state.inputEducation1,
       educationCenter: this.state.inputEducation2,
-      educationFromMonth: '',
-      educationFromYear: '',
-      educationToMonth: '',
-      educationToYear: ''
+      educationFromMonth: this.state.inputEducation3,
+      educationFromYear: this.state.inputEducation4,
+      educationToMonth: this.state.inputEducation5,
+      educationToYear: this.state.inputEducation6
     });
     event.preventDefault();
   }
@@ -357,6 +389,18 @@ updateInputExperience7(event){
 
         inputEducation2b = {this.state.inputEducation2}
         updateInputEducation2b = {this.updateInputEducation2}
+
+        inputEducation3b = {this.state.inputEducation3}
+        updateInputEducation3b = {this.updateInputEducation3}
+
+        inputEducation4b = {this.state.inputEducation4}
+        updateInputEducation4b = {this.updateInputEducation4}
+
+        inputEducation5b = {this.state.inputEducation5}
+        updateInputEducation5b = {this.updateInputEducation5}
+
+        inputEducation6b = {this.state.inputEducation6}
+        updateInputEducation6b = {this.updateInputEducation6}
       />
 
       <div className="cv-box hidden-cv">

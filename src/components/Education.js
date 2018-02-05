@@ -31,13 +31,13 @@ class Education extends Component {
           <div className="calendar">
             <div className="calendar-start-educ">
                 <p className="start-educ">Desde*</p>
-                <select id="start_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducstart" ref="montheduc">{monthOptions}</select>
-                <select id="start_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducstart" ref="yeareduc">{yearOptions}</select>
+                <select id="start_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducstart" ref="montheduc" value={this.props.inputEducation3a} onChange={this.props.updateInputEducation3a}>{monthOptions}</select>
+                <select id="start_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducstart" ref="yeareduc" value={this.props.inputEducation4a} onChange={this.props.updateInputEducation4a}>{yearOptions}</select>
             </div>
             <div className="calendar-end-educ">
               <p className="end-educ">Hasta*</p>
-              <select id="end_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducend" ref="montheduc">{monthOptions}</select>
-              <select id="end_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducend" ref="yeareduc">{yearOptions}</select>
+              <select id="end_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducend" ref="montheduc" value={this.props.inputEducation5a} onChange={this.props.updateInputEducation5a}>{monthOptions}</select>
+              <select id="end_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducend" ref="yeareduc" value={this.props.inputEducation6a} onChange={this.props.updateInputEducation6a}>{yearOptions}</select>
             </div>
 
           </div>
