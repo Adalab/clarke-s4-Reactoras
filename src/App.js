@@ -21,6 +21,8 @@ class App extends Component {
       inputPersonal5: '',
       inputPersonal6: '',
       inputSkills: '',
+      inputLanguage1: '',
+      inputLanguage2: '',
       name: "Nombre Apellido",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -59,6 +61,9 @@ class App extends Component {
     this.updateInputPersonal6 = this.updateInputPersonal6.bind(this);
 
     this.updateInputSkills = this.updateInputSkills.bind(this);
+
+    this.updateInputLanguage1 = this.updateInputLanguage1.bind(this);
+    this.updateInputLanguage2 = this.updateInputLanguage2.bind(this);
   }
 
   updateInputPersonal1(event){
@@ -122,18 +127,24 @@ class App extends Component {
     event.preventDefault();
   }
 
-  onHandleSendLanguages(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
+
+  updateInputLanguage1(event){
     this.setState({
-      languageTittle: entries.firstlanguage,
-      languageContent: entries.leveltitle
+      inputLanguage1: event.target.value
+    });
+  }
+
+  updateInputLanguage2(event){
+    this.setState({
+      inputLanguage2: event.target.value
+    });
+  }
+
+
+  onHandleSendLanguages(event){
+    this.setState({
+      languageTittle: this.state.inputLanguage1,
+      languageContent: this.state.inputLanguage2
     });
     event.preventDefault();
   }
@@ -250,6 +261,11 @@ class App extends Component {
 
         inputSkillsb = {this.state.inputSkills}
         updateInputSkillsb={this.updateInputSkills}
+
+        inputLanguage1b = {this.state.inputLanguage1}
+        updateInputLanguage1b={this.updateInputLanguage1}
+        inputLanguage2b = {this.state.inputLanguage2}
+        updateInputLanguage2b={this.updateInputLanguage2}
       />
 
       <div className="cv-box hidden-cv">

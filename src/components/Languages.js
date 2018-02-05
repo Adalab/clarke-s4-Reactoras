@@ -18,8 +18,8 @@ class Languages extends Component {
     return (
 
           <Collapse legend = "Idiomas">
-                <input onChange ={this.props.elenita} id="anita" className="user-language default-input-txtarea" type="text" name="firstlanguage" value={this.props.value}  placeholder="Idioma*"  />
-                <input onChange ={this.props.elenita} className="user-level default-input-txtarea" type="text" name="leveltitle" value={this.props.value} placeholder="Nivel/Título*"  />
+                <input onChange ={this.props.elenita} id="anita" className="user-language default-input-txtarea" type="text" name="firstlanguage" value={this.props.value}  placeholder="Idioma*" value={this.props.inputLanguage1a} onChange={this.props.updateInputLanguage1a}  />
+                <input onChange ={this.props.elenita} className="user-level default-input-txtarea" type="text" name="leveltitle" value={this.props.value} placeholder="Nivel/Título*"  value={this.props.inputLanguage2a} onChange={this.props.updateInputLanguage2a} />
                 <p className="indicative-text-typo">*Campos obligatorios</p>
                 <div className="language-buttons margin-xs">
                     <img id="add-language" className="add-button" src="images/add.svg" alt="add button" />
