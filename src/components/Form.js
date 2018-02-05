@@ -18,8 +18,24 @@ class Form extends Component {
     this.setState({
       inputValue: event.target.value
     })
-
   }
+
+  handleInsertPhoto(event) {
+    const input = document.querySelector("#photo");
+    const img = document.querySelector('.photo-CV');
+    const files = input.files;
+    if (files && files.length > 0) {
+      showImage(files[0], img);
+    }
+    function showImage(image, imgTag) {
+      const fr = new FileReader();
+      fr.onload = function () {
+        imgTag.src = fr.result;
+      }
+      fr.readAsDataURL(image);
+    }
+  }
+
   render() {
 
     return (
@@ -33,7 +49,7 @@ class Form extends Component {
           <div>
             <label htmlFor="photo" className="insert-photo-input colored1-button-typo rounded-primaryColor-width100-button">Insertar fotografía
             </label>
-            <input className="hidden" type="file" name="photo" value="" id="photo" onChange= {this.props.actionInsertPhoto}/>
+            <input className="hidden" type="file" name="photo" value="" id="photo" onChange= {this.handleInsertPhoto}/>
           </div>
           <input type="submit" className="rounded-primaryColor-width100-button colored1-button-typo text-center margin-top-xxxs margin-bottom-lg padding-xxxxxs" id="save" value="enviar datos al cv"/ >
         </form>
