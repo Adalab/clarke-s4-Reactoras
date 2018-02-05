@@ -10,25 +10,41 @@ import Education from './Education';
 class Form extends Component {
 constructor(props){
   super(props);
-this.state = {
-inputValue : ''
-}
-this.changeInputText = this.changeInputText.bind(this);
+// this.state = {
+// inputValue : this.props.thisInputValue
+// }
+//this.changeInputText = this.changeInputText.bind(this);
 }
 
-changeInputText(event){
-this.setState({
-inputValue: event.target.value
-})
+// changeInputText(event){
+// this.setState({
+// inputValue: this.props.inputSkillValue
+// })
+//
+// }
 
-}
+// componentWillReceiveProps(nextProps){
+//   if(nextProps.value != this.state.inputValue){
+//     this.setState({inputValue: nextProps.inputValue});
+//   }
+// }
   render() {
     return (
     <div className="form-box margin-top-xs">
       <form className="form" onSubmit={this.props.handleClick}>
-        <PersonalData changeInputText={this.changeInputText} sendLocalPersonalData={this.props.sendPersonalData} />
+
+        <PersonalData  sendLocalPersonalData={this.props.sendPersonalData}
+
+        inputPersonal1a={this.props.inputPersonal1b}
+        updateInputPersonal1a={this.props.updateInputPersonal1b}
+
+        inputPersonal2a={this.props.inputPersonal2b}
+        updateInputPersonal2a={this.props.updateInputPersonal2b}
+
+          />
+
         <Skills changeInputText={this.changeInputText}
-        sendLocalSkills={this.props.sendSkills} />
+        sendLocalSkills={this.props.sendSkills}  />
         <Languages changeInputText={this.changeInputText}
         sendLocalLanguages={this.props.sendLanguages} />
         <Experience changeInputText={this.changeInputText}

@@ -17,6 +17,9 @@ class App extends Component {
     super(props);
 
     this.state = {
+      inputPersonal1: '',
+      inputPersonal2: '',
+
       name: "Álex Guerrero",
       profession: "Profesión",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -47,27 +50,58 @@ class App extends Component {
     this.onHandleSendLanguages = this.onHandleSendLanguages.bind(this);
     this.onHandleSendExperiencie = this.onHandleSendExperiencie.bind(this);
     this.onHandleSendEducation = this.onHandleSendEducation.bind(this);
+
+    this.updateInputPersonal1 = this.updateInputPersonal1.bind(this);
+    this.updateInputPersonal2 = this.updateInputPersonal2.bind(this);
+  }
+
+  // updateInputPersonal1(event){
+  //   let inputPersonal1 = '';
+  // this.setState({
+  // inputPersonal1: event.target.value
+  // })
+  // }
+
+  // updateInputPersonal2(event){
+  // this.setState({
+  // inputPersonal2: event.target.value
+  // })
+  // }
+
+
+  updateInputPersonal1(event){
+  this.setState({
+  inputPersonal1: event.target.value
+});
+  }
+
+  updateInputPersonal2(event){
+  this.setState({
+  inputPersonal2: event.target.value
+});
   }
 
   onHandleSendLocalPersonalData(event){
-    const currentTarget = event.target;
-    const formData = new FormData(currentTarget);
 
-    const entries = {};
-    for (let entry of formData.entries()) {
-      const nombreDelInput = entry[0];
-      const value = entry[1];
-      entries[nombreDelInput] = value;
-    }
+
+    // const currentTarget = event.target;
+    // const formData = new FormData(currentTarget);
+    //
+    // const entries = {};
+    // for (let entry of formData.entries()) {
+    //   const nombreDelInput = entry[0];
+    //   const value = entry[1];
+    //   entries[nombreDelInput] = value;
+    // }
 
 
     this.setState({
-      name: entries.fullname,
-      profession: entries.profession,
-      description: entries.comments,
-      phone: entries.phone,
-      mail: entries.email,
-      linkedin: entries.Linkedin
+      name: this.state.inputPersonal1,
+      profession: this.state.inputPersonal2
+      // description: entries.comments,
+      // phone: entries.phone,
+      // mail: entries.email,
+      // linkedin: entries.Linkedin
     });
 
     event.preventDefault();
@@ -217,11 +251,18 @@ class App extends Component {
 
       <Form
       handleClick={ this.handleSendData }
+
       sendPersonalData={this.onHandleSendLocalPersonalData}
       sendSkills={this.onHandleSendSkills}
       sendLanguages={this.onHandleSendLanguages}
       sendExperiencie={this.onHandleSendExperiencie}
       sendEducation={this.onHandleSendEducation}
+
+      inputPersonal1b = {this.state.inputPersonal1}
+      updateInputPersonal1b = {this.updateInputPersonal1}
+
+      inputPersonal2b = {this.state.inputPersonal2}
+      updateInputPersonal2b = {this.updateInputPersonal2}
       />
 
       <div className="cv-box hidden-cv">
