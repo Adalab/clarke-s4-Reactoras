@@ -47,3 +47,32 @@ border: $border-secondary;
  border: none;
  box-shadow: none;
 }
+
+/*Estilos botones añadir, subir, bajar y quitar*/
+.skills-buttons, .language-buttons, .experience-buttons, .education-buttons {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/*tamaño iconos botones añadir, subir, bajar y quitar*/
+.add-button, .up-button, .down-button, .remove-button {
+  width: 30px;
+  height: 30px;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  border:none;
+  border-radius: 0.313em;
+  padding: 0.625em;
+  margin:0.5em 0em;
+  background: lightgray;
+  opacity: 0.5;
+  width: 100%;
+  font-family: inherit;
+}
