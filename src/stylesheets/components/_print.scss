@@ -1,0 +1,76 @@
+
+
+.print-button {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  background-color: #a6313a;
+  opacity: 1;
+  border-radius: 0.938em;
+  padding: 0.313em;
+  width: 100%;
+  border: none;
+  margin-bottom: 1.250em;
+  margin-top: 1.250em;
+  box-shadow: none;
+}
+
+@media all and (min-width: 768px){
+
+  .list-contact {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .list-education li {
+    margin-right: 30px;
+  }
+}
+
+@media all and (min-width:1024px){
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .form-box {
+    width:30%;
+  }
+
+  .cv-box {
+    display: block;
+    width:65%;
+    margin:20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 10px 10px;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  .print-button{
+    display: none;
+  }
+
+  .list-contact {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .contact ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+  }
+}

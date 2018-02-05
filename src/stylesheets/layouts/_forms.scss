@@ -62,3 +62,29 @@
 		opacity: 1;
 	}
 }
+
+.calendar {
+  margin: 0.125em 0em;
+}
+
+.calendar-start-exp, .calendar-end-exp, .calendar-start-educ, .calendar-end-educ {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.print-button {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  background-color: #a6313a;
+  opacity: 1;
+  border-radius: 0.938em;
+  padding: 0.313em;
+  width: 100%;
+  border: none;
+  margin-bottom: 1.250em;
+  margin-top: 1.250em;
+  box-shadow: none;
+}
