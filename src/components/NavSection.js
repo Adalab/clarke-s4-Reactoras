@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonsNavSection from './ButtonsNavSection';
 
 class NavSection extends React.Component {
   constructor(props) {
