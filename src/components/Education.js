@@ -25,19 +25,19 @@ class Education extends Component {
     return (
       <Collapse legend= "Educación">
         <div className = "educ-container">
-          <input id="degree" onChange ={this.props.elenita} className="default-input-txtarea" type="text" name="degree"  placeholder="Título*"  />
-          <input id="university" onChange ={this.props.elenita} className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*"  />
+          <input id="degree"  className="default-input-txtarea" type="text" name="degree"  placeholder="Título*" value={this.props.inputEducation1a} onChange={this.props.updateInputEducation1a} />
+          <input id="university"  className="default-input-txtarea" type="text" name="university"  placeholder="Centro de Estudios*" value={this.props.inputEducation2a} onChange={this.props.updateInputEducation2a}  />
 
           <div className="calendar">
             <div className="calendar-start-educ">
                 <p className="start-educ">Desde*</p>
-                <select id="start_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducstart" ref="montheduc">{monthOptions}</select>
-                <select id="start_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducstart" ref="yeareduc">{yearOptions}</select>
+                <select id="start_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducstart" ref="montheduc" value={this.props.inputEducation3a} onChange={this.props.updateInputEducation3a}>{monthOptions}</select>
+                <select id="start_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducstart" ref="yeareduc" value={this.props.inputEducation4a} onChange={this.props.updateInputEducation4a}>{yearOptions}</select>
             </div>
             <div className="calendar-end-educ">
               <p className="end-educ">Hasta*</p>
-              <select id="end_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducend" ref="montheduc">{monthOptions}</select>
-              <select id="end_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducend" ref="yeareduc">{yearOptions}</select>
+              <select id="end_month_educ" className="month color-tertiary color-dark padding-left-lg" name="montheducend" ref="montheduc" value={this.props.inputEducation5a} onChange={this.props.updateInputEducation5a}>{monthOptions}</select>
+              <select id="end_year_educ" className="year color-tertiary color-dark padding-left-xs" name="yeareducend" ref="yeareduc" value={this.props.inputEducation6a} onChange={this.props.updateInputEducation6a}>{yearOptions}</select>
             </div>
 
           </div>
@@ -52,7 +52,7 @@ class Education extends Component {
           <img className="remove-button" src="images/remove.svg" alt="remove button" />
         </div>
 
-        <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="submit" name="button" onSubmit={this.props.sendLocalEducation}>guardar</button>
+        <button className="rounded-lightColor-width45-button colored2-button-typo right margin-md padding-xxxxs" id={`${this.props.idButtonCollapse}`}  type="button" name="button" onClick={this.props.sendLocalEducation}>guardar</button>
       </Collapse>
 
     );
